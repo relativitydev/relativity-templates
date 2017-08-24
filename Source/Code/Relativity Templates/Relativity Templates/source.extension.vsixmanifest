@@ -4,7 +4,7 @@
     <Identity Id="08054949-82bb-41d5-bfe3-0c63ac1a60bf" Version="1.2.0.0" Language="en-US" Publisher="kCura" />
     <DisplayName>Relativity 9.3 Templates</DisplayName>
     <Description xml:space="preserve">Templates for Relativity Event Handlers, Custom Pages, and Agents.</Description>
-    <License>kCura - Visual Studio License.txt</License>
+    <License>Relativity - Visual Studio License.txt</License>
     <Icon>__TemplateIcon.ico</Icon>
     <PreviewImage>templatesImg.png</PreviewImage>
   </Metadata>
