@@ -1,0 +1,65 @@
+﻿@using Relativity_Extension.CustomPages.Models
+@model ManagerAgentModel
+
+@{
+    ViewBag.Title = "Manager Queue";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Init
+{
+    ManagerAgent.URLManagerIndex = '@Url.Action("Index", "ManagerAgent", new { appId = Request.QueryString["AppID"], StandardsCompliance = true })';
+    ManagerAgent.init();
+}
+
+<div class="container" id="dvIndex">
+    <br />
+    <div class="panel panel-primary">
+        <div class="panel-heading">Manager Queue</div>
+        <div class="panel-body">
+            <br />
+            @if (Model.Records.Count > 0)
+            {
+                <div class="row">
+                    <div class="col-md-12">
+                        @{
+                WebGrid recordsGrid = new WebGrid(@Model.Records, canPage: false, canSort: false);
+                            <div>
+                                @recordsGrid.GetHtml("table",
+
+                            fillEmptyRows: false,
+                            headerStyle: "header",
+                            footerStyle: "grid-footer",
+
+                            columns: new[]
+                            {
+                                recordsGrid.Column("Id", "ID"),
+                                recordsGrid.Column("RecordArtifactID", "Record Artifact ID"),
+                                recordsGrid.Column("AddedOn", "Added On"),
+                                recordsGrid.Column("AddedBy", "Added By"),
+                                recordsGrid.Column("WorkspaceArtifactId", "Workspace Artifact ID"),
+                                recordsGrid.Column("WorkspaceName", "Workspace Name"),
+                                recordsGrid.Column("Status"),
+                                recordsGrid.Column("AgentId", "Agent ID"),
+                                recordsGrid.Column("Priority"),
+                            })
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="row">
+                    <div class="col-md-12">
+                        No records in the queue 
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@*loading*@
+<div id="modal"></div>
+
