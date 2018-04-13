@@ -8,7 +8,7 @@
 
 @section Init
 {
-    WorkerAgent.URLWorkerIndex = '@Url.Action("Index", "WorkerAgent", new { appId = Request.QueryString["AppID"], StandardsCompliance = true })';
+    WorkerAgent.URLWorkerIndex = '@Url.Action("Index", "WorkerAgent", new { appId = Relativity.CustomPages.ConnectionHelper.Helper().GetActiveCaseID(), StandardsCompliance = true })';
     WorkerAgent.init();
 }
 

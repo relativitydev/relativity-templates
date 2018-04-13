@@ -19,9 +19,9 @@ namespace Relativity_Extension.Helpers
 
 		public class Guids
 		{
-			public static readonly Guid ApplicationGuid = new Guid("EEC7752D-EC38-42A2-91D4-CCEE6C7744B2");
-			public static readonly Guid ManagerQueueTab = new Guid("03910743-44A0-4A3C-9DFD-5DE9B7BED9FE");
-			public static readonly Guid WorkerQueueTab = new Guid("CB2946FB-0B67-4785-A782-43356A9EA562");
+			public static readonly Guid ApplicationGuid = new Guid("8DF88F3C-5795-4C02-9CDF-5E826D603B13");
+			public static readonly Guid ManagerQueueTab = new Guid("1CC1A982-6F61-42F6-9F65-DE2C522EC0F2");
+			public static readonly Guid WorkerQueueTab = new Guid("96D453C3-A512-4B1F-BE95-BEE52AE6176E");
 		}
 
 		public class Sizes

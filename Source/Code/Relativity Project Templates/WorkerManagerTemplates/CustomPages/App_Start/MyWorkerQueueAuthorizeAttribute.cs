@@ -16,10 +16,9 @@ namespace Relativity_Extension.CustomPages
 
 			if (httpContext.Session != null)
 			{
-				Int32 caseArtifactId = -1;
-				Int32.TryParse(httpContext.Request.QueryString["appid"], out caseArtifactId);
+				Int32 caseArtifactId = Relativity.CustomPages.ConnectionHelper.Helper().GetActiveCaseID();
 
-				ArtifactQueries query = new ArtifactQueries();
+                ArtifactQueries query = new ArtifactQueries();
 				bool res = query.DoesUserHaveAccessToArtifact(
 				ConnectionHelper.Helper().GetServicesManager(),
 				ExecutionIdentity.CurrentUser,

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using kCura.EventHandler;
 using kCura.EventHandler.CustomAttributes;
@@ -15,7 +16,9 @@ namespace Relativity.ConsoleEventHandler
 
         public override kCura.EventHandler.Console GetConsole(PageEvent pageEvent)
         {
-            kCura.EventHandler.Console returnConsole = new kCura.EventHandler.Console();
+            kCura.EventHandler.Console returnConsole = new kCura.EventHandler.Console() { Items = new List<IConsoleItem>(), Title = "Title of Console" }; ;
+            
+            returnConsole.Items.Add(new ConsoleButton() {Name = "1st Button", DisplayText = "Click Me", Enabled = true});
 
             Int32 currentWorkspaceArtifactID = Helper.GetActiveCaseID();
 
@@ -44,7 +47,7 @@ namespace Relativity.ConsoleEventHandler
 
             IAPILog logger = Helper.GetLoggerFactory().GetLogger();
             logger.LogVerbose("Log information throughout execution.");
-
+            
             return returnConsole;
         }
 

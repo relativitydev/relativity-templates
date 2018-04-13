@@ -8,7 +8,7 @@
 
 @section Init
 {
-    ManagerAgent.URLManagerIndex = '@Url.Action("Index", "ManagerAgent", new { appId = Request.QueryString["AppID"], StandardsCompliance = true })';
+    ManagerAgent.URLManagerIndex = '@Url.Action("Index", "ManagerAgent", new { appId = Relativity.CustomPages.ConnectionHelper.Helper().GetActiveCaseID(), StandardsCompliance = true })';
     ManagerAgent.init();
 }
 

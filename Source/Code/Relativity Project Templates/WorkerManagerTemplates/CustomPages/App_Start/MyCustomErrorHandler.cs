@@ -11,10 +11,9 @@ namespace Relativity_Extension.CustomPages
 		public override void OnException(ExceptionContext filterContext)
 		{
 			base.OnException(filterContext);
-			Int32 caseArtifactId = -1;
-			Int32.TryParse(filterContext.HttpContext.Request.QueryString["appid"], out caseArtifactId);
+			Int32 caseArtifactId = Relativity.CustomPages.ConnectionHelper.Helper().GetActiveCaseID();
 
-		    Relativity_Extension.Helpers.IQuery queryHelper = new Query();
+            Relativity_Extension.Helpers.IQuery queryHelper = new Query();
 
 			if (filterContext.Exception != null)
 			{
