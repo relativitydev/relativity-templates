@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RIP.Provider", "RIP.Provider\RIP.Provider.csproj", "{B03206A4-E1DE-403A-BB14-60BA20E52985}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RIP.Web", "RIP.Web\RIP.Web.csproj", "{F1A97050-A891-44AB-A63D-34014BC8CFDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B03206A4-E1DE-403A-BB14-60BA20E52985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B03206A4-E1DE-403A-BB14-60BA20E52985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B03206A4-E1DE-403A-BB14-60BA20E52985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B03206A4-E1DE-403A-BB14-60BA20E52985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1A97050-A891-44AB-A63D-34014BC8CFDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1A97050-A891-44AB-A63D-34014BC8CFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1A97050-A891-44AB-A63D-34014BC8CFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1A97050-A891-44AB-A63D-34014BC8CFDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

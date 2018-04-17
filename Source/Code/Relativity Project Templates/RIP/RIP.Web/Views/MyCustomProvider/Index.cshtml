@@ -1,0 +1,24 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    @*  Add jquery-1.8.2.js, jquery-postMessage.js and frame-messaging.js to the Scripts folder.
+    They can be found in the Integration Points SDK Archive.
+    Implement the Submit, Back & Load methods in myCustomProvider.js to control how your data model interacts with the RIP Framework.
+    The same model is also sent to all methods in the main Provider class as well as the GetViewFields Action in the controller.*@
+    <script src="~/Scripts/jquery-1.8.2.js"></script>
+    <script src="~/Scripts/jquery-postMessage.js"></script>
+    <script src="~/Scripts/frame-messaging.js"></script>
+    <script src="~/Scripts/myCustomProvider.js"></script>
+</head>
+<body>
+    @*These fields are used to assemble the model in myCustomProvider.js*@
+    <input type="text" id="exampleViewField1" value="" /><br />
+    <input type="text" id="exampleViewField2" value="" /><br />
+    <input type="text" id="exampleViewField3" value="" /><br />
+    <input type="text" id="exampleViewField4" value="" /><br />
+    <input type="text" id="exampleViewField5" value="" />
+</body>
+</html>
