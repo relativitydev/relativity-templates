@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{$guid1$}</ProjectGuid>
+    <ProjectGuid>{FDDC391A-82FE-4732-A456-476DF1507C1E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>$safeprojectname$</RootNamespace>
-    <AssemblyName>$safeprojectname$</AssemblyName>
-    <TargetFrameworkVersion>v$targetframeworkversion$</TargetFrameworkVersion>
+    <RootNamespace>Relativity.PostSaveEventHandler</RootNamespace>
+    <AssemblyName>Relativity.PostSaveEventHandler</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -30,14 +30,33 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="kCura.EventHandler">
-      <HintPath>..\..\..\..\..\..\Program Files\kCura Corporation\Relativity SDK\Event Handlers\Client\kCura.EventHandler.dll</HintPath>
+    <Reference Include="kCura.EventHandler, Version=9.6.85.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.EventHandler.9.6.85.9\lib\kCura.EventHandler.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="kCura.Relativity.Client">
-      <HintPath>..\..\..\..\..\..\Program Files\kCura Corporation\Relativity SDK\Services API\Client\kCura.Relativity.Client.dll</HintPath>
+    <Reference Include="kCura.Relativity.Client, Version=9.6.85.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Rsapi.9.6.85.9\lib\kCura.Relativity.Client.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Relativity.API">
-      <HintPath>..\..\..\..\..\..\Program Files\kCura Corporation\Relativity SDK\Relativity API\Lib\Relativity.API.dll</HintPath>
+    <Reference Include="Relativity.API, Version=9.6.85.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Api.9.6.85.9\lib\Relativity.API.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Relativity.Kepler, Version=1.0.1.445, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.9.6.85.9\lib\Relativity.Kepler.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Relativity.Services.DataContracts, Version=9.6.85.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.9.6.85.9\lib\Relativity.Services.DataContracts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Relativity.Services.Interfaces, Version=9.6.85.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.9.6.85.9\lib\Relativity.Services.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Relativity.Services.ServiceProxy, Version=1.0.1.392, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.9.6.85.9\lib\Relativity.Services.ServiceProxy.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,6 +69,9 @@
   <ItemGroup>
     <Compile Include="PostSaveEventHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
