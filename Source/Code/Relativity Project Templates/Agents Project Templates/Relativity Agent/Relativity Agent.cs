@@ -1,55 +1,75 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using kCura.Agent;
+﻿using kCura.Agent;
 using kCura.Relativity.Client;
 using Relativity.API;
+using Relativity.Services.Objects;
+using System;
 
-namespace $safeprojectname$
+namespace Relativity.Agent
 {
-	[kCura.Agent.CustomAttributes.Name("Agent")]
-	[System.Runtime.InteropServices.Guid("$guid1$")]
-  public class RelativityAgent : kCura.Agent.AgentBase
-  {
+	[kCura.Agent.CustomAttributes.Name("Agent Name")]
+	[System.Runtime.InteropServices.Guid("E19FE53D-1611-4972-ADFD-F237AE20BEC9")]
+	public class RelativityAgent : AgentBase
+	{
+		/// <summary>
+		/// Agent logic goes here
+		/// </summary>
 		public override void Execute()
 		{
-			//Get the current Agent artifactID
-			Int32 agentArtifactID = this.AgentID;
-			//Get a dbContext for the EDDS database
-			Relativity.API.IDBContext eddsDBContext = this.Helper.GetDBContext(-1);
-			
+			IAPILog logger = Helper.GetLoggerFactory().GetLogger();
+
 			try
 			{
+				//Get the current Agent artifactID
+				int agentArtifactId = AgentID;
 
-				/*
-				
-				//Setting up an RSAPI Client
-				using (IRSAPIClient proxy =
-					Helper.GetServicesManager().CreateProxy<IRSAPIClient>(ExecutionIdentity.System))
+				//Get a dbContext for the EDDS database
+				IDBContext eddsDbContext = Helper.GetDBContext(-1);
+
+				//Get a dbContext for the workspace database
+				//int workspaceArtifactId = 01010101; // Update it with the real 
+				//IDBContext workspaceDbContext = Helper.GetDBContext(workspaceArtifactId);
+
+				//Get GUID for an artifact
+				//int testArtifactId = 10101010;
+				//Guid guidForTestArtifactId = Helper.GetGuid(workspaceArtifactId, testArtifactId);
+
+				//Display a message in Agents Tab and Windows Event Viewer
+				RaiseMessage($"The current time is: {DateTime.Now.ToLongTimeString()}", 1);
+
+				//The Object Manager is the newest and preferred way to interact with Relativity instead of the Relativity Services API(RSAPI). 
+				//The RSAPI will be scheduled for depreciation after the Object Manager reaches feature party with it.
+				using (IObjectManager objectManager = this.Helper.GetServicesManager().CreateProxy<IObjectManager>(ExecutionIdentity.CurrentUser))
 				{
+
+				}
+
+				//Setting up an RSAPI Client
+				using (IRSAPIClient rsapiClient = Helper.GetServicesManager().CreateProxy<IRSAPIClient>(ExecutionIdentity.CurrentUser))
+				{
+					//Set the proxy to use the current workspace
+					//rsapiClient.APIOptions.WorkspaceID = workspaceArtifactId;
+
 					//Add code for working with RSAPIClient
 				}
 
-				*/
-
+				logger.LogVerbose("Log information throughout execution.");
 			}
-			catch (System.Exception ex)
+			catch (Exception ex)
 			{
 				//Your Agent caught an exception
-				this.RaiseError(ex.Message, ex.Message);
+				logger.LogError(ex, "There was an exception.");
+				RaiseError(ex.Message, ex.Message);
 			}
 		}
 
-		/**
-		 * Returns the name of agent
-		 */
+		/// <summary>
+		/// Returns the name of agent
+		/// </summary>
 		public override string Name
 		{
-			get 
-			{ 
-				return "Agent";
+			get
+			{
+				return "Agent Name";
 			}
 		}
 	}
