@@ -1,0 +1,29 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Manager Worker Agents</Name>
+    <Description>Project Template for Manager Worker Agents </Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Manager Worker Agents</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+    <PreviewImage>__PreviewImage.ico</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Agents.csproj" File="Agents.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="AgentJobBase.cs">AgentJobBase.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Manager.cs">Manager.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ManagerJob.cs">ManagerJob.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties" />
+      <ProjectItem ReplaceParameters="true" TargetFileName="Worker.cs">Worker.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="WorkerJob.cs">WorkerJob.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

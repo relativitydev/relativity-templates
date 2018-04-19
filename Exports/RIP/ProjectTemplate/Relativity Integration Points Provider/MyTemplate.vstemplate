@@ -1,0 +1,31 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Relativity Integration Points Provider</Name>
+    <Description>Project template for the Relativity Integration Points Provider</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Relativity Integration Points Provider</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+    <PreviewImage>__PreviewImage.ico</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="RIP.Provider.csproj" File="RIP.Provider.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Constants.cs">Constants.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ExampleConfigurationModel.cs">ExampleConfigurationModel.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MyCustomProvider.cs">MyCustomProvider.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="RegisterMyCustomProvider.cs">RegisterMyCustomProvider.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="RemoveMyCustomProvider.cs">RemoveMyCustomProvider.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

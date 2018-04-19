@@ -12,12 +12,13 @@ namespace RIP.Provider
         {
             public class Provider
             {
-                public const String MY_CUSTOM_PROVIDER = "522384FF-425A-40D5-B18C-4D132774A1CC";
+                public const String MY_CUSTOM_PROVIDER = "D7A00988-9F1D-4440-83B2-E6C41F126690";
             }
 
             public class Application
             {
-                public static Guid SMP_RELATIVITY_APPLICATION = new Guid("7EE06267-9F5B-4B62-986F-DF1A3271FF93");
+                // Replace with the Guid of the Relativity Application in which your RIP Provider will be attached
+                public static Guid SMP_RELATIVITY_APPLICATION = new Guid("125D8DE8-85F7-47BA-BE16-546A6BC15432");
             }
         }
     }

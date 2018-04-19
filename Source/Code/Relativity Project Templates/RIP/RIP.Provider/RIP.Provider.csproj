@@ -31,49 +31,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="kCura.Apps.Common.Config">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\kCura Corporation\Integration Points SDK\Provider\kCura.Apps.Common.Config.dll</HintPath>
-    </Reference>
-    <Reference Include="kCura.Apps.Common.Data">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\kCura Corporation\Integration Points SDK\Provider\kCura.Apps.Common.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="kCura.Apps.Common.Utils">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\kCura Corporation\Integration Points SDK\Provider\kCura.Apps.Common.Utils.dll</HintPath>
-    </Reference>
     <Reference Include="kCura.EventHandler, Version=9.5.378.15, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Relativity.EventHandler.9.5.378.15\lib\kCura.EventHandler.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="kCura.IntegrationPoints.Contracts">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\kCura Corporation\Integration Points SDK\Provider\kCura.IntegrationPoints.Contracts.dll</HintPath>
+    <Reference Include="kCura.IntegrationPoints.Contracts, Version=9.5.57.2, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Marlon\kcd\Presentations\2017-RIP Workshop\96-extradlls\kCura.IntegrationPoints.Contracts.dll</HintPath>
     </Reference>
-    <Reference Include="kCura.IntegrationPoints.Core">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\kCura Corporation\Integration Points SDK\Provider\kCura.IntegrationPoints.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="kCura.IntegrationPoints.Core.Contracts">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\kCura Corporation\Integration Points SDK\Provider\kCura.IntegrationPoints.Core.Contracts.dll</HintPath>
-    </Reference>
-    <Reference Include="kCura.IntegrationPoints.Data">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\kCura Corporation\Integration Points SDK\Provider\kCura.IntegrationPoints.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="kCura.IntegrationPoints.Domain">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\kCura Corporation\Integration Points SDK\Provider\kCura.IntegrationPoints.Domain.dll</HintPath>
-    </Reference>
-    <Reference Include="kCura.IntegrationPoints.Security">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\kCura Corporation\Integration Points SDK\Provider\kCura.IntegrationPoints.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="kCura.IntegrationPoints.SourceProviderInstaller">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\kCura Corporation\Integration Points SDK\Provider\kCura.IntegrationPoints.SourceProviderInstaller.dll</HintPath>
-    </Reference>
-    <Reference Include="kCura.IntegrationPoints.Synchronizers.RDO">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\kCura Corporation\Integration Points SDK\Provider\kCura.IntegrationPoints.Synchronizers.RDO.dll</HintPath>
+    <Reference Include="kCura.IntegrationPoints.SourceProviderInstaller, Version=9.5.57.2, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Marlon\kcd\Presentations\2017-RIP Workshop\96-extradlls\kCura.IntegrationPoints.SourceProviderInstaller.dll</HintPath>
     </Reference>
     <Reference Include="kCura.Relativity.Client, Version=9.5.378.15, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Relativity.Rsapi.9.5.378.15\lib\kCura.Relativity.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="kCura.ScheduleQueue.Core">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\kCura Corporation\Integration Points SDK\Provider\kCura.ScheduleQueue.Core.dll</HintPath>
+    <Reference Include="kCura.ScheduleQueue.Core, Version=9.5.57.2, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Marlon\kcd\Presentations\2017-RIP Workshop\96-extradlls\kCura.ScheduleQueue.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Relativity.API, Version=9.5.378.15, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Relativity.Api.9.5.378.15\lib\Relativity.API.dll</HintPath>
@@ -103,18 +83,21 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="SystemInterface">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\kCura Corporation\Integration Points SDK\Provider\SystemInterface.dll</HintPath>
+    <Reference Include="SystemInterface, Version=0.19.0.115, Culture=neutral, PublicKeyToken=fbc3a63dd3cf8960, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Marlon\kcd\Presentations\2017-RIP Workshop\96-extradlls\SystemInterface.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
+    <Compile Include="ExampleConfigurationModel.cs" />
     <Compile Include="RegisterMyCustomProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveMyCustomProvider.cs" />
     <Compile Include="MyCustomProvider.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
