@@ -49,8 +49,8 @@
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="kCura.Relativity.Client, Version=9.6.53.73, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Rsapi.9.6.53.73\lib\kCura.Relativity.Client.dll</HintPath>
+    <Reference Include="kCura.Relativity.Client, Version=9.5.378.15, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Rsapi.9.5.378.15\lib\kCura.Relativity.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -62,28 +62,28 @@
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Relativity.API, Version=9.6.53.73, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Api.9.6.53.73\lib\Relativity.API.dll</HintPath>
+    <Reference Include="Relativity.API, Version=9.5.378.15, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Api.9.5.378.15\lib\Relativity.API.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Relativity.CustomPages, Version=9.6.53.73, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.CustomPages.9.6.53.73\lib\Relativity.CustomPages.dll</HintPath>
+    <Reference Include="Relativity.CustomPages, Version=9.5.378.15, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.CustomPages.9.5.378.15\lib\Relativity.CustomPages.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Relativity.Kepler, Version=1.0.1.440, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.9.6.53.73\lib\Relativity.Kepler.dll</HintPath>
+    <Reference Include="Relativity.Kepler, Version=1.0.1.429, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.9.5.378.15\lib\Relativity.Kepler.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Relativity.Services.DataContracts, Version=9.6.53.73, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.9.6.53.73\lib\Relativity.Services.DataContracts.dll</HintPath>
+    <Reference Include="Relativity.Services.DataContracts, Version=9.5.378.15, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.9.5.378.15\lib\Relativity.Services.DataContracts.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Relativity.Services.Interfaces, Version=9.6.53.73, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.9.6.53.73\lib\Relativity.Services.Interfaces.dll</HintPath>
+    <Reference Include="Relativity.Services.Interfaces, Version=9.5.378.15, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.9.5.378.15\lib\Relativity.Services.Interfaces.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Relativity.Services.ServiceProxy, Version=1.0.1.392, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.9.6.53.73\lib\Relativity.Services.ServiceProxy.dll</HintPath>
+      <HintPath>..\packages\Relativity.ObjectManager.9.5.378.15\lib\Relativity.Services.ServiceProxy.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
