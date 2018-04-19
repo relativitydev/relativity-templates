@@ -7,8 +7,8 @@ using System;
 namespace $rootnamespace$
 {
 	[kCura.Agent.CustomAttributes.Name("Agent Name")]
-	[System.Runtime.InteropServices.Guid("E19FE53D-1611-4972-ADFD-F237AE20BEC9")]
-	public class RelativityAgent : AgentBase
+	// [System.Runtime.InteropServices.Guid("$guid1$")]
+	public class $safeitemname$ : AgentBase
 	{
 		/// <summary>
 		/// Agent logic goes here
