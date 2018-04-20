@@ -7,8 +7,8 @@
     <ProjectGuid>{AAA809DA-EA6F-474C-B9C0-D2B6217A5702}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Relativity.Test.Helpers.Example.NUnit</RootNamespace>
-    <AssemblyName>Relativity.Test.Helpers.Example.NUnit</AssemblyName>
+    <RootNamespace>Relativity.TestHelpersExample.NUnit</RootNamespace>
+    <AssemblyName>Relativity.TestHelpersExample.NUnit</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -43,12 +43,6 @@
       <HintPath>..\packages\NUnitTestAdapter.WithFramework.2.0.0\lib\nunit.core.interfaces.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="kCura.Data.RowDataGateway">
-      <HintPath>C:\Program Files\kCura Corporation\Relativity SDK\Agents\Client\kCura.Data.RowDataGateway.dll</HintPath>
-    </Reference>
-    <Reference Include="kCura.Relativity.DataReaderClient">
-      <HintPath>C:\Program Files\kCura Corporation\Relativity SDK\ImportAPI\Client\x64\kCura.Relativity.DataReaderClient.dll</HintPath>
-    </Reference>
     <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnitTestAdapter.WithFramework.2.0.0\lib\nunit.framework.dll</HintPath>
     </Reference>
@@ -64,17 +58,8 @@
       <HintPath>..\packages\Relativity.Api.9.5.169.7\lib\Relativity.API.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Relativity.Services.DataContracts">
-      <HintPath>C:\Program Files\kCura Corporation\Relativity SDK\Services API\Client\Relativity.Services.DataContracts.dll</HintPath>
-    </Reference>
-    <Reference Include="Relativity.Services.Interfaces">
-      <HintPath>C:\Program Files\kCura Corporation\Relativity SDK\Services API\Client\Relativity.Services.Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="Relativity.Services.ServiceProxy">
-      <HintPath>C:\Program Files\kCura Corporation\Relativity SDK\Services API\Client\Relativity.Services.ServiceProxy.dll</HintPath>
-    </Reference>
-    <Reference Include="Relativity.Test.Helpers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\RelativityTestHelpersNuget.2.0.0\lib\Relativity.Test.Helpers.dll</HintPath>
+    <Reference Include="Relativity.Test.Helpers, Version=4.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RelativityDev.RelativityTestHelpers.4.1.0.1\lib\Relativity.Test.Helpers.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

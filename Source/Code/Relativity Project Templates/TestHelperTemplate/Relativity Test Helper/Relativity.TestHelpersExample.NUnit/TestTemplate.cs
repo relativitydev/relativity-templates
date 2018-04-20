@@ -4,6 +4,7 @@ using System.Reflection;
 using kCura.Relativity.Client;
 using NUnit.Framework;
 using Relativity.API;
+using Relativity.Test.Helpers;
 using Relativity.Test.Helpers.ArtifactHelpers;
 using Relativity.Test.Helpers.GroupHelpers;
 using Relativity.Test.Helpers.ServiceFactory.Extentions;
@@ -11,12 +12,12 @@ using Relativity.Test.Helpers.SharedTestHelpers;
 using Relativity.Test.Helpers.UserHelpers;
 using Relativity.Test.Helpers.WorkspaceHelpers;
 
-namespace Relativity.Test.Helpers.Example.NUnit
+namespace Relativity.TestHelpersExample.NUnit
 {
     /// <summary>
     ///     Relativity Integration Test Helpers to assist you with writing good Integration Tests for your application. You can
     ///     use this framework to test event handlers, agents and any workflow that combines agents and frameworks.
-    ///     Before you get Started, fill out details for the following the app.config file
+    ///     Before you get Started, fill out details for the following in the app.config file
     ///     "WorkspaceID", "RSAPIServerAddress", "RESTServerAddress",	"AdminUsername","AdminPassword", "SQLServerAddress"
     ///     ,"SQLUsername","SQLPassword" "TestWorkspaceName"
     /// </summary>
@@ -72,11 +73,11 @@ namespace Relativity.Test.Helpers.Example.NUnit
             if (executableLocation != null)
                 nativeFilePath = Path.Combine(executableLocation, nativeName);
             //Create Documents with a given folder name
-            ImportAPIHelper.ImportAPIHelper.CreateDocumentswithFolderName(_workspaceId, _numberOfDocuments, _foldername, nativeFilePath);
+            Test.Helpers.ImportAPIHelper.ImportAPIHelper.CreateDocumentswithFolderName(_workspaceId, _numberOfDocuments, _foldername, nativeFilePath);
 
             //Create Documents with a given folder artifact id
             string folderName = Folders.GetFolderName(_rootFolderArtifactID, dbContext);
-            ImportAPIHelper.ImportAPIHelper.CreateDocumentswithFolderName(_workspaceId, _numberOfDocuments, folderName, nativeFilePath);
+            Test.Helpers.ImportAPIHelper.ImportAPIHelper.CreateDocumentswithFolderName(_workspaceId, _numberOfDocuments, folderName, nativeFilePath);
 
             //Create Fixed Length field
             _fixedLengthArtId = Fields.CreateField_FixedLengthText(_client, _workspaceId);
