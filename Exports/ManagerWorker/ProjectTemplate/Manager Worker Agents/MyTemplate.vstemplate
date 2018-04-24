@@ -26,4 +26,16 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="WorkerJob.cs">WorkerJob.cs</ProjectItem>
     </Project>
   </TemplateContent>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages repository="extension" repositoryId="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b">
+	  <package id="Relativity.Agent" version="9.5.370.136" />
+	  <package id="Relativity.Api" version="9.5.370.136" />
+	  <package id="Relativity.ObjectManager" version="9.5.370.136" />
+	  <package id="Relativity.Rsapi" version="9.5.370.136" />
+	</packages>
+  </WizardData>
 </VSTemplate>
