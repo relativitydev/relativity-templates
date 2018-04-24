@@ -1,12 +1,11 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
   <TemplateData>
-    <DefaultName>Relativity.TestHelpersExample.NUnit.cs</DefaultName>
-    <Name>Relativity.TestHelpersExample.NUnit</Name>
+    <DefaultName>IntegrationTest</DefaultName>
+    <Name>Relativity Integration Test Template</Name>
     <Description>Item Template for example use of Relativity Test Helpers</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>10</SortOrder>
-    <Icon>__TemplateIcon.ico</Icon>
-    <PreviewImage>__PreviewImage.ico</PreviewImage>
+    <Icon>__PreviewImage.ico</Icon>
   </TemplateData>
   <TemplateContent>
     <References />

@@ -12,7 +12,7 @@
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <Icon>__TemplateIcon.ico</Icon>
-    <PreviewImage>__PreviewImage.ico</PreviewImage>
+	<Hidden>true</Hidden>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="Helpers.csproj" File="Helpers.csproj" ReplaceParameters="true">
