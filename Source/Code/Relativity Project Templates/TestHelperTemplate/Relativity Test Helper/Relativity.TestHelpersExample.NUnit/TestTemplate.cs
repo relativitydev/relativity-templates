@@ -7,12 +7,13 @@ using Relativity.API;
 using Relativity.Test.Helpers;
 using Relativity.Test.Helpers.ArtifactHelpers;
 using Relativity.Test.Helpers.GroupHelpers;
+using Relativity.Test.Helpers.ImportAPIHelper;
 using Relativity.Test.Helpers.ServiceFactory.Extentions;
 using Relativity.Test.Helpers.SharedTestHelpers;
 using Relativity.Test.Helpers.UserHelpers;
 using Relativity.Test.Helpers.WorkspaceHelpers;
 
-namespace Relativity.TestHelpersExample.NUnit
+namespace Relativity.RelativityTestTemplate.Tests.Integration.NUnit
 {
     /// <summary>
     ///     Relativity Integration Test Helpers to assist you with writing good Integration Tests for your application. You can
@@ -73,11 +74,11 @@ namespace Relativity.TestHelpersExample.NUnit
             if (executableLocation != null)
                 nativeFilePath = Path.Combine(executableLocation, nativeName);
             //Create Documents with a given folder name
-            Test.Helpers.ImportAPIHelper.ImportAPIHelper.CreateDocumentswithFolderName(_workspaceId, _numberOfDocuments, _foldername, nativeFilePath);
+            ImportAPIHelper.CreateDocumentswithFolderName(_workspaceId, _numberOfDocuments, _foldername, nativeFilePath);
 
             //Create Documents with a given folder artifact id
             string folderName = Folders.GetFolderName(_rootFolderArtifactID, dbContext);
-            Test.Helpers.ImportAPIHelper.ImportAPIHelper.CreateDocumentswithFolderName(_workspaceId, _numberOfDocuments, folderName, nativeFilePath);
+            ImportAPIHelper.CreateDocumentswithFolderName(_workspaceId, _numberOfDocuments, folderName, nativeFilePath);
 
             //Create Fixed Length field
             _fixedLengthArtId = Fields.CreateField_FixedLengthText(_client, _workspaceId);
