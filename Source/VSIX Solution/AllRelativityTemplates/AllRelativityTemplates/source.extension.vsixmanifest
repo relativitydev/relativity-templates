@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b" Version="1.0" Language="en-US" Publisher="Relativity" />
+        <DisplayName>Relativity Templates</DisplayName>
+        <Description xml:space="preserve">This Project Contains Templates for Relativity Event Handlers, Agents, Custom Pages, The Manager Worker Solution, Relativity Integration Points(RIP) and The Test Helper Example.</Description>
+        <License>license.txt</License>
+        <Icon>favicon.ico</Icon>
+        <Tags>Relativity Agent EventHandler ManagerWorker RIP CustomPage TestHelper</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[11.0,16.0)" />
+        <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.Pro" />
+        <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.Enterprise" />
+        <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.VSWinExpress" />
+        <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.VWDExpress" />
+        <InstallationTarget Version="[11.0,16.0)" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Agent\Agent.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\CustomPages\CustomPages_MVC5.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\CustomPages\CustomPages_WebForms.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\EventHandlers\ConsoleEventHandler.zip"/>
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\EventHandlers\PageInteractionEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\EventHandlers\PostInstallEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\EventHandlers\PostSaveEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\EventHandlers\PreCascadeEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\EventHandlers\PreDeleteEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\EventHandlers\PreInstallEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\EventHandlers\PreLoadEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\EventHandlers\PreMassDeleteEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\EventHandlers\PreSaveEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\EventHandlers\PreUninstallEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\IntegrationPoints\RIP_PostInstall.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\IntegrationPoints\RIP_PostUninstall.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\IntegrationPoints\RIP_Provider.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\TestHelper\TestHelper.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\Agent\Agent.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\CustomPages\CustomPages_MVC5.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\CustomPages\CustomPages_WebForms.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\EventHandlers\ConsoleEventHandler.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\EventHandlers\PageInteractionEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\EventHandlers\PostInstallEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\EventHandlers\PostSaveEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\EventHandlers\PreCascadeEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\EventHandlers\PreDeleteEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\EventHandlers\PreInstallEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\EventHandlers\PreLoadEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\EventHandlers\PreMassDeleteEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\EventHandlers\PreSaveEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\EventHandlers\PreUninstallEH.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\TestHelper\TestHelper.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\IntegrationPoints\RIP.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\ManagerWorker\ManagerWorker.zip" />
+		
+		<Asset Type="Antlr.3.4.1.9004.nupkg" d:Source="File" Path="Packages\Antlr.3.4.1.9004.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="bootstrap.3.0.0.nupkg" d:Source="File" Path="Packages\bootstrap.3.0.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="bootstrap.3.2.0.nupkg" d:Source="File" Path="Packages\bootstrap.3.2.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Castle.Core.4.2.1.nupkg" d:Source="File" Path="Packages\Castle.Core.4.2.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="EntityFramework.6.1.3.nupkg" d:Source="File" Path="Packages\EntityFramework.6.1.3.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="jQuery.1.10.2.nupkg" d:Source="File" Path="Packages\jQuery.1.10.2.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="jQuery.2.1.1.nupkg" d:Source="File" Path="Packages\jQuery.2.1.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="jQuery.Validation.1.11.1.nupkg" d:Source="File" Path="Packages\jQuery.Validation.1.11.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="jQuery.Validation.1.13.0.nupkg" d:Source="File" Path="Packages\jQuery.Validation.1.13.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.AspNet.Identity.Core.2.2.1.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.Identity.Core.2.2.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.AspNet.Identity.EntityFramework.2.2.1.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.AspNet.Identity.Owin.2.2.1.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.Identity.Owin.2.2.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.AspNet.Mvc.5.2.3.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.Mvc.5.2.3.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.AspNet.Mvc.5.2.4.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.Mvc.5.2.4.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.AspNet.Mvc.FixedDisplayModes.5.0.0.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.Mvc.FixedDisplayModes.5.0.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.AspNet.Razor.3.2.3.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.Razor.3.2.3.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.AspNet.Razor.3.2.4.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.Razor.3.2.4.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.AspNet.Web.Optimization.1.1.3.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.Web.Optimization.1.1.3.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.AspNet.WebApi.4.0.20710.0.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.WebApi.4.0.20710.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.AspNet.WebApi.Client.4.0.20710.0.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.AspNet.WebApi.Core.4.0.20710.0.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.AspNet.WebApi.WebHost.4.0.20710.0.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.AspNet.WebPages.3.2.3.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.WebPages.3.2.3.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.AspNet.WebPages.3.2.4.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.WebPages.3.2.4.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.jQuery.Unobtrusive.Ajax.3.2.2.nupkg" d:Source="File" Path="Packages\Microsoft.jQuery.Unobtrusive.Ajax.3.2.2.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.jQuery.Unobtrusive.Validation.3.2.2.nupkg" d:Source="File" Path="Packages\Microsoft.jQuery.Unobtrusive.Validation.3.2.2.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.jQuery.Unobtrusive.Validation.3.2.3.nupkg" d:Source="File" Path="Packages\Microsoft.jQuery.Unobtrusive.Validation.3.2.3.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.Net.Http.2.0.20710.0.nupkg" d:Source="File" Path="Packages\Microsoft.Net.Http.2.0.20710.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.Owin.3.0.1.nupkg" d:Source="File" Path="Packages\Microsoft.Owin.3.0.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.Owin.Host.SystemWeb.3.0.1.nupkg" d:Source="File" Path="Packages\Microsoft.Owin.Host.SystemWeb.3.0.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.Owin.Security.3.0.1.nupkg" d:Source="File" Path="Packages\Microsoft.Owin.Security.3.0.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.Owin.Security.Cookies.3.0.1.nupkg" d:Source="File" Path="Packages\Microsoft.Owin.Security.Cookies.3.0.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.Owin.Security.Facebook.3.0.1.nupkg" d:Source="File" Path="Packages\Microsoft.Owin.Security.Facebook.3.0.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.Owin.Security.Google.3.0.1.nupkg" d:Source="File" Path="Packages\Microsoft.Owin.Security.Google.3.0.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.Owin.Security.MicrosoftAccount.3.0.1.nupkg" d:Source="File" Path="Packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.Owin.Security.OAuth.3.0.1.nupkg" d:Source="File" Path="Packages\Microsoft.Owin.Security.OAuth.3.0.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.Owin.Security.Twitter.3.0.1.nupkg" d:Source="File" Path="Packages\Microsoft.Owin.Security.Twitter.3.0.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Microsoft.Web.Infrastructure.1.0.0.0.nupkg" d:Source="File" Path="Packages\Microsoft.Web.Infrastructure.1.0.0.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Modernizr.2.6.2.nupkg" d:Source="File" Path="Packages\Modernizr.2.6.2.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Moq.4.2.1510.2205.nupkg" d:Source="File" Path="Packages\Moq.4.2.1510.2205.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Moq.4.7.142.nupkg" d:Source="File" Path="Packages\Moq.4.7.142.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Newtonsoft.Json.11.0.2.nupkg" d:Source="File" Path="Packages\Newtonsoft.Json.11.0.2.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Newtonsoft.Json.6.0.4.nupkg" d:Source="File" Path="Packages\Newtonsoft.Json.6.0.4.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Newtonsoft.Json.8.0.3.nupkg" d:Source="File" Path="Packages\Newtonsoft.Json.8.0.3.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="NUnit.2.6.3.nupkg" d:Source="File" Path="Packages\NUnit.2.6.3.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="NUnit.2.6.4.nupkg" d:Source="File" Path="Packages\NUnit.2.6.4.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="NUnit.3.8.1.nupkg" d:Source="File" Path="Packages\NUnit.3.8.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="NUnit3TestAdapter.3.9.0.nupkg" d:Source="File" Path="Packages\NUnit3TestAdapter.3.9.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="NUnitTestAdapter.WithFramework.2.0.0.nupkg" d:Source="File" Path="Packages\NUnitTestAdapter.WithFramework.2.0.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Owin.1.0.nupkg" d:Source="File" Path="Packages\Owin.1.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.Agent.9.5.370.136.nupkg" d:Source="File" Path="Packages\Relativity.Agent.9.5.370.136.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.Agent.9.5.378.15.nupkg" d:Source="File" Path="Packages\Relativity.Agent.9.5.378.15.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.Api.9.5.169.7.nupkg" d:Source="File" Path="Packages\Relativity.Api.9.5.169.7.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.Api.9.5.370.136.nupkg" d:Source="File" Path="Packages\Relativity.Api.9.5.370.136.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.Api.9.5.378.15.nupkg" d:Source="File" Path="Packages\Relativity.Api.9.5.378.15.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.Api.9.6.53.73.nupkg" d:Source="File" Path="Packages\Relativity.Api.9.6.53.73.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.CustomPages.9.5.370.136.nupkg" d:Source="File" Path="Packages\Relativity.CustomPages.9.5.370.136.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.CustomPages.9.5.378.15.nupkg" d:Source="File" Path="Packages\Relativity.CustomPages.9.5.378.15.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.CustomPages.9.6.53.73.nupkg" d:Source="File" Path="Packages\Relativity.CustomPages.9.6.53.73.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.EventHandler.9.5.378.15.nupkg" d:Source="File" Path="Packages\Relativity.EventHandler.9.5.378.15.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.ObjectManager.9.5.370.136.nupkg" d:Source="File" Path="Packages\Relativity.ObjectManager.9.5.370.136.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.ObjectManager.9.5.378.15.nupkg" d:Source="File" Path="Packages\Relativity.ObjectManager.9.5.378.15.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.ObjectManager.9.6.53.73.nupkg" d:Source="File" Path="Packages\Relativity.ObjectManager.9.6.53.73.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.Rsapi.9.5.169.7.nupkg" d:Source="File" Path="Packages\Relativity.Rsapi.9.5.169.7.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.Rsapi.9.5.315.50.nupkg" d:Source="File" Path="Packages\Relativity.Rsapi.9.5.315.50.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.Rsapi.9.5.370.136.nupkg" d:Source="File" Path="Packages\Relativity.Rsapi.9.5.370.136.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.Rsapi.9.5.378.15.nupkg" d:Source="File" Path="Packages\Relativity.Rsapi.9.5.378.15.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.Rsapi.9.6.53.73.nupkg" d:Source="File" Path="Packages\Relativity.Rsapi.9.6.53.73.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Relativity.Rsapi.9.6.85.9.nupkg" d:Source="File" Path="Packages\Relativity.Rsapi.9.6.85.9.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="RelativityDev.RelativityTestHelpers.4.1.0.1.nupkg" d:Source="File" Path="Packages\RelativityDev.RelativityTestHelpers.4.1.0.1.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="RelativityTestHelpersNuget.2.0.0.nupkg" d:Source="File" Path="Packages\RelativityTestHelpersNuget.2.0.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="Respond.1.2.0.nupkg" d:Source="File" Path="Packages\Respond.1.2.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="System.Net.Http.4.3.3.nupkg" d:Source="File" Path="Packages\System.Net.Http.4.3.3.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="System.Security.Cryptography.Algorithms.4.3.0.nupkg" d:Source="File" Path="Packages\System.Security.Cryptography.Algorithms.4.3.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="System.Security.Cryptography.Encoding.4.3.0.nupkg" d:Source="File" Path="Packages\System.Security.Cryptography.Encoding.4.3.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="System.Security.Cryptography.Primitives.4.3.0.nupkg" d:Source="File" Path="Packages\System.Security.Cryptography.Primitives.4.3.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="System.Security.Cryptography.X509Certificates.4.3.0.nupkg" d:Source="File" Path="Packages\System.Security.Cryptography.X509Certificates.4.3.0.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="WebGrease.1.5.2.nupkg" d:Source="File" Path="Packages\WebGrease.1.5.2.nupkg" d:VsixSubPath="Packages" /> 
+		<Asset Type="WebGrease.1.6.0.nupkg" d:Source="File" Path="Packages\WebGrease.1.6.0.nupkg" d:VsixSubPath="Packages" /> 
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>
