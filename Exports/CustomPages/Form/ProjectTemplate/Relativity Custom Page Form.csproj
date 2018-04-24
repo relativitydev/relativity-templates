@@ -42,28 +42,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="kCura.Relativity.Client, Version=9.5.370.136, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Rsapi.9.5.370.136\lib\kCura.Relativity.Client.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Relativity.API, Version=9.5.370.136, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Api.9.5.370.136\lib\Relativity.API.dll</HintPath>
-    </Reference>
-    <Reference Include="Relativity.CustomPages, Version=9.5.370.136, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.CustomPages.9.5.370.136\lib\Relativity.CustomPages.dll</HintPath>
-    </Reference>
-    <Reference Include="Relativity.Kepler, Version=1.0.1.423, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.9.5.370.136\lib\Relativity.Kepler.dll</HintPath>
-    </Reference>
-    <Reference Include="Relativity.Services.DataContracts, Version=9.5.370.136, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.9.5.370.136\lib\Relativity.Services.DataContracts.dll</HintPath>
-    </Reference>
-    <Reference Include="Relativity.Services.Interfaces, Version=9.5.370.136, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.9.5.370.136\lib\Relativity.Services.Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="Relativity.Services.ServiceProxy, Version=1.0.1.392, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.9.5.370.136\lib\Relativity.Services.ServiceProxy.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
