@@ -19,7 +19,6 @@ obj/
 Bin/
 Obj/
 re:~.*
-packages/
 StyleCop*
 .pyo
 .vs
