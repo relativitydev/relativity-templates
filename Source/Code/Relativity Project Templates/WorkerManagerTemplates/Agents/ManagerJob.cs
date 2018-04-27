@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
 using Relativity.API;
-using Relativity_Extension.Helpers;
-using Relativity_Extension.Helpers.Models;
+using Helpers;
+using Helpers.Models;
 
-namespace Relativity_Extension.Agents
+namespace Agents
 {
 	/// <summary>
 	/// This class abstracts the agent logic to allow unit testing without IIS dependencies

@@ -4,9 +4,9 @@ using System.Web.Routing;
 using Relativity.API;
 using System;
 using Relativity.CustomPages;
-using Relativity_Extension.Helpers.Rsapi;
+using Helpers.Rsapi;
 
-namespace Relativity_Extension.CustomPages
+namespace CustomPages
 {
 	public class MyWorkerQueueAuthorizeAttribute : AuthorizeAttribute
 	{

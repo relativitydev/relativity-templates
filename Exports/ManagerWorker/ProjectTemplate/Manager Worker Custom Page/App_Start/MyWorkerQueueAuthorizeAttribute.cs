@@ -3,10 +3,10 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Relativity.API;
 using System;
-using Relativity.$safeprojectname$;
-using Relativity_Extension.Helpers.Rsapi;
+using $saferootprojectname$.Helpers.Rsapi;
+using Relativity.CustomPages;
 
-namespace Relativity_Extension.$safeprojectname$
+namespace $safeprojectname$
 {
 	public class MyWorkerQueueAuthorizeAttribute : AuthorizeAttribute
 	{
@@ -16,7 +16,7 @@ namespace Relativity_Extension.$safeprojectname$
 
 			if (httpContext.Session != null)
 			{
-				Int32 caseArtifactId = Relativity.$safeprojectname$.ConnectionHelper.Helper().GetActiveCaseID();
+				Int32 caseArtifactId = Relativity.CustomPages.ConnectionHelper.Helper().GetActiveCaseID();
 
                 ArtifactQueries query = new ArtifactQueries();
 				bool res = query.DoesUserHaveAccessToArtifact(

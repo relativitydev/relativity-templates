@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace Relativity_Extension.CustomPages
+namespace CustomPages
 {
 	public class FilterConfig
 	{

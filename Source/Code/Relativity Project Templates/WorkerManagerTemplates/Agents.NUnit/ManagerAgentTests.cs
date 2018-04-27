@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Moq;
 using NUnit.Framework;
 using Relativity.API;
-using Relativity_Extension.Helpers;
-using Relativity_Extension.Agents;
+using Helpers;
+using Agents;
 
-namespace Relativity_Extension.Agents.NUnit
+namespace Agents.NUnit
 {
 	[TestFixture]
 	public class ManagerAgentTests

@@ -51,6 +51,10 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="Web.Release.config">Web.Release.config</ProjectItem>
     </Project>
   </TemplateContent>
+  <WizardExtension>
+    <Assembly>RelativityWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>RelativityWizard.ChildWizard</FullClassName>
+  </WizardExtension>
   	<WizardExtension>
 		<Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
 		<FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
@@ -65,7 +69,7 @@
 		<package id="Microsoft.AspNet.Razor" version="3.2.3" />
 		<package id="Microsoft.AspNet.WebPages" version="3.2.3" />
 		<package id="Microsoft.Web.Infrastructure" version="1.0.0.0" />
-		<package id="Newtonsoft.Json" version="6.0.4" />
+		<package id="Newtonsoft.Json" version="8.0.3" />
 	</packages>
   </WizardData>
 </VSTemplate>

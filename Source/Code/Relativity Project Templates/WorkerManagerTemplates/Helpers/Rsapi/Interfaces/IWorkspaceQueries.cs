@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Relativity.API;
 
-namespace Relativity_Extension.Helpers.Rsapi.Interfaces
+namespace Helpers.Rsapi.Interfaces
 {
 	public interface IWorkspaceQueries
 	{

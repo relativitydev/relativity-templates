@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web.Optimization;
 
-namespace Relativity_Extension.CustomPages
+namespace CustomPages
 {
 	public class BundleConfig
 	{

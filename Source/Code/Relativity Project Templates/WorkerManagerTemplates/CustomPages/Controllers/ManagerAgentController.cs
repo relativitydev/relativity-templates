@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Mvc;
 using Relativity.CustomPages;
-using Relativity_Extension.CustomPages.Models;
+using CustomPages.Models;
 
-namespace Relativity_Extension.CustomPages.Controllers
+namespace CustomPages.Controllers
 {
 	[MyManagerQueueAuthorize]
 	public class ManagerAgentController : Controller

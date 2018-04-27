@@ -5,13 +5,13 @@ using kCura.EventHandler;
 using Moq;
 using NUnit.Framework;
 using Relativity.API;
-using Relativity_Extension.Helpers;
-using Relativity_Extension.Helpers.Rsapi.Interfaces;
+using Helpers;
+using Helpers.Rsapi.Interfaces;
 using PageEvent = kCura.EventHandler.ConsoleEventHandler.PageEvent;
-using Relativity_Extension.EventHandlers;
+using EventHandlers;
 using Console = kCura.EventHandler.Console;
 
-namespace Relativity_Extension.EventHandlers.NUnit
+namespace EventHandlers.NUnit
 {
 	[TestFixture]
 	public class ManageJobConsoleTests

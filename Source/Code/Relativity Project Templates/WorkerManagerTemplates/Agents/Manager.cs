@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Relativity.API;
-using Relativity_Extension.Helpers;
+using Helpers;
 
-namespace Relativity_Extension.Agents
+namespace Agents
 {
 	// Change the name and guid for your application
 	[kCura.Agent.CustomAttributes.Name("Manager Agent Template")]
@@ -20,7 +20,7 @@ namespace Relativity_Extension.Agents
 
 		public async Task ExecuteAsync()
 		{
-		    Relativity_Extension.Helpers.IQuery queryHelper = new Query();
+		    Helpers.IQuery queryHelper = new Query();
 			IEnumerable<Int32> resourceGroupIds = GetResourceGroupIDs();
 			Logger = Helper.GetLoggerFactory().GetLogger();
 		    ManagerJob job = new ManagerJob(AgentID, Helper, queryHelper, DateTime.Now, resourceGroupIds, Logger);

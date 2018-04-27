@@ -2,9 +2,9 @@
 using System.Data;
 using NUnit.Framework;
 
-using Relativity_Extension.Helpers.Models;
+using $saferootprojectname$.Helpers.Models;
 
-namespace Relativity_Extension.$safeprojectname$
+namespace $safeprojectname$
 {
 	[TestFixture]
 	public class WorkerQueueRecordTests

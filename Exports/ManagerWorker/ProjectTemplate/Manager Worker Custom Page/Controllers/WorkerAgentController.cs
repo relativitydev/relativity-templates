@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Mvc;
-using Relativity.$safeprojectname$;
-using Relativity_Extension.$safeprojectname$.Models;
+using Relativity.CustomPages;
+using $saferootprojectname$.CustomPages.Models;
 
-namespace Relativity_Extension.$safeprojectname$.Controllers
+namespace $safeprojectname$.Controllers
 {
 	[MyWorkerQueueAuthorize]
 	public class WorkerAgentController : Controller

@@ -7,10 +7,10 @@ using Moq;
 
 using NUnit.Framework;
 using Relativity.API;
-using Relativity_Extension.CustomPages.Models;
-using Relativity_Extension.Helpers;
+using CustomPages.Models;
+using Helpers;
 
-namespace Relativity_Extension.CustomPages.NUnit
+namespace CustomPages.NUnit
 {
 	[TestFixture]
 	public class WorkerAgentModelTests

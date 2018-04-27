@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.Threading.Tasks;
 using Relativity.API;
 
-namespace Relativity_Extension.$safeprojectname$
+namespace $safeprojectname$
 {
 	public class Query : IQuery
 	{

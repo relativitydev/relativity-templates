@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using kCura.EventHandler;
 using Relativity.API;
-using Relativity_Extension.Helpers;
+using $saferootprojectname$.Helpers;
 
-namespace Relativity_Extension.$safeprojectname$
+namespace $safeprojectname$
 {
 	[kCura.EventHandler.CustomAttributes.RunOnce(false)]
 	[kCura.EventHandler.CustomAttributes.Description("Creates the underlying tables for the application.")]

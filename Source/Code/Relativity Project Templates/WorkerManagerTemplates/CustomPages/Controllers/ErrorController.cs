@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Mvc;
 
-namespace Relativity_Extension.CustomPages.Controllers
+namespace CustomPages.Controllers
 {
 	public class ErrorController : Controller
 	{

@@ -10,7 +10,7 @@
   <TemplateContent>
     <References />
     <ProjectItem SubType="" TargetFileName="$fileinputname$.aspx" ReplaceParameters="true">Default.aspx</ProjectItem>
-    <ProjectItem SubType="ASPXCodeBehind" TargetFileName="$fileinputname$.aspx.cs" ReplaceParameters="true">Default.aspx.cs</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="$fileinputname$.aspx.cs" ReplaceParameters="true">Default.aspx.cs</ProjectItem>
     <ProjectItem SubType="" TargetFileName="$fileinputname$.aspx.designer.cs" ReplaceParameters="true">Default.aspx.designer.cs</ProjectItem>
   </TemplateContent>
 </VSTemplate>

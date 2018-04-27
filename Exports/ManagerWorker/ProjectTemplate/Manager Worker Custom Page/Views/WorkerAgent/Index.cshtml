@@ -1,4 +1,4 @@
-﻿@using Relativity_Extension.$safeprojectname$.Models
+﻿@using $saferootprojectname$.Models
 @model WorkerAgentModel
 
 @{
@@ -8,7 +8,7 @@
 
 @section Init
 {
-    WorkerAgent.URLWorkerIndex = '@Url.Action("Index", "WorkerAgent", new { appId = Relativity.$safeprojectname$.ConnectionHelper.Helper().GetActiveCaseID(), StandardsCompliance = true })';
+    WorkerAgent.URLWorkerIndex = '@Url.Action("Index", "WorkerAgent", new { appId = Relativity.CustomPages.ConnectionHelper.Helper().GetActiveCaseID(), StandardsCompliance = true })';
     WorkerAgent.init();
 }
 

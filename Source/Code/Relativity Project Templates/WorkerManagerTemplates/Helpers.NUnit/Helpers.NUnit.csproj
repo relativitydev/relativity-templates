@@ -7,8 +7,8 @@
     <ProjectGuid>{09364F6F-1646-41B5-96E4-AC604726A321}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Relativity_Extension.Helpers.NUnit</RootNamespace>
-    <AssemblyName>Relativity_Extension.Helpers.NUnit</AssemblyName>
+    <RootNamespace>Helpers.NUnit</RootNamespace>
+    <AssemblyName>Helpers.NUnit</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

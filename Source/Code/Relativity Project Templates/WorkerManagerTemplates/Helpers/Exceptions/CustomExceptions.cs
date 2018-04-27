@@ -1,5 +1,5 @@
 ﻿
-namespace Relativity_Extension.Helpers.Exceptions
+namespace Helpers.Exceptions
 {
 	[System.Serializable]
 	public class CustomRelativityAgentException : System.Exception

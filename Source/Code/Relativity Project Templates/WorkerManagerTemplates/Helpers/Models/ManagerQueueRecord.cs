@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 
-namespace Relativity_Extension.Helpers.Models
+namespace Helpers.Models
 {
 	/// <summary>
 	/// Represents a single row in the Manager Queue Table 

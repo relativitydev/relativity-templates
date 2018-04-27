@@ -1,19 +1,19 @@
 ﻿using System.Web.Mvc;
 using Relativity.API;
-using Relativity_Extension.Helpers;
-using Relativity.$safeprojectname$;
+using $saferootprojectname$.Helpers;
+using Relativity.CustomPages;
 using System;
 
-namespace Relativity_Extension.$safeprojectname$
+namespace $safeprojectname$
 {
 	public class MyCustomErrorHandler : HandleErrorAttribute
 	{
 		public override void OnException(ExceptionContext filterContext)
 		{
 			base.OnException(filterContext);
-			Int32 caseArtifactId = Relativity.$safeprojectname$.ConnectionHelper.Helper().GetActiveCaseID();
+			Int32 caseArtifactId = Relativity.CustomPages.ConnectionHelper.Helper().GetActiveCaseID();
 
-            Relativity_Extension.Helpers.IQuery queryHelper = new Query();
+            Helpers.IQuery queryHelper = new Query();
 
 			if (filterContext.Exception != null)
 			{

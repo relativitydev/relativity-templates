@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Relativity_Extension.$safeprojectname$
+namespace $safeprojectname$
 {
 	public class RouteConfig
 	{

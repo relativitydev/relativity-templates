@@ -3,7 +3,7 @@ using System.Data;
 using System.Threading.Tasks;
 using Relativity.API;
 
-namespace Relativity_Extension.Helpers
+namespace Helpers
 {
 	public interface IQuery
 	{

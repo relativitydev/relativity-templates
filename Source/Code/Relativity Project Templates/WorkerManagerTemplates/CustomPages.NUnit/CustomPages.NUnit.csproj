@@ -7,8 +7,8 @@
     <ProjectGuid>{C931958B-F21F-430A-86A9-7E80D46C3A99}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Relativity_Extension.CustomPages.NUnit</RootNamespace>
-    <AssemblyName>Relativity_Extension.CustomPages.NUnit</AssemblyName>
+    <RootNamespace>CustomPages.NUnit</RootNamespace>
+    <AssemblyName>CustomPages.NUnit</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

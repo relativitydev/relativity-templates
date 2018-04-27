@@ -39,14 +39,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>kCura.IntegrationPoints.SourceProviderInstaller.dll</HintPath>
     </Reference>
-    <Reference Include="kCura.ScheduleQueue.Core, Version=9.5.57.2, Culture=neutral, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>kCura.ScheduleQueue.Core.dll</HintPath>
-    </Reference>
-	<Reference Include="SystemInterface, Version=0.19.0.115, Culture=neutral, PublicKeyToken=fbc3a63dd3cf8960, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>SystemInterface.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace Relativity_Extension.$safeprojectname$
+namespace $safeprojectname$
 {
 	public class FilterConfig
 	{

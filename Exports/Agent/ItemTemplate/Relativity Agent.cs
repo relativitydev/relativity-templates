@@ -34,7 +34,7 @@ namespace $rootnamespace$
 				//Guid guidForTestArtifactId = Helper.GetGuid(workspaceArtifactId, testArtifactId);
 
 				//Display a message in Agents Tab and Windows Event Viewer
-				RaiseMessage($"The current time is: {DateTime.Now.ToLongTimeString()}", 1);
+				RaiseMessage("The current time is: " +DateTime.Now.ToLongTimeString(), 1);
 
 				//The Object Manager is the newest and preferred way to interact with Relativity instead of the Relativity Services API(RSAPI). 
 				//The RSAPI will be scheduled for depreciation after the Object Manager reaches feature party with it.

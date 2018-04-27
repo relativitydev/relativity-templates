@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 
 using NUnit.Framework;
 
-using Relativity_Extension.Helpers.Rsapi;
+using $saferootprojectname$.Helpers.Rsapi;
 
-namespace Relativity_Extension.$safeprojectname$
+namespace $safeprojectname$
 {
 	[TestFixture]
 	public class MessageFormatterTests

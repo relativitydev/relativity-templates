@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Relativity_Extension.$safeprojectname$.MvcApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="$safeprojectname$.MvcApplication" Language="C#" %>

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
 using Relativity.API;
-using Relativity_Extension.Helpers;
+using $saferootprojectname$.Helpers;
 
-namespace Relativity_Extension.$safeprojectname$.Models
+namespace $safeprojectname$.Models
 {
 	public class WorkerAgentModel
 	{

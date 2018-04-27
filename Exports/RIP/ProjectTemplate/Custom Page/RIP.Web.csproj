@@ -95,9 +95,9 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RIP.Provider\RIP.Provider.csproj">
+    <ProjectReference Include="..\$saferootprojectname$.Provider\$saferootprojectname$.Provider.csproj">
       <Project>{b03206a4-e1de-403a-bb14-60ba20e52985}</Project>
-      <Name>RIP.Provider</Name>
+      <Name>$saferootprojectname$.Provider</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -25,4 +25,8 @@
 		<ProjectTemplateLink ProjectName="$safeprojectname$.Helpers.NUnit">Manager Worker Helpers.NUnit\MyTemplate.vstemplate</ProjectTemplateLink>
 	</ProjectCollection>
   </TemplateContent>  
+  <WizardExtension>
+    <Assembly>RelativityWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>RelativityWizard.RootWizard</FullClassName>
+  </WizardExtension>
 </VSTemplate>  

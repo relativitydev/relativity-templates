@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace Relativity_Extension.CustomPages
+namespace CustomPages
 {
 	public static class WebApiConfig
 	{

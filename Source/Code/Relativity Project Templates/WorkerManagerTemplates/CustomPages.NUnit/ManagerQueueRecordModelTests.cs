@@ -3,10 +3,10 @@ using System.Data;
 using System.Threading.Tasks;
 using Moq;
 using NUnit.Framework;
-using Relativity_Extension.CustomPages.Models;
-using Relativity_Extension.Helpers;
+using CustomPages.Models;
+using Helpers;
 
-namespace Relativity_Extension.CustomPages.NUnit
+namespace CustomPages.NUnit
 {
 	[TestFixture]
 	class ManagerQueueRecordModelTests

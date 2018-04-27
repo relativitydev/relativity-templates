@@ -3,9 +3,9 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Threading.Tasks;
-using Relativity_Extension.Helpers;
+using $saferootprojectname$.Helpers;
 
-namespace Relativity_Extension.$safeprojectname$.Models
+namespace $safeprojectname$.Models
 {
 	public class ManagerQueueRecordModel
 	{

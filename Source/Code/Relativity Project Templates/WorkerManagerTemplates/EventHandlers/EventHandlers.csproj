@@ -7,8 +7,8 @@
     <ProjectGuid>{6DB0BA47-085C-4937-8FFB-7BF7130B21D0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Relativity_Extension.EventHandlers</RootNamespace>
-    <AssemblyName>Relativity_Extension.EventHandlers</AssemblyName>
+    <RootNamespace>EventHandlers</RootNamespace>
+    <AssemblyName>EventHandlers</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

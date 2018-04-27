@@ -105,7 +105,6 @@
     <None Include="Properties\PublishProfiles\Publish.pubxml" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
@@ -139,9 +138,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Helpers\Helpers.csproj">
+    <ProjectReference Include="..\$saferootprojectname$.Helpers\$saferootprojectname$.Helpers.csproj">
       <Project>{8f4cda45-eaf3-4b40-a7a9-f312b7664abc}</Project>
-      <Name>Helpers</Name>
+      <Name>$saferootprojectname$.Helpers</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

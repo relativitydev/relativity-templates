@@ -48,13 +48,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EventHandlers\EventHandlers.csproj">
+    <ProjectReference Include="..\$saferootprojectname$.EventHandlers\$saferootprojectname$.EventHandlers.csproj">
       <Project>{6db0ba47-085c-4937-8ffb-7bf7130b21d0}</Project>
-      <Name>EventHandlers</Name>
+      <Name>$saferootprojectname$.EventHandlers</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Helpers\Helpers.csproj">
+    <ProjectReference Include="..\$saferootprojectname$.Helpers\$saferootprojectname$.Helpers.csproj">
       <Project>{8f4cda45-eaf3-4b40-a7a9-f312b7664abc}</Project>
-      <Name>Helpers</Name>
+      <Name>$saferootprojectname$.Helpers</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

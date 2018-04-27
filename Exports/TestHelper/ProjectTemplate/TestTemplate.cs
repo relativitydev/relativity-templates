@@ -29,7 +29,7 @@ namespace $safeprojectname$
         private IRSAPIClient _client;
         private int _workspaceId;
         private int _rootFolderArtifactID;
-        private readonly string _workspaceName = $"IntTest_{Guid.NewGuid()}";
+        private readonly string _workspaceName = "IntTest_" + Guid.NewGuid();
         private const ExecutionIdentity EXECUTION_IDENTITY = ExecutionIdentity.CurrentUser;
         private IDBContext dbContext;
         private IServicesMgr servicesManager;

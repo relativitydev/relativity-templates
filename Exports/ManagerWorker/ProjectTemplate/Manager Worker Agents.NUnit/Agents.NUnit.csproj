@@ -51,13 +51,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Agents\Agents.csproj">
+    <ProjectReference Include="..\$saferootprojectname$.Agents\$saferootprojectname$.Agents.csproj">
       <Project>{439F47FC-70FC-4202-B312-F856F1A09960}</Project>
-      <Name>Agents</Name>
+      <Name>$saferootprojectname$.Agents</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Helpers\Helpers.csproj">
+    <ProjectReference Include="..\$saferootprojectname$.Helpers\$saferootprojectname$.Helpers.csproj">
       <Project>{8F4CDA45-EAF3-4B40-A7A9-F312B7664ABC}</Project>
-      <Name>Helpers</Name>
+      <Name>$saferootprojectname$.Helpers</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

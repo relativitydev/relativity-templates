@@ -32,5 +32,6 @@
   <package id="Relativity.EventHandler" version="9.5.370.136" />
   <package id="Relativity.ObjectManager" version="9.5.370.136" />
   <package id="Relativity.Rsapi" version="9.5.370.136" />
+  </packages>
   </WizardData>
 </VSTemplate>

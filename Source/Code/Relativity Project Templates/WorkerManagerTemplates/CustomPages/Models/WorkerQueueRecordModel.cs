@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Data;
-using Relativity_Extension.Helpers;
+using Helpers;
 
-namespace Relativity_Extension.CustomPages.Models
+namespace CustomPages.Models
 {
 	public class WorkerQueueRecordModel
 	{

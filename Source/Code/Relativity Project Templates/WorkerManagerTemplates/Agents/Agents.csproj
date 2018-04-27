@@ -7,8 +7,8 @@
     <ProjectGuid>{439F47FC-70FC-4202-B312-F856F1A09960}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Relativity_Extension.Agents</RootNamespace>
-    <AssemblyName>Relativity_Extension.Agents</AssemblyName>
+    <RootNamespace>Agents</RootNamespace>
+    <AssemblyName>Agents</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

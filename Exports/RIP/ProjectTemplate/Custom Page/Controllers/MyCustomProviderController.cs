@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Relativity.API;
 using Relativity.CustomPages;
-using RIP.Provider;
+using $saferootprojectname$.Provider;
 
 namespace $safeprojectname$.Controllers
 {

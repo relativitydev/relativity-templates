@@ -1,4 +1,4 @@
-﻿@using Relativity_Extension.$safeprojectname$.Models
+﻿@using $saferootprojectname$.Models
 @model ManagerAgentModel
 
 @{
@@ -8,7 +8,7 @@
 
 @section Init
 {
-    ManagerAgent.URLManagerIndex = '@Url.Action("Index", "ManagerAgent", new { appId = Relativity.$safeprojectname$.ConnectionHelper.Helper().GetActiveCaseID(), StandardsCompliance = true })';
+    ManagerAgent.URLManagerIndex = '@Url.Action("Index", "ManagerAgent", new { appId = Relativity.CustomPages.ConnectionHelper.Helper().GetActiveCaseID(), StandardsCompliance = true })';
     ManagerAgent.init();
 }
 

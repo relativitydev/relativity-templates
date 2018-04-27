@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Relativity_Extension.$safeprojectname$
+namespace $safeprojectname$
 {
 	public class Constant
 	{

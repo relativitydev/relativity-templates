@@ -2,7 +2,7 @@
 using System.Data;
 using System.Threading.Tasks;
 
-namespace Relativity_Extension.$safeprojectname$.DataHelpers
+namespace $safeprojectname$.DataHelpers
 {
 	public class ManagerAgentData
 	{

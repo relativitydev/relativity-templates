@@ -3,10 +3,10 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Relativity.API;
 using System;
-using Relativity_Extension.Helpers.Rsapi;
+using Helpers.Rsapi;
 using Relativity.CustomPages;
 
-namespace Relativity_Extension.CustomPages
+namespace CustomPages
 {
 	public class MyManagerQueueAuthorizeAttribute : AuthorizeAttribute
 	{

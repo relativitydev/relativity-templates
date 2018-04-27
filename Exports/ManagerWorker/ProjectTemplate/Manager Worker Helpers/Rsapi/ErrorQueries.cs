@@ -4,7 +4,7 @@ using kCura.Relativity.Client;
 using kCura.Relativity.Client.DTOs;
 using Relativity.API;
 
-namespace Relativity_Extension.$safeprojectname$.Rsapi
+namespace $safeprojectname$.Rsapi
 {
 	public class ErrorQueries
 	{

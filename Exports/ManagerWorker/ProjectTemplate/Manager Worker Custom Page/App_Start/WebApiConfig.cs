@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace Relativity_Extension.$safeprojectname$
+namespace $safeprojectname$
 {
 	public static class WebApiConfig
 	{

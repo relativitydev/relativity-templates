@@ -2,7 +2,7 @@
 using System.Data;
 using System.Threading.Tasks;
 
-namespace Relativity_Extension.CustomPages.NUnit.DataHelpers
+namespace CustomPages.NUnit.DataHelpers
 {
 	public class WorkerAgentData
 	{

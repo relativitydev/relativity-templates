@@ -2,9 +2,9 @@
 using System.Linq;
 using kCura.Relativity.Client.DTOs;
 using NUnit.Framework;
-using Relativity_Extension.Helpers.Rsapi;
+using Helpers.Rsapi;
 
-namespace Relativity_Extension.Helpers.NUnit
+namespace Helpers.NUnit
 {
     [TestFixture]
     public class ResponseTests

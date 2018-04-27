@@ -4,7 +4,7 @@ using System.Linq;
 using kCura.Relativity.Client;
 using kCura.Relativity.Client.DTOs;
 
-namespace Relativity_Extension.Helpers.Rsapi
+namespace Helpers.Rsapi
 {
 	public class Response<TResultType>
 	{

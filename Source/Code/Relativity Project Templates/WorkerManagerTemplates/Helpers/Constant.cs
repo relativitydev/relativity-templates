@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Relativity_Extension.Helpers
+namespace Helpers
 {
 	public class Constant
 	{

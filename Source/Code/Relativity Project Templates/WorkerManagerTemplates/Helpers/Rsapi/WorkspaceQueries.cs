@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using kCura.Relativity.Client;
 using Relativity.API;
-using Relativity_Extension.Helpers.Rsapi.Interfaces;
+using Helpers.Rsapi.Interfaces;
 
-namespace Relativity_Extension.Helpers.Rsapi
+namespace Helpers.Rsapi
 {
 	public class WorkspaceQueries : IWorkspaceQueries
 	{

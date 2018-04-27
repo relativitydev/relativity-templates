@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Relativity_Extension.Helpers.Rsapi
+namespace Helpers.Rsapi
 {
 	public class MessageFormatter
 	{
