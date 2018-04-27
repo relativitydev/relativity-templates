@@ -1,0 +1,30 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+  <TemplateData>  
+    <Name>Relativity Integration Points Template</Name>  
+    <Description>Creates Project Structure of a Relativity Integration Points Provider and Custom Page</Description>  
+    <ProjectType>CSharp</ProjectType>  
+    <ProjectSubType>  
+    </ProjectSubType>  
+    <SortOrder>1000</SortOrder>  
+    <CreateNewFolder>true</CreateNewFolder>  
+    <DefaultName>RIP_Project</DefaultName>  
+    <ProvideDefaultName>true</ProvideDefaultName>  
+    <LocationField>Enabled</LocationField>  
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>  
+    <Icon>favicon.ico</Icon>  
+  </TemplateData>  
+  <TemplateContent>  
+    <ProjectCollection>  
+            <ProjectTemplateLink ProjectName="$projectname$.Provider">  
+                Provider\MyTemplate.vstemplate 
+            </ProjectTemplateLink>  
+            <ProjectTemplateLink ProjectName="$projectname$.Web">  
+                Custom Page\MyTemplate.vstemplate
+            </ProjectTemplateLink>  
+	</ProjectCollection>  
+  </TemplateContent>  
+   <WizardExtension>
+    <Assembly>RelativityWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>RelativityWizard.RootWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>  

@@ -1,0 +1,65 @@
+﻿
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+/* manually added */
+
+input { color: #000; }
+.placeholder { color: #aaa; }
+
+.btn{
+    margin-left:10px;
+}
+
+body .modal-scroll {
+	height: 390px;
+	overflow: auto;
+}
+
+.loading {
+    display:    block;
+    position:   fixed;
+    z-index:    2000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../Content/images/ajax-loader.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+span#trueicon {
+    color: #0056B5;
+}
+span#falseicon {
+    color: #FF0000;
+}
+
+.selectedNode
+{
+	color: white;
+}

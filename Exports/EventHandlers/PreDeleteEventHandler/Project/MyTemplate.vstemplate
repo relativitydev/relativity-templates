@@ -1,0 +1,37 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Relativity PreDeleteEventHandler</Name>
+    <Description>Project Template for Relativity Pre Delete Event Handler</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Relativity PreDeleteEventHandler</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Relativity PreDeleteEventHandler.csproj" File="Relativity PreDeleteEventHandler.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="PreDeleteEventHandler.cs">PreDeleteEventHandler.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+  	<WizardExtension>
+		<Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+		<FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+	</WizardExtension>
+	<WizardData>
+    <packages repository="extension" repositoryId="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b">
+  <package id="Relativity.Api" version="9.5.370.136" />
+  <package id="Relativity.EventHandler" version="9.5.370.136" />
+  <package id="Relativity.ObjectManager" version="9.5.370.136" />
+  <package id="Relativity.Rsapi" version="9.5.370.136" />
+	</packages>
+  </WizardData>
+</VSTemplate>

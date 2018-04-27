@@ -1,0 +1,32 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+  <TemplateData>  
+    <Name>Relativity Manager Worker Project Template</Name>  
+    <Description>A template for Relativity agents using the manager/worker framework. Includes agents, custom pages and a console to manage/view jobs, and an event handler to create underlying tables.</Description>  
+    <ProjectType>CSharp</ProjectType>  
+    <ProjectSubType>  
+    </ProjectSubType>  
+    <SortOrder>1000</SortOrder>  
+    <CreateNewFolder>true</CreateNewFolder>  
+    <DefaultName>ManagerWorkerTemplate</DefaultName>  
+    <ProvideDefaultName>true</ProvideDefaultName>  
+    <LocationField>Enabled</LocationField>  
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>  
+    <Icon>favicon.ico</Icon>  
+  </TemplateData>  
+  <TemplateContent>  
+	<ProjectCollection>
+		<ProjectTemplateLink ProjectName="$safeprojectname$.Agents">Manager Worker Agents\MyTemplate.vstemplate</ProjectTemplateLink>
+		<ProjectTemplateLink ProjectName="$safeprojectname$.Agents.NUnit">Manager Worker Agents.NUnit\MyTemplate.vstemplate</ProjectTemplateLink>
+		<ProjectTemplateLink ProjectName="$safeprojectname$.CustomPages">Manager Worker Custom Page\MyTemplate.vstemplate</ProjectTemplateLink>
+		<ProjectTemplateLink ProjectName="$safeprojectname$.CustomPages.NUnit">Manager Worker Custom Page.NUnit\MyTemplate.vstemplate</ProjectTemplateLink>
+		<ProjectTemplateLink ProjectName="$safeprojectname$.EventHandlers">Manager Worker Event Handlers\MyTemplate.vstemplate</ProjectTemplateLink>
+		<ProjectTemplateLink ProjectName="$safeprojectname$.EventHandlers.NUnit">Manager Worker Event Handlers.NUnit\MyTemplate.vstemplate</ProjectTemplateLink>
+		<ProjectTemplateLink ProjectName="$safeprojectname$.Helpers">Manager Worker Helpers\MyTemplate.vstemplate</ProjectTemplateLink>
+		<ProjectTemplateLink ProjectName="$safeprojectname$.Helpers.NUnit">Manager Worker Helpers.NUnit\MyTemplate.vstemplate</ProjectTemplateLink>
+	</ProjectCollection>
+  </TemplateContent>  
+  <WizardExtension>
+    <Assembly>RelativityWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>RelativityWizard.RootWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>  

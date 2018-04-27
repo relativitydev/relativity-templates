@@ -1,0 +1,16 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>Relativity Custom Page Form.aspx</DefaultName>
+    <Name>Relativity Custom Page Form</Name>
+    <Description>Item Template for Relativity Custom Pages Forms</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.aspx" ReplaceParameters="true">Default.aspx</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="$fileinputname$.aspx.cs" ReplaceParameters="true">Default.aspx.cs</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.aspx.designer.cs" ReplaceParameters="true">Default.aspx.designer.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

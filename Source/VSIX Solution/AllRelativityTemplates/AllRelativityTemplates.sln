@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllRelativityTemplates", "AllRelativityTemplates\AllRelativityTemplates.csproj", "{6C4C3A35-2C70-4DA4-ADDB-F440ED5DDB68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelativityWizard", "RelativityWizard\RelativityWizard.csproj", "{DD72E465-4A25-4B1B-BF12-2980F8A6F63A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6C4C3A35-2C70-4DA4-ADDB-F440ED5DDB68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C4C3A35-2C70-4DA4-ADDB-F440ED5DDB68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C4C3A35-2C70-4DA4-ADDB-F440ED5DDB68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD72E465-4A25-4B1B-BF12-2980F8A6F63A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD72E465-4A25-4B1B-BF12-2980F8A6F63A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD72E465-4A25-4B1B-BF12-2980F8A6F63A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD72E465-4A25-4B1B-BF12-2980F8A6F63A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
