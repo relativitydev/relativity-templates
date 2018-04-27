@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity ConsoleEventHandler", "Relativity ConsoleEventHandler\Relativity ConsoleEventHandler.csproj", "{612F63C3-B031-41A0-B3E7-316404CF7C10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity PageInteractionEventHandler", "Relativity PageInteractionEventHandler\Relativity PageInteractionEventHandler.csproj", "{6ECA9656-E4E5-448F-9720-CB979ACC282D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity PostInstallEventHandler", "Relativity PostInstallEventHandler\Relativity PostInstallEventHandler.csproj", "{EC980F38-E50A-4F5D-A6DA-0BE24FDC4614}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity PostSaveEventHandler", "Relativity PostSaveEventHandler\Relativity PostSaveEventHandler.csproj", "{FDDC391A-82FE-4732-A456-476DF1507C1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity PreCascadeDeleteEventHandler", "Relativity PreCascadeDeleteEventHandler\Relativity PreCascadeDeleteEventHandler.csproj", "{6F14CE82-BD87-49AB-ADD2-FEBDA13700E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity PreDeleteEventHandler", "Relativity PreDeleteEventHandler\Relativity PreDeleteEventHandler.csproj", "{F1F482DD-5CBD-458D-A38F-169F1E875B07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity PreInstallEventHandler", "Relativity PreInstallEventHandler\Relativity PreInstallEventHandler.csproj", "{C63E9D00-D24B-49F7-85D2-1744613E3DB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity PreLoadEventHandler", "Relativity PreLoadEventHandler\Relativity PreLoadEventHandler.csproj", "{2A72D90F-F19A-4611-83AF-AED2620D8881}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity PreMassDeleteEventHandler", "Relativity PreMassDeleteEventHandler\Relativity PreMassDeleteEventHandler.csproj", "{51319841-F50D-4836-B742-077716E7C757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity PreSaveEventHandler", "Relativity PreSaveEventHandler\Relativity PreSaveEventHandler.csproj", "{C2C8B9D3-D4D3-4EBE-A3D9-769ECC21DE87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity PreUninstallEventHandler", "Relativity PreUninstallEventHandler\Relativity PreUninstallEventHandler.csproj", "{D750B78E-4464-4D2D-B327-E708EB32B82C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{612F63C3-B031-41A0-B3E7-316404CF7C10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{612F63C3-B031-41A0-B3E7-316404CF7C10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{612F63C3-B031-41A0-B3E7-316404CF7C10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{612F63C3-B031-41A0-B3E7-316404CF7C10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ECA9656-E4E5-448F-9720-CB979ACC282D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ECA9656-E4E5-448F-9720-CB979ACC282D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ECA9656-E4E5-448F-9720-CB979ACC282D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ECA9656-E4E5-448F-9720-CB979ACC282D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC980F38-E50A-4F5D-A6DA-0BE24FDC4614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC980F38-E50A-4F5D-A6DA-0BE24FDC4614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC980F38-E50A-4F5D-A6DA-0BE24FDC4614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC980F38-E50A-4F5D-A6DA-0BE24FDC4614}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDDC391A-82FE-4732-A456-476DF1507C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDC391A-82FE-4732-A456-476DF1507C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDC391A-82FE-4732-A456-476DF1507C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDC391A-82FE-4732-A456-476DF1507C1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F14CE82-BD87-49AB-ADD2-FEBDA13700E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F14CE82-BD87-49AB-ADD2-FEBDA13700E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F14CE82-BD87-49AB-ADD2-FEBDA13700E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F14CE82-BD87-49AB-ADD2-FEBDA13700E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F482DD-5CBD-458D-A38F-169F1E875B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F482DD-5CBD-458D-A38F-169F1E875B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F482DD-5CBD-458D-A38F-169F1E875B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F482DD-5CBD-458D-A38F-169F1E875B07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C63E9D00-D24B-49F7-85D2-1744613E3DB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C63E9D00-D24B-49F7-85D2-1744613E3DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C63E9D00-D24B-49F7-85D2-1744613E3DB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C63E9D00-D24B-49F7-85D2-1744613E3DB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A72D90F-F19A-4611-83AF-AED2620D8881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A72D90F-F19A-4611-83AF-AED2620D8881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A72D90F-F19A-4611-83AF-AED2620D8881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A72D90F-F19A-4611-83AF-AED2620D8881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51319841-F50D-4836-B742-077716E7C757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51319841-F50D-4836-B742-077716E7C757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51319841-F50D-4836-B742-077716E7C757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51319841-F50D-4836-B742-077716E7C757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2C8B9D3-D4D3-4EBE-A3D9-769ECC21DE87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2C8B9D3-D4D3-4EBE-A3D9-769ECC21DE87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2C8B9D3-D4D3-4EBE-A3D9-769ECC21DE87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2C8B9D3-D4D3-4EBE-A3D9-769ECC21DE87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D750B78E-4464-4D2D-B327-E708EB32B82C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D750B78E-4464-4D2D-B327-E708EB32B82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D750B78E-4464-4D2D-B327-E708EB32B82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D750B78E-4464-4D2D-B327-E708EB32B82C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
