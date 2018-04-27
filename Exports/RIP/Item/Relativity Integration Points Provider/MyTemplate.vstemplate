@@ -5,7 +5,7 @@
     <Description>Item template for the Relativity Integration Points Provider</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>10</SortOrder>
-    <Icon>__TemplateIcon.ico</Icon>
+    <Icon>__PreviewImage.ico</Icon>
     <PreviewImage>__PreviewImage.ico</PreviewImage>
   </TemplateData>
   <TemplateContent>
