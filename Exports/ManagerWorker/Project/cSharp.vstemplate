@@ -1,13 +1,13 @@
 <VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
   <TemplateData>  
-    <Name>Relativity Manager Worker Project Template</Name>  
+    <Name>Relativity Manager Worker Project Project</Name>  
     <Description>A template for Relativity agents using the manager/worker framework. Includes agents, custom pages and a console to manage/view jobs, and an event handler to create underlying tables.</Description>  
     <ProjectType>CSharp</ProjectType>  
     <ProjectSubType>  
     </ProjectSubType>  
     <SortOrder>1000</SortOrder>  
     <CreateNewFolder>true</CreateNewFolder>  
-    <DefaultName>ManagerWorkerTemplate</DefaultName>  
+    <DefaultName>ManagerWorkerProject</DefaultName>  
     <ProvideDefaultName>true</ProvideDefaultName>  
     <LocationField>Enabled</LocationField>  
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>  

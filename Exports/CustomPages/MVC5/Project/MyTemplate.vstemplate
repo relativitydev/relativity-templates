@@ -43,7 +43,6 @@
       <Folder Name="Scripts" TargetFolderName="Scripts">
         <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.js">bootstrap.js</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.js">bootstrap.min.js</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-1.10.2.intellisense.js">jquery-1.10.2.intellisense.js</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="jquery-1.10.2.js">jquery-1.10.2.js</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="jquery-1.10.2.min.js">jquery-1.10.2.min.js</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="jquery-1.10.2.min.map">jquery-1.10.2.min.map</ProjectItem>
@@ -76,7 +75,7 @@
 	  <package id="Microsoft.AspNet.Razor" version="3.2.3" />
 	  <package id="Microsoft.AspNet.WebPages" version="3.2.3" />
 	  <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" />
-	  <package id="Modernizr" version="2.6.2" />
+	  <!--<package id="Modernizr" version="2.6.2" />-->
 	  <package id="Relativity.Api" version="9.5.370.136" />
 	  <package id="Relativity.CustomPages" version="9.5.370.136" />
 	  <package id="Relativity.ObjectManager" version="9.5.370.136" />

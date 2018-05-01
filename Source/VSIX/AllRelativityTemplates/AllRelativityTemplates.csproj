@@ -47,10 +47,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ItemTemplates\Relativity\CustomPages\CustomPages_MVC5.zip">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="ItemTemplates\Relativity\EventHandlers\ConsoleEventHandler.zip">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
@@ -92,14 +88,6 @@
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="ItemTemplates\Relativity\EventHandlers\PreUninstallEH.zip">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="ItemTemplates\Relativity\IntegrationPoints\RIP_PostUninstall.zip">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="ItemTemplates\Relativity\IntegrationPoints\RIP_Provider.zip">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -263,12 +251,6 @@
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="ProjectTemplates\Relativity\CustomPages\CustomPages_MVC5.zip">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="ProjectTemplates\Relativity\CustomPages\CustomPages_WebForms.zip">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="ProjectTemplates\Relativity\EventHandlers\PreInstallEH.zip">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -296,9 +278,6 @@
     <Content Include="ProjectTemplates\Relativity\EventHandlers\ConsoleEventHandler.zip">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="ItemTemplates\Relativity\CustomPages\CustomPages_WebForms.zip">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="ItemTemplates\Relativity\Agent\Agent.zip">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -308,25 +287,43 @@
     <Content Include="ProjectTemplates\Relativity\EventHandlers\PreDeleteEH.zip">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="ItemTemplates\Relativity\IntegrationPoints\RIP_PostInstall.zip">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="ItemTemplates\Relativity\TestHelper\TestHelper.zip">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="ProjectTemplates\Relativity\RelativityTestTemplate\TestHelper.zip">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="ProjectTemplates\Relativity\EventHandlers\PreCascadeEH.zip">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="packages\moq.4.2.1510.2205.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="ProjectTemplates\Relativity\ManagerWorker\ManagerWorker.zip">
+    <Content Include="ItemTemplates\Relativity\CustomPages\CustomPages_MVC5.zip">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="ProjectTemplates\Relativity\CustomPages\CustomPages_MVC5.zip">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="ItemTemplates\Relativity\IntegrationPoints\RIP_PostInstall.zip">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="ItemTemplates\Relativity\IntegrationPoints\RIP_PostUninstall.zip">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="ItemTemplates\Relativity\IntegrationPoints\RIP_Provider.zip">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="ItemTemplates\Relativity\CustomPages\CustomPages_WebForms.zip">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="ProjectTemplates\Relativity\CustomPages\CustomPages_WebForms.zip">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="ProjectTemplates\Relativity\IntegrationPoints\RIP.zip">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="ProjectTemplates\Relativity\ManagerWorker\ManagerWorker.zip">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="ItemTemplates\Relativity\TestHelpers\TestHelper.zip">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="ProjectTemplates\Relativity\TestHelpers\TestHelper.zip">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="source.extension.vsixmanifest">
