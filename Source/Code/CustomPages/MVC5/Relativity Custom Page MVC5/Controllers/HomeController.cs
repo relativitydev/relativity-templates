@@ -2,6 +2,7 @@
 using Relativity.API;
 using Relativity.Services.Objects;
 using System;
+using System.Net;
 using System.Web.Mvc;
 
 namespace Relativity_Custom_Page_MVC5.Controllers
@@ -15,6 +16,9 @@ namespace Relativity_Custom_Page_MVC5.Controllers
 
 			try
 			{
+				// Update Security Protocol
+				ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+
 				//Gets the user ID.
 				int userArtifactId = Relativity.CustomPages.ConnectionHelper.Helper().GetAuthenticationManager().UserInfo.ArtifactID;
 				//Gets the user ID to use for auditing purposes.
@@ -29,18 +33,18 @@ namespace Relativity_Custom_Page_MVC5.Controllers
 				string lastName = Relativity.CustomPages.ConnectionHelper.Helper().GetAuthenticationManager().UserInfo.LastName;
 				//Gets the full name of the current user.
 				string fullName = Relativity.CustomPages.ConnectionHelper.Helper().GetAuthenticationManager().UserInfo.FullName;
-				//Gets the current user workspace artifact ID.
-				int currentUserWorkspaceArtifactId = Relativity.CustomPages.ConnectionHelper.Helper().GetAuthenticationManager().UserInfo.WorkspaceUserArtifactID;
+				//Gets the current workspace artifact ID.
+				int currentWorkspaceId = Relativity.CustomPages.ConnectionHelper.Helper().GetActiveCaseID();
 
 				//Get GUID for an artifact
 				int testArtifactId = 1234567;
-				Guid guidForTestArtifactId = Relativity.CustomPages.ConnectionHelper.Helper().GetGuid(currentUserWorkspaceArtifactId, testArtifactId);
+				Guid guidForTestArtifactId = Relativity.CustomPages.ConnectionHelper.Helper().GetGuid(currentWorkspaceId, testArtifactId);
 
 				//Get a dbContext for the EDDS database
 				IDBContext eddsDbContext = Relativity.CustomPages.ConnectionHelper.Helper().GetDBContext(-1);
 
 				//Get a dbContext for the workspace database
-				IDBContext workspaceDbContext = Relativity.CustomPages.ConnectionHelper.Helper().GetDBContext(currentUserWorkspaceArtifactId);
+				IDBContext workspaceDbContext = Relativity.CustomPages.ConnectionHelper.Helper().GetDBContext(currentWorkspaceId);
 
 				//The Object Manager is the newest and preferred way to interact with Relativity instead of the Relativity Services API(RSAPI). 
 				//The RSAPI will be scheduled for depreciation after the Object Manager reaches feature party with it.
@@ -53,7 +57,7 @@ namespace Relativity_Custom_Page_MVC5.Controllers
 				using (IRSAPIClient rsapiClient = Relativity.CustomPages.ConnectionHelper.Helper().GetServicesManager().CreateProxy<IRSAPIClient>(ExecutionIdentity.CurrentUser))
 				{
 					//Set the proxy to use the current workspace
-					rsapiClient.APIOptions.WorkspaceID = currentUserWorkspaceArtifactId;
+					rsapiClient.APIOptions.WorkspaceID = currentWorkspaceId;
 
 					//Add code for working with RSAPIClient
 				}
