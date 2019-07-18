@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Runtime.InteropServices;
 using kCura.EventHandler;
 using kCura.EventHandler.CustomAttributes;
@@ -14,9 +15,11 @@ namespace Relativity.PageInteractionEventhandler
     {
         public override Response PopulateScriptBlocks()
         {
+						// Update Security Protocol
+						ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
 
-            //Create a response object with default values
-            kCura.EventHandler.Response retVal = new kCura.EventHandler.Response();
+						//Create a response object with default values
+						kCura.EventHandler.Response retVal = new kCura.EventHandler.Response();
             retVal.Success = true;
             retVal.Message = string.Empty;
 

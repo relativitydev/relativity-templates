@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Runtime.InteropServices;
 using kCura.EventHandler;
 using kCura.EventHandler.CustomAttributes;
@@ -15,8 +16,11 @@ namespace Relativity.PreLoadEventHandler
 
         public override Response Execute()
         {
-            //Construct a response object with default values.
-            kCura.EventHandler.Response retVal = new kCura.EventHandler.Response();
+						// Update Security Protocol
+						ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+
+						//Construct a response object with default values.
+						kCura.EventHandler.Response retVal = new kCura.EventHandler.Response();
             retVal.Success = true;
             retVal.Message = string.Empty;
             try

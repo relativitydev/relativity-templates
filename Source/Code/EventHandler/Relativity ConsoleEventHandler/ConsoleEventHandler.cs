@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Runtime.InteropServices;
 using kCura.EventHandler;
 using kCura.EventHandler.CustomAttributes;
@@ -16,7 +17,10 @@ namespace Relativity.ConsoleEventHandler
 
         public override kCura.EventHandler.Console GetConsole(PageEvent pageEvent)
         {
-            kCura.EventHandler.Console returnConsole = new kCura.EventHandler.Console() { Items = new List<IConsoleItem>(), Title = "Title of Console" }; ;
+						// Update Security Protocol
+						ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+
+						kCura.EventHandler.Console returnConsole = new kCura.EventHandler.Console() { Items = new List<IConsoleItem>(), Title = "Title of Console" }; ;
             
             returnConsole.Items.Add(new ConsoleButton() {Name = "1st Button", DisplayText = "Click Me", Enabled = true});
 
@@ -53,7 +57,10 @@ namespace Relativity.ConsoleEventHandler
 
         public override void OnButtonClick(ConsoleButton consoleButton)
         {
-            switch (consoleButton.Name)
+						// Update Security Protocol
+						ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+
+						switch (consoleButton.Name)
             {
                 //Handle each Button's functionality
             }
