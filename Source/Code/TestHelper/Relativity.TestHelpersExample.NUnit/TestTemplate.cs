@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Net;
 using System.Reflection;
 using kCura.Relativity.Client;
 using NUnit.Framework;
@@ -47,8 +48,13 @@ namespace Relativity.RelativityTestTemplate.Tests.Integration.NUnit
         [TestFixtureSetUp]
         public void Execute_TestFixtureSetup()
         {
-            //Setup for testing		
-            TestHelper helper = new TestHelper();
+						// Update Security Protocol
+						ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+
+						//Setup for testing
+						string relativityUsername = ""; // Replace with actual Relativity Username
+						string relativityPassword = ""; // Replace with actual Relativity Password
+						TestHelper helper = new TestHelper(relativityUsername, relativityPassword);
             servicesManager = helper.GetServicesManager();
             _eddsDbContext = helper.GetDBContext(-1);
 
