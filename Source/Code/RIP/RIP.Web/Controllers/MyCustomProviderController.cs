@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Relativity.API;
 using Relativity.CustomPages;
+using Relativity.Kepler.Services;
 using RIP.Provider;
 
 namespace RIP.Web.Controllers
@@ -54,7 +55,9 @@ namespace RIP.Web.Controllers
                     string data = new StreamReader(Request.InputStream).ReadToEnd();
                     JToken token = JToken.Parse(data);
                     ExampleConfigurationModel jobConfiguration = JsonConvert.DeserializeObject<ExampleConfigurationModel>(token.ToString());
-                    settings.Add(new KeyValuePair<string, string>("Job Setting 1", jobConfiguration.ConfigSetting1));
+										DataSourceProviderConfiguration dataSourceProviderConfiguration = new DataSourceProviderConfiguration();
+
+										settings.Add(new KeyValuePair<string, string>("Job Setting 1", jobConfiguration.ConfigSetting1));
                     settings.Add(new KeyValuePair<string, string>("Job Setting 2", jobConfiguration.ConfigSetting2));
                     settings.Add(new KeyValuePair<string, string>("Job Setting 3", jobConfiguration.ConfigSetting3));
                     settings.Add(new KeyValuePair<string, string>("Example Static Value", "Example, Example, Example"));

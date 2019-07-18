@@ -31,21 +31,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="kCura.EventHandler, Version=9.5.378.15, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.EventHandler.9.5.378.15\lib\kCura.EventHandler.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="kCura.EventHandler, Version=10.2.170.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.EventHandler.10.2.170.2\lib\net462\kCura.EventHandler.dll</HintPath>
     </Reference>
-    <Reference Include="kCura.IntegrationPoints.Contracts, Version=9.5.57.2, Culture=neutral, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Marlon\kcd\Presentations\2017-RIP Workshop\96-extradlls\kCura.IntegrationPoints.Contracts.dll</HintPath>
+    <Reference Include="kCura.IntegrationPoints.Contracts">
+      <HintPath>..\packages\RIP SDK 10.2.23.7\kCura.IntegrationPoints.Contracts.dll</HintPath>
     </Reference>
-    <Reference Include="kCura.IntegrationPoints.SourceProviderInstaller, Version=9.5.57.2, Culture=neutral, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Marlon\kcd\Presentations\2017-RIP Workshop\96-extradlls\kCura.IntegrationPoints.SourceProviderInstaller.dll</HintPath>
+    <Reference Include="kCura.IntegrationPoints.Domain">
+      <HintPath>..\packages\RIP SDK 10.2.23.7\kCura.IntegrationPoints.Domain.dll</HintPath>
     </Reference>
-    <Reference Include="kCura.Relativity.Client, Version=9.5.378.15, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Rsapi.9.5.378.15\lib\kCura.Relativity.Client.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="kCura.IntegrationPoints.Services.Interfaces.Private">
+      <HintPath>..\packages\RIP SDK 10.2.23.7\kCura.IntegrationPoints.Services.Interfaces.Private.dll</HintPath>
+    </Reference>
+    <Reference Include="kCura.IntegrationPoints.SourceProviderInstaller">
+      <HintPath>..\packages\RIP SDK 10.2.23.7\kCura.IntegrationPoints.SourceProviderInstaller.dll</HintPath>
+    </Reference>
+    <Reference Include="kCura.Relativity.Client, Version=10.2.170.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Rsapi.10.2.170.2\lib\net462\kCura.Relativity.Client.dll</HintPath>
     </Reference>
     <Reference Include="kCura.ScheduleQueue.Core, Version=9.5.57.2, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
@@ -55,25 +57,20 @@
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Relativity.API, Version=9.5.378.15, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Api.9.5.378.15\lib\Relativity.API.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Relativity.API, Version=10.2.170.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Api.10.2.170.2\lib\net462\Relativity.API.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Kepler, Version=1.0.1.429, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.9.5.378.15\lib\Relativity.Kepler.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Relativity.Kepler, Version=1.0.1.557, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.10.2.170.2\lib\net462\Relativity.Kepler.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Services.DataContracts, Version=9.5.378.15, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.9.5.378.15\lib\Relativity.Services.DataContracts.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Relativity.Services.DataContracts, Version=10.2.170.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.10.2.170.2\lib\net462\Relativity.Services.DataContracts.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Services.Interfaces, Version=9.5.378.15, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.9.5.378.15\lib\Relativity.Services.Interfaces.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Relativity.Services.Interfaces, Version=10.2.170.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.10.2.170.2\lib\net462\Relativity.Services.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Services.ServiceProxy, Version=1.0.1.392, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.9.5.378.15\lib\Relativity.Services.ServiceProxy.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Relativity.Services.ServiceProxy, Version=1.0.1.557, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.10.2.170.2\lib\net462\Relativity.Services.ServiceProxy.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
