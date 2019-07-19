@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity PreSaveEventHand
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity PreUninstallEventHandler", "Relativity PreUninstallEventHandler\Relativity PreUninstallEventHandler.csproj", "{D750B78E-4464-4D2D-B327-E708EB32B82C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity ListPageInteractionEventHandler", "Relativity ListPageInteractionEventHandler\Relativity ListPageInteractionEventHandler.csproj", "{720C5841-1C57-410B-BF90-78CD2A7F1CCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,8 +77,15 @@ Global
 		{D750B78E-4464-4D2D-B327-E708EB32B82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D750B78E-4464-4D2D-B327-E708EB32B82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D750B78E-4464-4D2D-B327-E708EB32B82C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{720C5841-1C57-410B-BF90-78CD2A7F1CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{720C5841-1C57-410B-BF90-78CD2A7F1CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{720C5841-1C57-410B-BF90-78CD2A7F1CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{720C5841-1C57-410B-BF90-78CD2A7F1CCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {399F1097-63D1-4F68-A6FB-D9AD92CAD254}
 	EndGlobalSection
 EndGlobal
