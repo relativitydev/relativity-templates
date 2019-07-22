@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using kCura.Relativity.Client;
 using Relativity.API;
-using $saferootprojectname$.Helpers.Rsapi.Interfaces;
+using $safeprojectname$.Rsapi.Interfaces;
 
 namespace $safeprojectname$.Rsapi
 {

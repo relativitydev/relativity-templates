@@ -1,7 +1,7 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
     <Name>Helpers</Name>
-    <Description>Project Template for the Manager Worker Helpers</Description>
+    <Description>Project Template for Relativity Manager Worker Helpers</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
@@ -12,7 +12,6 @@
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <Icon>__TemplateIcon.ico</Icon>
-	<Hidden>true</Hidden>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="Helpers.csproj" File="Helpers.csproj" ReplaceParameters="true">
@@ -42,17 +41,13 @@
     </Project>
   </TemplateContent>
   <WizardExtension>
-    <Assembly>RelativityWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
-    <FullClassName>RelativityWizard.ChildWizard</FullClassName>
-  </WizardExtension>
-  <WizardExtension>
     <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
     <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
   </WizardExtension>
   <WizardData>
     <packages repository="extension" repositoryId="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b">
-	  <package id="Relativity.Api" version="9.5.370.136" />
-	  <package id="Relativity.Rsapi" version="9.5.370.136" />
-	</packages>
+      <package id="Relativity.Api" version="10.2.170.2" />
+      <package id="Relativity.Rsapi" version="10.2.170.2" />
+    </packages>
   </WizardData>
 </VSTemplate>

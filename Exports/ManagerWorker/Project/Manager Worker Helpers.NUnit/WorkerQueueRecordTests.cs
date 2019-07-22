@@ -2,7 +2,7 @@
 using System.Data;
 using NUnit.Framework;
 
-using $saferootprojectname$.Helpers.Models;
+using Helpers.Models;
 
 namespace $safeprojectname$
 {

@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Relativity.CustomPages</name>
+    </assembly>
+    <members>
+        <member name="T:Relativity.CustomPages.AppCache">
+            <summary>
+            Contains helper methods to manage application cache within Custom Pages environment.
+            </summary>
+        </member>
+        <member name="P:Relativity.CustomPages.AppCache.Instance">
+            <summary>
+            Returns an instance of AppCache class.
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.AppCache.RetrieveWorkspaceDataFromDatabase(System.Int32)">
+            <summary>
+            HEARTCLUB TODO
+            Retrieves the database location for a given workspace ID.
+            </summary>
+            <param name="appArtifactID">Workspace ID</param>
+            <returns>Database location</returns>
+        </member>
+        <member name="T:Relativity.CustomPages.ConnectionHelper">
+            <summary>
+            Defines and establishes a database connection based on workspace ID.
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.ConnectionHelper.Helper">
+            <summary>
+            Returns a custom page helper object which later can be used to obtain database connection, service or authentication manager instance.
+            </summary>
+            <returns>Returns <see cref="T:Relativity.API.ICPHelper"/> object.</returns>
+        </member>
+        <member name="T:Relativity.CustomPages.Constants">
+            <summary>
+            Contains preconfigured constants which are used internally in Custom Pages.
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.Constants.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.Constants.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionTimeout"></param>
+        </member>
+        <member name="T:Relativity.CustomPages.DBContext">
+            <summary>
+            Contains data layer methods providing everything needed in order to properly execute CRUD operations.
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.#ctor(kCura.Data.RowDataGateway.BaseContext)">
+            <summary>
+            Initializes a new instance of the DBContext class.
+            </summary>
+            <param name="context">Predefined context object based on which DBContext instance is created.</param>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.ExecuteSqlStatementAsDataTable(System.String)">
+            <summary>
+            Returns DataTable object as a result of SQL statement execution.
+            </summary>
+            <param name="sqlStatement">String containing SQL query.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.ExecuteSqlStatementAsDataTable(System.String,System.Collections.Generic.IEnumerable{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            Returns DataTable object as a result of parameterized SQL statement execution.
+            </summary>
+            <param name="sqlStatement">String containing parameterized SQL query.</param>
+            <param name="parameters">List of SQL parameters which are passed in to SQL query.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.ExecuteSqlStatementAsScalar``1(System.String)">
+            <summary>
+            Executes the query, and returns the first column of the first row in the result set returned by the query. Additional columns or rows are ignored.
+            </summary>
+            <typeparam name="T">Type used to define returned object.</typeparam>
+            <param name="sqlStatement">String containing SQL query.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.ExecuteSqlStatementAsScalar``1(System.String,System.Collections.Generic.IEnumerable{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            Executes the query, and returns the first column of the first row in the result set returned by the query. Additional columns or rows are ignored.
+            </summary>
+            <typeparam name="T">Type used to define returned object.</typeparam>
+            <param name="sqlStatement">String containing parameterized SQL query.</param>
+            <param name="parameters">List of SQL parameters which are passed in to SQL query.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.ExecuteNonQuerySQLStatement(System.String)">
+            <summary>
+            Executes a Transact-SQL statement against the connection and returns the number of rows affected.
+            </summary>
+            <param name="sqlStatement">String containing SQL query.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.ExecuteNonQuerySQLStatement(System.String,System.Collections.Generic.IEnumerable{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            Executes a Transact-SQL statement against the connection and returns the number of rows affected.
+            </summary>
+            <param name="sqlStatement">String containing parameterized SQL query.</param>
+            <param name="parameters">List of SQL parameters which are passed in to SQL query.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.ExecuteSqlStatementAsDbDataReader(System.String,System.Collections.Generic.IEnumerable{System.Data.Common.DbParameter})">
+            <summary>
+            Executes a Transact-SQL statement against the connection and build a DbDataReader.
+            </summary>
+            <param name="sqlStatement">String containing parameterized SQL query.</param>
+            <param name="parameters">List of SQL parameters which are passed in to SQL query.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.ExecuteSqlStatementAsDbDataReader(System.String)">
+            <summary>
+            Executes a Transact-SQL statement against the connection and builds a DbDataReader.
+            </summary>
+            <param name="sqlStatement">String containing parameterized SQL query.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.ExecuteProcedureAsReader(System.String,System.Collections.Generic.IEnumerable{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            Executes a stored procedure against the connection and builds a DbDataReader.
+            </summary>
+            <param name="procedureName">String value indicating a name of stored procedure to be executed.</param>
+            <param name="parameters">List of SQL parameters which are passed in to the stored procedure.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.ExecuteProcedureNonQuery(System.String,System.Collections.Generic.IEnumerable{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            Executes a stored procedure against the connection and returns the number of rows affected.
+            </summary>
+            <param name="procedureName">String value indicating a name of stored procedure to be executed.</param>
+            <param name="parameters">List of SQL parameters which are passed in to the stored procedure.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.ExecuteSqlStatementAsDataSet(System.String)">
+            <summary>
+            Executes a Transact-SQL statement against the connection and returns an in-memory cache of data.
+            </summary>
+            <param name="sqlStatement">String containing SQL query.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.ExecuteSqlStatementAsDataSet(System.String,System.Collections.Generic.IEnumerable{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            Executes a parameterized Transact-SQL statement against the connection and returns an in-memory cache of data.
+            </summary>
+            <param name="sqlStatement">String containing parameterized SQL query.</param>
+            <param name="parameters">List of SQL parameters which are passed in to SQL statement.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.GetConnection">
+            <summary>
+            Gets a database connection.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Relativity.CustomPages.DBContext.Database">
+            <summary>
+            Gets database name out of database context.
+            </summary>
+        </member>
+        <member name="P:Relativity.CustomPages.DBContext.ServerName">
+            <summary>
+            Gets a database server name.
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.GetTransaction">
+            <summary>
+            Gets a current database transaction.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.BeginTransaction">
+            <summary>
+            Starts a database transaction.
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.CommitTransaction">
+            <summary>
+            Commits a database transaction.
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.RollbackTransaction">
+            <summary>
+            Rollbacks a database transaction.
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.ReleaseConnection">
+            <summary>
+            Releases a database connection.
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.DBContext.Cancel">
+            <summary>
+            Tries to cancel the execution of a SQL command.
+            </summary>
+        </member>
+        <member name="T:Relativity.CustomPages.IDBContext">
+            <summary>
+            Interface for DBContext class.
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.GetConnection">
+            <summary>
+            Gets a database connection.
+            </summary>
+            <returns>Returns a database connection.</returns>
+        </member>
+        <member name="P:Relativity.CustomPages.IDBContext.Database">
+            <summary>
+            Gets a database name.
+            </summary>
+        </member>
+        <member name="P:Relativity.CustomPages.IDBContext.ServerName">
+            <summary>
+            Gets a database server name.
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.GetTransaction">
+            <summary>
+            Gets a database transaction.
+            </summary>
+            <returns>Returns a database transaction.</returns>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.BeginTransaction">
+            <summary>
+            Starts a database transaction.
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.CommitTransaction">
+            <summary>
+            Commits a database transaction.
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.RollbackTransaction">
+            <summary>
+            Rolls back a database transaction.
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.ReleaseConnection">
+            <summary>
+            Releases a database connection.
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.Cancel">
+            <summary>
+            Tries to cancel a SQL command execution.
+            </summary>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.ExecuteSqlStatementAsDataTable(System.String)">
+            <summary>
+            Executes a Transact-SQL statement agains the connection and returns a table of in-memory data.
+            </summary>
+            <param name="sqlStatement">String containing SQL statement.</param>
+            <returns>Returns a table of in-memory data.</returns>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.ExecuteSqlStatementAsDataTable(System.String,System.Collections.Generic.IEnumerable{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            Executes a parameterized Transact-SQL statement against the connection and returns a table of in-memory data.
+            </summary>
+            <param name="sqlStatement">String containing parameterized SQL statement.</param>
+            <param name="parameters">List of SQL parameters passed in to SQL statement.</param>
+            <returns>Returns a table of in-memory data.</returns>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.ExecuteSqlStatementAsScalar``1(System.String)">
+            <summary>
+            Executes the query, and returns the first column of the first row in the result set returned by the query. Additional columns or rows are ignored.
+            </summary>
+            <typeparam name="T">Type used to define returned object.</typeparam>
+            <param name="sqlStatement">String containing SQL statement.</param>
+            <returns>Returns the first column of the first row in the result set returned by the query.</returns>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.ExecuteSqlStatementAsScalar``1(System.String,System.Collections.Generic.IEnumerable{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            Executes the query, and returns the first column of the first row in the result set returned by the query. Additional columns or rows are ignored.
+            </summary>
+            <typeparam name="T">Type used to define returned object.</typeparam>
+            <param name="sqlStatement">String containing SQL statement.</param>
+            <param name="parameters">List of SQL parameters passed in to SQL statement.</param>
+            <returns>Returns the first column of the first row in the result set returned by the query.</returns>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.ExecuteNonQuerySQLStatement(System.String)">
+            <summary>
+            Executes a Transact-SQL statement against the connection and returns the number of rows affected.
+            </summary>
+            <param name="sqlStatement">String containing SQL statement.</param>
+            <returns>Returns the number of rows affected.</returns>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.ExecuteNonQuerySQLStatement(System.String,System.Collections.Generic.IEnumerable{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            Executes a parameterized Transact-SQL statement against the connection and returns the number of rows affected.
+            </summary>
+            <param name="sqlStatement">String containing parameterized SQL statement.</param>
+            <param name="parameters">List of SQL parameters passed in to SQL statement.</param>
+            <returns>Returns the number of rows affected.</returns>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.ExecuteSqlStatementAsDbDataReader(System.String,System.Collections.Generic.IEnumerable{System.Data.Common.DbParameter})">
+            <summary>
+            Executes a Transact-SQL statement against the connection and builds a DbDataReader.
+            </summary>
+            <param name="sqlStatement">String containing parameterized SQL statement.</param>
+            <param name="parameters">List of SQL parameters passed in to SQL statement.</param>
+            <returns>Returns a DbDataReader object.</returns>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.ExecuteSqlStatementAsDbDataReader(System.String)">
+            <summary>
+            Executes a Transact-SQL statement against the connection and builds a DbDataReader.
+            </summary>
+            <param name="sqlStatement">String containing SQL statement.</param>
+            <returns>Returns a DbDataReader object.</returns>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.ExecuteProcedureAsReader(System.String,System.Collections.Generic.IEnumerable{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            Executes a stored procedure against the connection and builds a DbDataReader.
+            </summary>
+            <param name="procedureName">String value indicating a name of stored procedure to be executed.</param>
+            <param name="parameters">List of SQL parameters passed in to the stored procedure.</param>
+            <returns>Returns a DbDataReader object.</returns>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.ExecuteProcedureNonQuery(System.String,System.Collections.Generic.IEnumerable{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            Executes a stored procedure against the connection and returns the number of rows affected.
+            </summary>
+            <param name="procedureName">String value indicating a name of stored procedure to be executed.</param>
+            <param name="parameters">List of SQL parameters passed in to the stored procedure.</param>
+            <returns>Returns the number of rows affected.</returns>
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.ExecuteSqlStatementAsDataSet(System.String)">
+             <summary>
+             Executes a Transact-SQL statement against the connection and returns an in-memory cache of data.
+             </summary>
+             <param name="sqlStatement">String containing SQL statement.</param>
+            <returns>Returns an in-memory cache of data.</returns> 
+        </member>
+        <member name="M:Relativity.CustomPages.IDBContext.ExecuteSqlStatementAsDataSet(System.String,System.Collections.Generic.IEnumerable{System.Data.SqlClient.SqlParameter})">
+             <summary>
+             Executes a parameterized Transact-SQL statement against the connection and returns an in-memory cache of data.
+             </summary>
+             <param name="sqlStatement">String containing parameterized SQL statement.</param>
+             <param name="parameters">List of SQL parameters passed in to SQL statement.</param>
+            <returns>Returns an in-memory cache of data.</returns>
+        </member>
+    </members>
+</doc>

@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using kCura.EventHandler.CustomAttributes;
+using kCura.IntegrationPoints.Contracts;
 using kCura.IntegrationPoints.SourceProviderInstaller;
 
 namespace $safeprojectname$
 {
     [Description("My Custom Provider - Installer")]
     [RunOnce(false)]
-    [Guid("$guid1$")]
+    [Guid("DF4DBC03-D20F-4CE1-9C26-35B6F0C94AC8")]
     public class RegisterMyCustomProvider : IntegrationPointSourceProviderInstaller
     {
         public RegisterMyCustomProvider()
@@ -25,8 +26,8 @@ namespace $safeprojectname$
             SourceProvider myCustomProvider = new SourceProvider
             {
                 Name = "My Custom Provider",
-                Url = String.Format("/%applicationpath%/CustomPages/{0}/MyCustomProvider/Index/", Constants.Guids.Application.SMP_RELATIVITY_APPLICATION),
-                ViewDataUrl = String.Format("/%applicationpath%/CustomPages/{0}/MyCustomProvider/GetViewFields/", Constants.Guids.Application.SMP_RELATIVITY_APPLICATION)
+                Url = $"/%applicationpath%/CustomPages/{Constants.Guids.Application.SMP_RELATIVITY_APPLICATION}/MyCustomProvider/Index/",
+                ViewDataUrl = $"/%applicationpath%/CustomPages/{Constants.Guids.Application.SMP_RELATIVITY_APPLICATION}/MyCustomProvider/GetViewFields/"
             };
 
             sourceProviders.Add(new Guid(Constants.Guids.Provider.MY_CUSTOM_PROVIDER), myCustomProvider);

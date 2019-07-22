@@ -56,13 +56,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\$saferootprojectname$.CustomPages\$saferootprojectname$.CustomPages.csproj">
+    <ProjectReference Include="..\CustomPages\CustomPages.csproj">
       <Project>{345c7333-f112-4eb2-8206-e05fe9363e22}</Project>
-      <Name>$saferootprojectname$.CustomPages</Name>
+      <Name>CustomPages</Name>
     </ProjectReference>
-    <ProjectReference Include="..\$saferootprojectname$.Helpers\$saferootprojectname$.Helpers.csproj">
+    <ProjectReference Include="..\Helpers\Helpers.csproj">
       <Project>{8f4cda45-eaf3-4b40-a7a9-f312b7664abc}</Project>
-      <Name>$saferootprojectname$.Helpers</Name>
+      <Name>Helpers</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

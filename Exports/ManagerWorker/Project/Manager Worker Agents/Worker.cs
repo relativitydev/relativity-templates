@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using System.Threading.Tasks;
 using Relativity.API;
-using $saferootprojectname$.Helpers;
+using Helpers;
 
 namespace $safeprojectname$
 {
@@ -21,7 +22,10 @@ namespace $safeprojectname$
 
 		public async Task ExecuteAsync()
 		{
-		    Helpers.IQuery queryHelper = new Query();
+			// Update Security Protocol
+			ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+
+			Helpers.IQuery queryHelper = new Query();
 			IEnumerable<Int32> resourceGroupIds = GetResourceGroupIDs();
 			Logger = Helper.GetLoggerFactory().GetLogger();
 		    WorkerJob job = new WorkerJob(AgentID, Helper, queryHelper, DateTime.Now, resourceGroupIds, Logger);

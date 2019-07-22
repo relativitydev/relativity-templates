@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Moq;
 using NUnit.Framework;
 using Relativity.API;
-using $saferootprojectname$.Helpers;
-using $saferootprojectname$.Agents;
+using Helpers;
+using Agents;
 
 namespace $safeprojectname$
 {

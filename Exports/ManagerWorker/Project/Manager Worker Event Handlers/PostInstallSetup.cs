@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using kCura.EventHandler;
 using Relativity.API;
-using $saferootprojectname$.Helpers;
+using Helpers;
 
 namespace $safeprojectname$
 {

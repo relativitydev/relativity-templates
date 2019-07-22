@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
 using Relativity.API;
-using $saferootprojectname$.Helpers;
-using $saferootprojectname$.Helpers.Models;
+using Helpers;
+using Helpers.Models;
 
 namespace $safeprojectname$
 {

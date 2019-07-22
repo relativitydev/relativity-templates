@@ -3,8 +3,8 @@ using System.Data;
 using System.Threading.Tasks;
 using Moq;
 using NUnit.Framework;
-using $saferootprojectname$.CustomPages.Models;
-using $saferootprojectname$.Helpers;
+using CustomPages.Models;
+using Helpers;
 
 namespace $safeprojectname$
 {

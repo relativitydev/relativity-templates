@@ -5,10 +5,10 @@ using kCura.EventHandler;
 using Moq;
 using NUnit.Framework;
 using Relativity.API;
-using $saferootprojectname$.Helpers;
-using $saferootprojectname$.Helpers.Rsapi.Interfaces;
+using Helpers;
+using Helpers.Rsapi.Interfaces;
 using PageEvent = kCura.EventHandler.ConsoleEventHandler.PageEvent;
-using $saferootprojectname$.EventHandlers;
+using EventHandlers;
 using Console = kCura.EventHandler.Console;
 
 namespace $safeprojectname$

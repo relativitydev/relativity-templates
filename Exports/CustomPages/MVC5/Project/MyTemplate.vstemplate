@@ -1,7 +1,7 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
     <Name>Relativity Custom Page MVC5</Name>
-    <Description>Project Template for Relativity Custom Pages MVC5</Description>
+    <Description>Project Template for Relativity Custom Page MVC5</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
@@ -20,18 +20,22 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="RouteConfig.cs">RouteConfig.cs</ProjectItem>
       </Folder>
       <Folder Name="Content" TargetFolderName="Content">
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-grid.css">bootstrap-grid.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-grid.css.map">bootstrap-grid.css.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-grid.min.css">bootstrap-grid.min.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-grid.min.css.map">bootstrap-grid.min.css.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-reboot.css">bootstrap-reboot.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-reboot.css.map">bootstrap-reboot.css.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-reboot.min.css">bootstrap-reboot.min.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-reboot.min.css.map">bootstrap-reboot.min.css.map</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.css">bootstrap.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.css.map">bootstrap.css.map</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.css">bootstrap.min.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.css.map">bootstrap.min.css.map</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Site.css">Site.css</ProjectItem>
       </Folder>
       <Folder Name="Controllers" TargetFolderName="Controllers">
         <ProjectItem ReplaceParameters="true" TargetFileName="HomeController.cs">HomeController.cs</ProjectItem>
-      </Folder>
-      <Folder Name="fonts" TargetFolderName="fonts">
-        <ProjectItem ReplaceParameters="false" TargetFileName="glyphicons-halflings-regular.eot">glyphicons-halflings-regular.eot</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="glyphicons-halflings-regular.svg">glyphicons-halflings-regular.svg</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="glyphicons-halflings-regular.ttf">glyphicons-halflings-regular.ttf</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="glyphicons-halflings-regular.woff">glyphicons-halflings-regular.woff</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax">Global.asax</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax.cs">Global.asax.cs</ProjectItem>
@@ -39,14 +43,58 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+        <Folder Name="PublishProfiles" TargetFolderName="PublishProfiles">
+          <ProjectItem ReplaceParameters="false" TargetFileName="local.pubxml">local.pubxml</ProjectItem>
+        </Folder>
       </Folder>
       <Folder Name="Scripts" TargetFolderName="Scripts">
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.bundle.js">bootstrap.bundle.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.bundle.js.map">bootstrap.bundle.js.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.bundle.min.js">bootstrap.bundle.min.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.bundle.min.js.map">bootstrap.bundle.min.js.map</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.js">bootstrap.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.js.map">bootstrap.js.map</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.js">bootstrap.min.js</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-1.10.2.js">jquery-1.10.2.js</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-1.10.2.min.js">jquery-1.10.2.min.js</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-1.10.2.min.map">jquery-1.10.2.min.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.js.map">bootstrap.min.js.map</ProjectItem>
+        <Folder Name="esm" TargetFolderName="esm">
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.js">popper-utils.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.js.map">popper-utils.js.map</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.min.js">popper-utils.min.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.min.js.map">popper-utils.min.js.map</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper.js">popper.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper.js.map">popper.js.map</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper.min.js">popper.min.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper.min.js.map">popper.min.js.map</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="index.d.ts">index.d.ts</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-1.10.2.intellisense.js">jquery-1.10.2.intellisense.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.4.1.intellisense.js">jquery-3.4.1.intellisense.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.4.1.js">jquery-3.4.1.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.4.1.min.js">jquery-3.4.1.min.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.4.1.min.map">jquery-3.4.1.min.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.4.1.slim.js">jquery-3.4.1.slim.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.4.1.slim.min.js">jquery-3.4.1.slim.min.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.4.1.slim.min.map">jquery-3.4.1.slim.min.map</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="modernizr-2.6.2.js">modernizr-2.6.2.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.js">popper-utils.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.js.map">popper-utils.js.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.min.js">popper-utils.min.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.min.js.map">popper-utils.min.js.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="popper.js">popper.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="popper.js.map">popper.js.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="popper.min.js">popper.min.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="popper.min.js.map">popper.min.js.map</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+        <Folder Name="umd" TargetFolderName="umd">
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.js">popper-utils.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.js.map">popper-utils.js.map</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.min.js">popper-utils.min.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.min.js.map">popper-utils.min.js.map</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper.js">popper.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper.js.map">popper.js.map</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper.min.js">popper.min.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper.min.js.map">popper.min.js.map</ProjectItem>
+        </Folder>
       </Folder>
       <Folder Name="Views" TargetFolderName="Views">
         <ProjectItem ReplaceParameters="true" TargetFileName="_ViewStart.cshtml">_ViewStart.cshtml</ProjectItem>
@@ -69,17 +117,17 @@
   </WizardExtension>
   <WizardData>
     <packages repository="extension" repositoryId="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b">
-	  <package id="bootstrap" version="3.0.0" />
-	  <package id="jQuery" version="1.10.2" />
-	  <package id="Microsoft.AspNet.Mvc" version="5.2.3" />
-	  <package id="Microsoft.AspNet.Razor" version="3.2.3" />
-	  <package id="Microsoft.AspNet.WebPages" version="3.2.3" />
-	  <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" />
-	  <!--<package id="Modernizr" version="2.6.2" />-->
-	  <package id="Relativity.Api" version="9.5.370.136" />
-	  <package id="Relativity.CustomPages" version="9.5.370.136" />
-	  <package id="Relativity.ObjectManager" version="9.5.370.136" />
-	  <package id="Relativity.Rsapi" version="9.5.370.136" />
-	</packages>
+      <package id="bootstrap" version="4.3.1" />
+      <package id="jQuery" version="3.4.1" />
+      <package id="Microsoft.AspNet.Mvc" version="5.2.3" />
+      <package id="Microsoft.AspNet.Razor" version="3.2.3" />
+      <package id="Microsoft.AspNet.WebPages" version="3.2.3" />
+      <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" />
+      <package id="popper.js" version="1.14.0" />
+      <package id="Relativity.Api" version="9.6.53.73" />
+      <package id="Relativity.CustomPages" version="9.6.53.73" />
+      <package id="Relativity.ObjectManager" version="9.6.53.73" />
+      <package id="Relativity.Rsapi" version="9.6.53.73" />
+    </packages>
   </WizardData>
 </VSTemplate>
