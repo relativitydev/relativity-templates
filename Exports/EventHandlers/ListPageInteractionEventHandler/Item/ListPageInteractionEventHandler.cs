@@ -9,11 +9,11 @@ using kCura.Relativity.Client;
 using Relativity.API;
 using Relativity.Services.Objects;
 
-namespace Relativity_ListPageInteractionEventHandler
+namespace $rootnamespace$
 {
 	[kCura.EventHandler.CustomAttributes.Description("List Page Interaction EventHandler")]
-	[System.Runtime.InteropServices.Guid("C206B189-43A9-4D05-9FF3-6ABABB9DB32D")]
-	public class ListPageInteractionEventHandler : kCura.EventHandler.ListPageInteractionEventHandler
+	[System.Runtime.InteropServices.Guid("$guid1$")]
+	public class $safeitemname$ : kCura.EventHandler.ListPageInteractionEventHandler
 	{
 		public override Response PopulateScriptBlocks()
 		{

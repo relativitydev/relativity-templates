@@ -11,7 +11,7 @@ using Relativity.Services.Objects;
 
 namespace $safeprojectname$
 {
-	[kCura.EventHandler.CustomAttributes.Description("Page Interaction EventHandler")]
+	[kCura.EventHandler.CustomAttributes.Description("List Page Interaction EventHandler")]
 	[System.Runtime.InteropServices.Guid("$guid1$")]
 	public class $safeitemname$ : kCura.EventHandler.ListPageInteractionEventHandler
 	{

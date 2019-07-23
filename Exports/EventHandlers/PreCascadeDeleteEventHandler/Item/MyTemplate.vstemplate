@@ -2,7 +2,7 @@
   <TemplateData>
     <DefaultName>Relativity PreCascadeDeleteEventHandler.cs</DefaultName>
     <Name>Relativity PreCascadeDeleteEventHandler</Name>
-    <Description>Item Template for Relativity  Pre Cascade Delete Event Handler</Description>
+    <Description>Item Template for Relativity Pre Cascade Delete Event Handler</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>10</SortOrder>
     <Icon>__TemplateIcon.ico</Icon>
