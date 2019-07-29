@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 using NUnit.Framework;
 
-using Helpers.Rsapi;
+using $saferootprojectname$.Helpers.Rsapi;
 
 namespace $safeprojectname$
 {

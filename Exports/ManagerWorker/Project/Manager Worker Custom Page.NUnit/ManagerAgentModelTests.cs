@@ -7,8 +7,8 @@ using Moq;
 
 using NUnit.Framework;
 using Relativity.API;
-using CustomPages.Models;
-using Helpers;
+using $saferootprojectname$.CustomPages.Models;
+using $saferootprojectname$.Helpers;
 
 namespace $safeprojectname$
 {

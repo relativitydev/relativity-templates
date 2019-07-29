@@ -4,15 +4,15 @@ using System.Data;
 using System.Threading.Tasks;
 using kCura.EventHandler;
 using Relativity.API;
-using Helpers;
-using Helpers.Rsapi;
-using Helpers.Rsapi.Interfaces;
+using $saferootprojectname$.Helpers;
+using $saferootprojectname$.Helpers.Rsapi;
+using $saferootprojectname$.Helpers.Rsapi.Interfaces;
 using Console = kCura.EventHandler.Console;
 
 namespace $safeprojectname$
 {
 	[kCura.EventHandler.CustomAttributes.Description("Allows a user to submit a job or remove a job from the manager queue.")]
-	[System.Runtime.InteropServices.Guid("D004F1C2-4D74-4F9A-A017-B69107330456")]
+	[System.Runtime.InteropServices.Guid("$guid1$")]
 	public class ManageJobConsole : ConsoleEventHandler
 	{
 		public IQuery QueryHelper = new Query();

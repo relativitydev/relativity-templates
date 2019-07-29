@@ -29,8 +29,8 @@
   </WizardExtension>
   <WizardData>
     <packages repository="extension" repositoryId="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b">
-      <package id="NUnit" version="2.6.4" />
-      <package id="NUnitTestAdapter.WithFramework" version="2.0.0" />
+      <package id="NUnit" version="3.12.0" />
+      <package id="NUnit3TestAdapter" version="3.12.0" />
       <package id="Relativity.Api" version="10.2.170.2" />
       <package id="Relativity.Rsapi" version="10.2.170.2" />
       <package id="RelativityDev.RelativityTestHelpers" version="6.7.0.1" />

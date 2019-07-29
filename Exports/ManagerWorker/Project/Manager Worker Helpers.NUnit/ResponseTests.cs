@@ -2,7 +2,7 @@
 using System.Linq;
 using kCura.Relativity.Client.DTOs;
 using NUnit.Framework;
-using Helpers.Rsapi;
+using $saferootprojectname$.Helpers.Rsapi;
 
 namespace $safeprojectname$
 {

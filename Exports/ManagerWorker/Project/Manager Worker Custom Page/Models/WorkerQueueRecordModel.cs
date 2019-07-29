@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Data;
-using Helpers;
+using $saferootprojectname$.Helpers;
 
 namespace $safeprojectname$.Models
 {

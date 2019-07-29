@@ -17,6 +17,12 @@
     <Project TargetFileName="RIP.Provider.csproj" File="RIP.Provider.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Constants.cs">Constants.cs</ProjectItem>
+      <Folder Name="DLL" TargetFolderName="DLL">
+        <ProjectItem ReplaceParameters="false" TargetFileName="kCura.IntegrationPoints.Contracts.dll">kCura.IntegrationPoints.Contracts.dll</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="kCura.IntegrationPoints.Domain.dll">kCura.IntegrationPoints.Domain.dll</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="kCura.IntegrationPoints.Services.Interfaces.Private.dll">kCura.IntegrationPoints.Services.Interfaces.Private.dll</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="kCura.IntegrationPoints.SourceProviderInstaller.dll">kCura.IntegrationPoints.SourceProviderInstaller.dll</ProjectItem>
+      </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="ExampleConfigurationModel.cs">ExampleConfigurationModel.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="MyCustomProvider.cs">MyCustomProvider.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
@@ -27,6 +33,10 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="RemoveMyCustomProvider.cs">RemoveMyCustomProvider.cs</ProjectItem>
     </Project>
   </TemplateContent>
+  <WizardExtension>
+    <Assembly>RelativityWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>RelativityWizard.ChildWizard</FullClassName>
+  </WizardExtension>
   <WizardExtension>
     <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
     <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>

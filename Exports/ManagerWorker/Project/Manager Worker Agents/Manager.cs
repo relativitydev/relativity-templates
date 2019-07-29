@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 using Relativity.API;
-using Helpers;
+using $saferootprojectname$.Helpers;
 
 namespace $safeprojectname$
 {

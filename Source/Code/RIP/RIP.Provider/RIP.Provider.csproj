@@ -34,24 +34,24 @@
     <Reference Include="kCura.EventHandler, Version=10.2.170.2, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Relativity.EventHandler.10.2.170.2\lib\net462\kCura.EventHandler.dll</HintPath>
     </Reference>
-    <Reference Include="kCura.IntegrationPoints.Contracts">
-      <HintPath>..\packages\RIP SDK 10.2.23.7\kCura.IntegrationPoints.Contracts.dll</HintPath>
+    <Reference Include="kCura.IntegrationPoints.Contracts, Version=10.2.23.7, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\kCura.IntegrationPoints.Contracts.dll</HintPath>
     </Reference>
-    <Reference Include="kCura.IntegrationPoints.Domain">
-      <HintPath>..\packages\RIP SDK 10.2.23.7\kCura.IntegrationPoints.Domain.dll</HintPath>
+    <Reference Include="kCura.IntegrationPoints.Domain, Version=10.2.23.7, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\kCura.IntegrationPoints.Domain.dll</HintPath>
     </Reference>
-    <Reference Include="kCura.IntegrationPoints.Services.Interfaces.Private">
-      <HintPath>..\packages\RIP SDK 10.2.23.7\kCura.IntegrationPoints.Services.Interfaces.Private.dll</HintPath>
+    <Reference Include="kCura.IntegrationPoints.Services.Interfaces.Private, Version=10.2.23.7, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\kCura.IntegrationPoints.Services.Interfaces.Private.dll</HintPath>
     </Reference>
-    <Reference Include="kCura.IntegrationPoints.SourceProviderInstaller">
-      <HintPath>..\packages\RIP SDK 10.2.23.7\kCura.IntegrationPoints.SourceProviderInstaller.dll</HintPath>
+    <Reference Include="kCura.IntegrationPoints.SourceProviderInstaller, Version=10.2.23.7, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\kCura.IntegrationPoints.SourceProviderInstaller.dll</HintPath>
     </Reference>
     <Reference Include="kCura.Relativity.Client, Version=10.2.170.2, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Relativity.Rsapi.10.2.170.2\lib\net462\kCura.Relativity.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="kCura.ScheduleQueue.Core, Version=9.5.57.2, Culture=neutral, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Marlon\kcd\Presentations\2017-RIP Workshop\96-extradlls\kCura.ScheduleQueue.Core.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -80,10 +80,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="SystemInterface, Version=0.19.0.115, Culture=neutral, PublicKeyToken=fbc3a63dd3cf8960, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Marlon\kcd\Presentations\2017-RIP Workshop\96-extradlls\SystemInterface.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
@@ -96,6 +92,20 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\kCura.IntegrationPoints.Contracts.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DLL\kCura.IntegrationPoints.Domain.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DLL\kCura.IntegrationPoints.Services.Interfaces.Private.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DLL\kCura.IntegrationPoints.SourceProviderInstaller.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

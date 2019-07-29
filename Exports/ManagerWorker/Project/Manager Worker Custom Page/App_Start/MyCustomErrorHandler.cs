@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using Relativity.API;
-using Helpers;
-using Relativity.$safeprojectname$;
+using $saferootprojectname$.Helpers;
+using Relativity.CustomPages;
 using System;
 
 namespace $safeprojectname$
@@ -11,7 +11,7 @@ namespace $safeprojectname$
 		public override void OnException(ExceptionContext filterContext)
 		{
 			base.OnException(filterContext);
-			Int32 caseArtifactId = Relativity.$safeprojectname$.ConnectionHelper.Helper().GetActiveCaseID();
+			Int32 caseArtifactId = Relativity.CustomPages.ConnectionHelper.Helper().GetActiveCaseID();
 
             Helpers.IQuery queryHelper = new Query();
 

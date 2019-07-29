@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Mvc;
-using Relativity.$safeprojectname$;
-using $safeprojectname$.Models;
+using Relativity.CustomPages;
+using $saferootprojectname$.CustomPages.Models;
 
 namespace $safeprojectname$.Controllers
 {

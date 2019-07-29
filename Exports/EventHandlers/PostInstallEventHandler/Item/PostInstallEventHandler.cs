@@ -12,6 +12,7 @@ namespace $rootnamespace$
 	[kCura.EventHandler.CustomAttributes.Description("Post Install EventHandler")]
 	[System.Runtime.InteropServices.Guid("$guid1$")]
 	public class $safeitemname$ : kCura.EventHandler.PostInstallEventHandler
+    {
 		public override Response Execute()
 		{
 			// Update Security Protocol

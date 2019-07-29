@@ -51,7 +51,7 @@
     <Compile Include="WorkerJob.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Helpers\Helpers.csproj">
+    <ProjectReference Include="..\$saferootprojectname$.Helpers\$saferootprojectname$.Helpers.csproj">
       <Project>{8f4cda45-eaf3-4b40-a7a9-f312b7664abc}</Project>
       <Name>Helpers</Name>
     </ProjectReference>

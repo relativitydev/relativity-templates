@@ -45,16 +45,14 @@ namespace $rootnamespace$
 		private int _yesnoartid;
 		private int _wholeNumberArtId;
 
-		[TestFixtureSetUp]
+		[OneTimeSetUp]
 		public void Execute_TestFixtureSetup()
 		{
 			// Update Security Protocol
 			ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
 
 			//Setup for testing
-			string relativityUsername = ""; // Replace with actual Relativity Username
-			string relativityPassword = ""; // Replace with actual Relativity Password
-			TestHelper helper = new TestHelper(relativityUsername, relativityPassword);
+			TestHelper helper = new TestHelper(ConfigurationHelper.ADMIN_USERNAME, ConfigurationHelper.DEFAULT_PASSWORD);
 			servicesManager = helper.GetServicesManager();
 			_eddsDbContext = helper.GetDBContext(-1);
 
@@ -103,7 +101,7 @@ namespace $rootnamespace$
 		}
 
 
-		[TestFixtureTearDown]
+		[OneTimeTearDown]
 		public void Execute_TestFixtureTeardown()
 		{
 			//Delete Workspace
