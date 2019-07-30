@@ -1,5 +1,5 @@
 # relativity-templates
-The Relativity Templates are compatible with Visual Studio 2012, 2013, 2015 and 2017 and consist of the following:
+The Relativity Templates are compatible with Visual Studio 2012, 2013, 2015, 2017, and 2019 and consist of the following:
 - Agent template
 - Custom page templates
     - Custom page MVC 5 template
