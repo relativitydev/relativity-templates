@@ -7,7 +7,7 @@ namespace $safeprojectname$
 {
     [Description("My Custom Provider - Uninstall")]
     [RunOnce(false)]
-    [Guid("$guid1$")]
+    [Guid("3113E395-E8C9-4CF8-883D-8E3BF35C0A19")]
     public class RemoveMyCustomProvider : IntegrationPointSourceProviderUninstaller
     {
         public RemoveMyCustomProvider()

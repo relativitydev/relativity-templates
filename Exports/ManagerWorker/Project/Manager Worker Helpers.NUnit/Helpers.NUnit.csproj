@@ -52,8 +52,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\$saferootprojectname$.Helpers\$saferootprojectname$.Helpers.csproj">
-      <Project>{8f4cda45-eaf3-4b40-a7a9-f312b7664abc}</Project>
-      <Name>$saferootprojectname$.Helpers</Name>
+      <Project>{8F4CDA45-EAF3-4B40-A7A9-F312B7664ABC}</Project>
+      <Name>Helpers</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -2,6 +2,7 @@
 using Relativity.API;
 using Relativity.Services.Objects;
 using System;
+using System.Net;
 
 namespace Relativity_Custom_Page_Form
 {
@@ -13,6 +14,9 @@ namespace Relativity_Custom_Page_Form
 
 			try
 			{
+				// Update Security Protocol
+				ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+
 				//Gets the user ID.
 				int userArtifactId = Relativity.CustomPages.ConnectionHelper.Helper().GetAuthenticationManager().UserInfo.ArtifactID;
 				//Gets the user ID to use for auditing purposes.

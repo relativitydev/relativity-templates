@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using kCura.EventHandler.CustomAttributes;
+using kCura.IntegrationPoints.Contracts;
 using kCura.IntegrationPoints.SourceProviderInstaller;
 
 namespace RIP.Provider

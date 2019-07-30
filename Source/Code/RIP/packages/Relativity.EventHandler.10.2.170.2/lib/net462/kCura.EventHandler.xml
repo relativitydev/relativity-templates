@@ -1,0 +1,2436 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+kCura.EventHandler
+</name>
+</assembly>
+<members>
+<member name="T:kCura.EventHandler.Application">
+ <summary>
+ Creates application instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.Application.ArtifactID">
+ <summary>
+ Contains unique identifier of the application within Relativity system.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Application.ApplicationPath">
+ <summary>
+ Contains a physical path to the application resource files.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Application.ApplicationUrl">
+ <summary>
+ Contains URL of the application.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.Application.#ctor(System.Int32,System.String,System.String)">
+ <summary>
+ Initializes a new instance of the Application class.
+ </summary>
+ <param name="artifactID">Integer number uniquely identifying an application.</param>
+ <param name="applicationPath">Path to the application resource files.</param>
+ <param name="applicationUrl">The URL of an application.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.InstallEventHandlerBase">
+ <summary>
+ Base class for install event handler instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.InstallEventHandlerBase.InitializeLifetimeService">
+ <summary>
+ Returns an object used to control the lifetime policy for this instance
+ </summary>
+ <returns>Returns object of type System.Runtime.Remoting.Lifetime.ILease</returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.InstallEventHandlerBase.CurrentVersion">
+ <summary>
+ Current Version of the application in the workspace.
+ </summary>
+ <value>Returns System.Version object.</value>
+ <returns></returns>
+ <remarks>If first time install, version will be Nothing/null.</remarks>
+</member>
+<member name="P:kCura.EventHandler.InstallEventHandlerBase.VersionInstalling">
+ <summary>
+ Version of the application being installed.
+ </summary>
+ <value></value>
+ <returns>Returns System.Version object.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.InstallEventHandlerBase.Dirty">
+ <summary>
+ Boolean to indicate if the application had been unlocked for any reason since the last install.
+ </summary>
+ <value></value>
+ <returns>Returns boolean value.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.InstallEventHandlerBase.ApplicationArtifactId">
+ <summary>
+ ArtifactId of the Application in the workspace.
+ </summary>
+ <value></value>
+ <returns>Returns integer value indicating artifact id of an application being installed.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.InstallEventHandlerBase.SetInstallProperties(System.Version,System.Version,System.Boolean,System.Int32,System.Int32)">
+ <summary>
+ Sets needed parameters for install event handlers.
+ </summary>
+ <param name="currentVersion">Current version of an application being present in an environment.</param>
+ <param name="versionInstalling">Version of an application being installed.</param>
+ <param name="dirty">Boolean flag indicating if an application has been modified.</param>
+ <param name="applcaitonArtifactId">Integer value indicating an artifact id of an application.</param>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.InstallEventHandlerBase.Helper">
+ <summary>
+ Gets and/or sets the Helper property of the event hendler which returns IEHHelper object from Relativity.API.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.InstallEventHandlerBase.Execute">
+ <summary>
+ Execute function that is called when the application is installed.
+ </summary>
+ <returns>An object of type kCura.EventHandler.Response</returns>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.PostInstallEventHandler">
+ <summary>
+ Creates post install event handler instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.PreInstallEventHandler">
+ <summary>
+ Creates pre install event handler instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.PreUninstallEventHandler">
+ <summary>
+ Creates pre uninstall event handler instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.Artifact">
+ <summary>
+ Creates artifact instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.Artifact.ArtifactID">
+ <summary>
+ Gets the artifact ID.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Artifact.ParentArtifactID">
+ <summary>
+ Gets the parent artifact ID.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Artifact.ArtifactTypeID">
+ <summary>
+ Gets the artifact type ID.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Artifact.IsNew">
+ <summary>
+ Gets the IsNew property.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Artifact.Fields">
+ <summary>
+ Gets the fields collection.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Artifact.ArtifactTypeName">
+ <summary>
+ Gets the artifact type name.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.Artifact.#ctor(System.Int32,System.Nullable{System.Int32},System.Int32,System.String,System.Boolean,kCura.EventHandler.FieldCollection)">
+ <summary>
+ Initializes a new instance of the Artifact class.
+ </summary>
+ <param name="artifactID">Integer value identifying an artifact.</param>
+ <param name="parentArtifactID">Integer value identifying a parent object of an artifact.</param>
+ <param name="artifactTypeID">Integer value identifying a type of an artifact.</param>
+ <param name="artifactTypeName">String value identifying a type of an artifact.</param>
+ <param name="isNew">Boolean flag identifying if the artifact object is new.</param>
+ <param name="fields">Field collection which should be associated with a given artifact.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.ConsoleControlTitle">
+ <summary>
+ Creates a Blue Console Title
+ </summary>
+ <remarks>Used by Analytics-Core.
+ Note, can be broken by a change to CSS
+ </remarks>
+</member>
+<member name="M:kCura.EventHandler.ConsoleControlTitle.#ctor(System.String)">
+ <summary>
+ Initializes a new instance of the ConsoleHeader class.
+ </summary>
+ <param name="title">Text of a <see cref="T:kCura.EventHandler.ConsoleHeader">ConsoleHeader</see>.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.CustomAttributes.FileName">
+ <summary>
+ Defines a file name tag for event handlers.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.CustomAttributes.FileName.FileName">
+ <summary>
+ Returns the file name for the event handler.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.CustomAttributes.FileName.#ctor(System.String)">
+ <summary>
+ Initializes a new instance of the FileName class.
+ </summary>
+ <param name="fileName">String value used to describe the file name.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.CustomAttributes.RunTarget">
+ <summary>
+ Defines a runtarget tag for event handlers.
+ </summary>
+ <remarks>RunTarget attribute is an enum type and its possible values are: Workspace or Environment.</remarks>
+</member>
+<member name="P:kCura.EventHandler.CustomAttributes.RunTarget.RunTarget">
+ <summary>
+ Returns the <see cref="T:kCura.EventHandler.Helper.RunTargets">run target</see> object for event handlers.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.CustomAttributes.RunTarget.#ctor(kCura.EventHandler.Helper.RunTargets)">
+ <summary>
+ Initializes a new instance of the RunTarget class.
+ </summary>
+ <param name="runTarget"><see cref="T:kCura.EventHandler.Helper.RunTargets">RunTarget</see> value to specify run on each workspace or at the instance level.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.CustomAttributes.Schedule">
+ <summary>
+ Defines a run Schedule for the statistics event handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.CustomAttributes.Schedule.Schedule">
+ <summary>
+ Returns the schedule for the statistics event handler.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.CustomAttributes.Schedule.#ctor(System.String)">
+ <summary>
+ Initializes a new instance of the Schedule Class.
+ </summary>
+ <param name="schedule">Schedule value to initialize the class.</param>
+ <remarks>Schedule is defined as a crontab expression.</remarks>
+</member>
+<member name="T:kCura.EventHandler.CustomAttributes.TryAgain">
+ <summary>
+ Defines a Try Again tag for statistics event handlers.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.CustomAttributes.TryAgain.TryAgain">
+ <summary>
+ Returns if the the event handler should run again if previously errored.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.CustomAttributes.TryAgain.#ctor(System.Boolean)">
+ <summary>
+ Initializes a new instance of the Try Again class.
+ </summary>
+ <param name="tryAgain">Boolean value used to flag the event handler to try again after an unsuccessful run.</param>
+ <remarks>Default value is set to False which translates to an event handler will wait to execute until its next run time comes.</remarks>
+</member>
+<member name="T:kCura.EventHandler.CustomAttributes.EHGuid">
+ <summary>
+ Defines a guid tag for event handlers.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.CustomAttributes.EHGuid.EHGuid">
+ <summary>
+ Returns the guid for the event handler.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.CustomAttributes.EHGuid.#ctor(System.Guid)">
+ <summary>
+ Initializes a new instance of the EHGuid class.
+ </summary>
+ <param name="eHGuid">Guid value used to identify the event handler.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.CustomAttributes.RunOnce">
+ <summary>
+ Defines a Run Once tag for event handlers.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.CustomAttributes.RunOnce.RunOnce">
+ <summary>
+ Returns if the the event handler should only run once.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.CustomAttributes.RunOnce.#ctor(System.Boolean)">
+ <summary>
+ Initializes a new instance of the Run Once class.
+ </summary>
+ <param name="runOnce">Boolean value used to flag the event handler to only run once.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.CustomAttributes.Description">
+ <summary>
+ Defines a description tag for event handlers.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.CustomAttributes.Description.Description">
+ <summary>
+ Returns the description for the event handler.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.CustomAttributes.Description.#ctor(System.String)">
+ <summary>
+ Initializes a new instance of the Description class.
+ </summary>
+ <param name="description">String value used to describe the event handler.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.FileValue">
+ <summary>
+ Creates file field value instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.FileValue.FileContents">
+ <summary>
+ Returns the file contents created in the constructor
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.FileValue.FileName">
+ <summary>
+ Returns the name of the file.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.FileValue.FilePath">
+ <summary>
+ Returns the fully qualified path of the file.
+ </summary>
+ <value></value>
+ <returns>Returns the path of the file on disk.</returns>
+ <remarks> On PreSave event handlers, if a new file has been uploaded, this will be the path provided by the browser. Else, it will be the path to the file as stored in Relativity. If the user creates a new FileValue object during an EventHandler operation, this will be an empty string.</remarks>
+</member>
+<member name="P:kCura.EventHandler.FileValue.FileStream">
+ <summary>
+ Returns the stream of the file.
+ </summary>
+ <returns>Returns a stream of the file.</returns>
+ <remarks>Each invocation of this returns a new stream. The caller is responsible for properly disposing of it.</remarks>
+</member>
+<member name="M:kCura.EventHandler.FileValue.#ctor(System.String,System.IO.Stream)">
+ <summary>
+ Initializes a new instance of the FileValue class.
+ </summary>
+ <param name="fileName">The display name to associate with the new file.</param>
+ <param name="inputStream">The input stream of the data to store as the new file. The stream must be readable and the total length of the content must not exceed 1GB.</param>
+ <remarks>The contents of the stream are stored internally as a byte array. The caller is responsible for properly disposing of the input stream provided.</remarks>
+</member>
+<member name="M:kCura.EventHandler.FileValue.#ctor(System.String,System.String,System.IO.Stream)">
+ <summary>
+ Initializes a new instance of the FileValue class.
+ </summary>
+ <param name="filePath">The fully qualified path to the file uploaded.</param>
+ <param name="fileName">The name of the file uploaded.</param>
+ <param name="inputStream">The stream of the file. The stream must be readable.</param>
+ <remarks>This constructor is intended for internal use only. It will be called by Relativity when the File field has a file that was just uploaded by the user.</remarks>
+</member>
+<member name="M:kCura.EventHandler.FileValue.#ctor(System.String,System.String,kCura.EventHandler.IStreamFactory)">
+ <summary>
+ Initializes a new instance of the FileValue class.
+ </summary>
+ <param name="fileName">The name of the file.</param>
+ <param name="filePath">The path of the file on disk.</param>
+ <param name="streamFactory">The factory used to generate FileStream.</param>
+ <remarks>This constructor is intended for internal use only. It will be called by Relativity when the File field references an existing file in the Relativity file share.</remarks>
+</member>
+<member name="T:kCura.EventHandler.ICanExecuteWithLimitedContext">
+ <summary>
+ Functions as a marker interface for executing event handlers without context information through the Object Manager service.
+ </summary>
+ <remarks>The Object Manager service includes operations for create, read, and update, which require a CallingContext object. This object contains information about the web context from which the event handler is being called, such as the originator of the call, the page mode, and the related layout. If this context information isn’t required, you can set the CallingContext object to null, but your event handler must implement the ICanExecuteWithLimitedContext interface. For more information about this service, see the Relativity.Services.Object  and Relativity.Services.Objects.Models.WebContent namespaces in the Relativity Services API.</remarks>
+</member>
+<member name="T:kCura.EventHandler.ISuppressDelete">
+ <summary>
+ When implemented by a PreCascadeDeleteEventHandler, signals that the event handler will execute the delete instead of Relativity.
+ With this event handler, default delete behavior can be continued as normal by adding the ContinueDefaultDelete PostExecuteAction to the event hander's Execute response
+ </summary>
+</member>
+<member name="T:kCura.EventHandler.PostCopyEventHandler">
+ <summary>
+ Defines a Post Copy event handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PostCopyEventHandler.Execute">
+ <summary>
+ Returns an event handler response object upon event handler execution.
+ </summary>
+ <returns>Returns an event handler response object upon event handler execution.</returns>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.PreCopyEventHandler">
+ <summary>
+ Defines a Pre Copy event handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PreCopyEventHandler.Execute">
+ <summary>
+ Returns an event handler response object upon event handler execution.
+ </summary>
+ <returns>Returns an event handler response object upon event handler execution.</returns>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.SaveEventHandler">
+ <summary>
+ Defines a Save event handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.SaveEventHandler.Execute">
+ <summary>
+ Returns an event handler response object upon event handler execution.
+ </summary>
+ <returns>Returns an event handler response object upon event handler execution.</returns>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.PostExecuteAction.ContinueDefaultDelete">
+ <summary>
+ For PreCascadeDeleteEventHandlers that implement InsteadOfDeleteHandler, this action will instruct Relativity to execute its default delete action
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PostExecuteAction.ContinueDefaultDelete.#ctor">
+ <summary>
+ Default constructor
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.PostExecuteAction.ContinueDefaultSave">
+ <summary>
+ Will continue with the default save action
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PostExecuteAction.ContinueDefaultSave.#ctor">
+ <summary>
+ Initializes a new instance of the ContinueDefaultSave class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.PostExecuteAction.Base">
+ <summary>
+ This is a base class for Post Execution Actions.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PostExecuteAction.Base.#ctor">
+ <summary>
+ Initializes a new instance of the Base class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.PostExecuteAction.RedirectToLayout">
+ <summary>
+ Creates redirects to layouts.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PostExecuteAction.RedirectToLayout.#ctor(System.Int32,kCura.EventHandler.Helper.PageMode)">
+ <summary>
+ Initializes a new instance of the RedirectToLayout class.
+ </summary>
+ <param name="layoutArtifactID">Integer value indicating the artifact ID for a layout.</param>
+ <param name="pageMode">Enum value indicating the page mode, for more information click <see cref="P:kCura.EventHandler.PostExecuteAction.RedirectToLayout.PageMode">here</see>.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PostExecuteAction.RedirectToLayout.#ctor(System.String,kCura.EventHandler.Helper.PageMode)">
+ <summary>
+ Initializes a new instance of the RedirectToLayout class.
+ </summary>
+ <param name="layoutName">String value indicating the name of a layout.</param>
+ <param name="pageMode">Enum value indicating the page mode, for more information click <see cref="P:kCura.EventHandler.PostExecuteAction.RedirectToLayout.PageMode">here</see>.</param>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.PostExecuteAction.RedirectToLayout.LayoutArtifactID">
+ <summary>
+ Gets and/or sets a layout artifact ID for the RedirectToLayout instance.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.PostExecuteAction.RedirectToLayout.PageMode">
+ <summary>
+ Gets and/or sets an integer value for the page mode of RedirectToLayout instance.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.PostExecuteAction.RedirectToLayout.Name">
+ <summary>
+ Gets and/or sets the name for RedirectToLayout instance.
+ </summary>
+</member>
+<member name="T:kCura.EventHandler.StatisticsEventHandler.CSVStatisticsBuilder">
+ <summary>
+ Defines CSV output for Statistics event handlers.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.StatisticsEventHandler.CSVStatisticsBuilder.DataTable">
+ <summary>
+ Gets or sets <see cref="T:System.Data.DataTable">DataTable</see> object, which represents a table containing data that is saved as a CSV output file.
+ </summary>
+ <value></value>
+ <returns>Returns <see cref="T:System.Data.DataTable">DataTable</see> object.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.StatisticsEventHandler.CSVStatisticsBuilder.#ctor">
+ <summary>
+ Constructs new instance of <see cref="T:kCura.EventHandler.StatisticsEventHandler.CSVStatisticsBuilder">CSVStatisticsBuilder</see> class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.StatisticsEventHandler.IStatisticsBuilder">
+ <summary>
+ Defines the methods and properties that a class of type Statistics event handler must implement.
+ </summary>
+ <remarks>The types of supported Statistics event handlers include XML and CSV.  These types refer to the format used for the output file created by the Statistics event handler.</remarks>
+</member>
+<member name="T:kCura.EventHandler.StatisticsEventHandler.IStatisticsResult">
+ <summary>
+ Defines the methods and properties that a class of type Statistics event handler must implement for a response object.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.StatisticsEventHandler.StatisticsEventHandler`1">
+ <summary>
+ Defines the base class for all Statistics event handlers.
+ </summary>
+ <typeparam name="T">The type parameter <see cref="T:kCura.EventHandler.StatisticsEventHandler.IStatisticsBuilder">IStatisticsBuilder</see> defines the Statistics event handler type, whether it uses XML or CSV as the format for the output file.</typeparam>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.StatisticsEventHandler.StatisticsEventHandler`1.CurrentTime">
+ <summary>
+ Gets or sets the current time.
+ </summary>
+ <value>DateTime object holds the current date and time.</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.StatisticsEventHandler.StatisticsEventHandler`1.LastSucessfulTime">
+ <summary>
+ Gets or sets the date and time for the last successful execution of a Statistics event handler.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.StatisticsEventHandler.StatisticsEventHandler`1.Helper">
+ <summary>
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.StatisticsEventHandler.StatisticsEventHandler`1.Execute(`0)">
+ <summary>
+ Base method for the execution of a Statistics event handler.
+ </summary>
+ <param name="statBuilder">The type parameter <see cref="T:kCura.EventHandler.StatisticsEventHandler.IStatisticsBuilder">IStatisticsBuilder</see> defines the Statistics event handler type, whether it uses XML or CSV as the format for the output file.</param>
+ <returns><see cref="T:kCura.EventHandler.StatisticsEventHandler.IStatisticsResult">IStatisticsResult</see> type of object defining the type of Statistics event handler.</returns>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.StatisticsEventHandler.StatisticsResult">
+ <summary>
+ Defines a response object for Statistics event handlers.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.StatisticsEventHandler.XMLStatisticsBuilder">
+ <summary>
+ Defines XML output of Statistics event handlers.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.StatisticsEventHandler.XMLStatisticsBuilder.#ctor">
+ <summary>
+ Constructs a new instance of <see cref="T:kCura.EventHandler.StatisticsEventHandler.XMLStatisticsBuilder">XMLStatisticsBuilder</see> class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.StatisticsEventHandler.XMLStatisticsBuilder.XmlDocument">
+ <summary>
+ Gets or sets the <see cref="T:System.Xml.Linq.XDocument">XDocument</see> object, which represents an XML document that is saved as an XML output file.
+ </summary>
+ <value></value>
+ <returns>Returns <see cref="T:System.Xml.Linq.XDocument">XDocument</see> object.</returns>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.PreWorkspaceDisableEventHandlerBase">
+ <summary>
+ Defines Pre Workspace Disable Event Handler base class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.PreWorkspaceDeleteEventHandlerBase">
+ <summary>
+ Defines Pre Workspace Delete Event Handler base class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.WorkspaceEventHandlerBase">
+ <summary>
+ Base class for Workspace Event Handlers.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.WorkspaceEventHandlerBase.Helper">
+ <summary>
+ Gets and/or sets the Helper property of the event handler which returns IEHHelper object from Relativity.API.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.WorkspaceEventHandlerBase.Execute">
+ <summary>
+ Executes function that is called when the application is installed.
+ </summary>
+ <returns>Returns an event handler response object upon event handler execution.</returns>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.PostWorkspaceCreateEventHandlerBase">
+ <summary>
+ Defines Post Workspace Create Event Handler base class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.PostWorkspaceCreateEventHandlerBase.TemplateWorkspaceID">
+ <summary>
+ Variable holding Workspace artifact id value.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.Constants">
+ <summary>
+ Contains default CSS class names for a variety of console components.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Constants.LinkButtonEnabledCssClass">
+ <summary>
+ The default class for a console link button in Relativity.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Constants.LinkButtonCssClass">
+ <summary>
+ The default class for a console link button in Relativity.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Constants.LinkButtonDisabledCssClass">
+ <summary>
+ The default class for a disabled console link button in Relativity.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Constants.LinkButtonSelectedCssClass">
+ <summary>
+ The default class for a selected console link button in Relativity.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Constants.LinkButtonDivCssClass">
+ <summary>
+ The default div class for console links.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Constants.EnabledButtonCssClass">
+ <summary>
+ The default class for a console button when it's enabled in Relativity.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Constants.DisabledButtonCssClass">
+ <summary>
+ The default class for a console button when it's disabled in Relativity.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Constants.HiddenButtonCssClass">
+ <summary>
+ The default class for a console button when it's hidden in Relativity.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Constants.DestructiveButtonCssClass">
+ <summary>
+ The default class for a console button when it will cause the job to be interrupted and non-recoverable
+ (for example, Stop OCR).
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Constants.ConsoleHeaderCssClass">
+ <summary>
+ The default class for the console header.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Constants.ConsoleSeparatorCssClass">
+ <summary>
+ The default class for a console separator.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Constants.ConsoleTitleCssClass">
+ <summary>
+ The default class for the console control title.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Constants.ConsoleControlCssClass">
+ <summary>
+ The default CSS class for the console control div (the div that contains all of the buttons).
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.Constants.#ctor">
+ <summary>
+ Initializes a new instance of the Constants class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.ConsoleLinkButton">
+ <summary>
+ Creates a styled link button with the <see cref="F:kCura.EventHandler.Constants.LinkButtonCssClass">LinkButtonCssClass</see> default CSS class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.ConsoleLinkButton.#ctor">
+ <summary>
+ Initializes a new instance of the ConsoleLinkButton class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.ConsoleLinkButton.UpdateCssClassForEnabled(System.Boolean)">
+ <summary>
+ Updates CSS class of a console link button based on its enabled property.
+ </summary>
+ <param name="isEnabled">Boolean flag indicating whether a console link button is enabled or not.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.IInstallEventHandlerProperties">
+ <summary>
+ Interface that defines storage properties needed by the InstallEventHandlerBase class
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.IInstallEventHandlerProperties.CurrentVersion">
+ <summary>
+ Gets a current version of the application in the workspace.  If first time install, version will be Nothing/null.
+ </summary>
+ <returns><see cref="T:System.Version">Version</see> object.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.IInstallEventHandlerProperties.VersionInstalling">
+ <summary>
+ Gets a version of the application being installed.
+ </summary>
+ <returns><see cref="T:System.Version">Version</see> object.</returns>
+</member>
+<member name="P:kCura.EventHandler.IInstallEventHandlerProperties.Dirty">
+ <summary>
+ Gets and/or sets a boolean flag to indicate if the application had been unlocked for any reason since the last install.
+ </summary>
+ <returns>True/False</returns>
+</member>
+<member name="P:kCura.EventHandler.IInstallEventHandlerProperties.ApplicationArtifactId">
+ <summary>
+ Gest and/or sets artifact id of the application in the workspace.
+ </summary>
+ <returns>Integer value indicating artifact id of an application.</returns>
+</member>
+<member name="M:kCura.EventHandler.IInstallEventHandlerProperties.SetInstallProperties(System.Version,System.Version,System.Boolean,System.Int32,System.Int32)">
+ <summary>
+ Method which sets installation properties of an application.
+ </summary>
+ <param name="currentVersion">String value indicating current version in a workspace of an application to be installed.</param>
+ <param name="versionInstalling">String value indicating a version of an application being installed.</param>
+ <param name="dirty">Boolean flag indicating if an application has been unlocked.</param>
+ <param name="applicationArtifactId">Integer value indicating artifact id of an application being installed.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.IExecutable">
+ <summary>
+ Allows event handlers to run execute method.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.IExecutable.Execute">
+ <summary>
+ Returns an event handler response object upon event handler execution.
+ </summary>
+ <returns>Returns an event handler response object upon event handler execution.</returns>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.IRequiredFields">
+ <summary>
+ Allows event handlers to get required fields property.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.IRequiredFields.RequiredFields">
+ <summary>
+ Returns a collection of required fields of the event handler.
+ </summary>
+</member>
+<member name="T:kCura.EventHandler.ConsoleEventHandler">
+ <summary>
+ Creates console event handler instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.ConsoleEventHandler.PageEvent">
+ <summary>
+ Page events; currently only Load and PreRender are handled.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.ConsoleEventHandler.PageEvent.Load">
+ <summary>
+ OnLoad page event.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.ConsoleEventHandler.PageEvent.PreRender">
+ <summary>
+ OnPreRender page event.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.ConsoleEventHandler.GetConsole(kCura.EventHandler.ConsoleEventHandler.PageEvent)">
+ <summary>
+ Returns a console instance based on a page event.
+ </summary>
+ <param name="pageEvent">Page event can be either Load or PreRender.</param>
+ <returns>Returns a <see cref="T:kCura.EventHandler.Console">Console</see> instance based on a page event.</returns>
+</member>
+<member name="M:kCura.EventHandler.ConsoleEventHandler.OnButtonClick(kCura.EventHandler.ConsoleButton)">
+ <summary>
+ Handles a console button click event.
+ </summary>
+ <param name="consoleButton">Console button control for which a method should handle a click event.</param>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.ConsoleEventHandler.RequiredFields">
+ <summary>
+ Returns a collection of required fields of the event handler.
+ </summary>
+</member>
+<member name="T:kCura.EventHandler.EventHandlerBase">
+ <summary>
+ This is a base class for event handlers.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.EventHandlerBase.InitializeLifetimeService">
+ <summary>
+ Returns an object used to control the lifetime policy for this instance
+ </summary>
+ <returns>Returns object of type System.Runtime.Remoting.Lifetime.ILease</returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.EventHandlerBase.PageMode">
+ <summary>
+ Gets and/or sets a page mode of the event handler.
+ </summary>
+ <value>Possible values: Edit, List, View and Unknown.</value>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.EventHandlerBase.ActiveLayout">
+ <summary>
+ Gets and/or sets an active layout of the event handler.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.EventHandlerBase.ActiveArtifact">
+ <summary>
+ Gets and/or sets an active artifact of the event handler.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.EventHandlerBase.ActiveUser">
+ <summary>
+ Gets and/or sets an active user of the event handler.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.EventHandlerBase.Application">
+ <summary>
+ Gets and/or sets an application of the event handler.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.EventHandlerBase.DatabaseConnection">
+ <summary>
+ Returns a database connection of the event handler.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.EventHandlerBase.MasterDatabaseConnection">
+ <summary>
+ Returns a master database connection of the event handler.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.EventHandlerBase.Helper">
+ <summary>
+ Gets and/or sets the Helper property of the event hendler which returns IEHHelper object from Relativity.API.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.EventHandlerBase.Description">
+ <summary>
+ This property is being deprecated.  Please assign a kCura.EventHandler.CustomAttributes.Description attribute to your class.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.EventHandlerBase.SetDatabaseConnection(System.Data.SqlClient.SqlConnection,System.String,System.Collections.Hashtable)">
+ <summary>
+ Sets a database connection for a given event handler.
+ </summary>
+ <param name="connection">String value containing SQL connection properties.</param>
+ <param name="masterDbServerName">Name of a master database server.</param>
+ <param name="dbLocationCache">Hashtable specifying a database cache location.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.EventHandlerBase.SetMasterDatabaseConnection(System.Data.SqlClient.SqlConnection,System.String,System.Collections.Hashtable)">
+ <summary>
+ Sets a master database connection for a given event handler.
+ </summary>
+ <param name="connection">String value containing SQL connection properties.</param>
+ <param name="masterDbServerName">Name of a master database server.</param>
+ <param name="dbLocationCache">Hashtable specifying a database cache location.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.EventHandlerBase.SetSessionToken(System.String)">
+ <summary>
+ Sets an authentication session token for a given event handler.
+ </summary>
+ <param name="sessionToken">String value representing a session token.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.EventHandlerBase.GetAuthenticationToken">
+ <summary>
+ Returns an authentication session token used for an event handler interaction with Relativity.
+ </summary>
+ <returns>Returns an authentication session token used for an event handler interaction with Relativity.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.EventHandlerBase.GetArtifactIdByGuid(System.Guid)">
+ <summary>
+ Returns the corresponding artifact ID for the given guid identifier.  Throws an exception if the artifact guid is not found.
+ </summary>
+ <param name="Guid">Guid value representing the unique id of the artifact</param>
+ <returns>The integer value representing the artifact id</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.EventHandlerBase.GetGuidsByArtifactId(System.Int32)">
+ <summary>
+ Returns the corresponding artifact guids for the given Artifact ID.
+ </summary>
+ <param name="artifactID">Guid value representing the unique id of the artifact</param>
+ <returns>An array of artifact guids.  If the ArtifactID is not found, an empty array is returned.</returns>
+ <remarks>Within a workspace, an Artifact ID can have multiple artifact guids.</remarks>
+</member>
+<member name="M:kCura.EventHandler.EventHandlerBase.ExecuteParameterizedSQLStatementAsReader(Relativity.API.IDBContext,System.String,System.Collections.Generic.IEnumerable{System.Data.SqlClient.SqlParameter})">
+ <summary>
+ This internal method allows GetGuidsByArtifactId to be unit-tested.
+ </summary>
+ <param name="context"></param>
+ <param name="queryStr"></param>
+ <param name="parameters"></param>
+ <returns></returns>
+</member>
+<member name="T:kCura.EventHandler.PageInteractionEventHandler">
+ <summary>
+ Defines Page Interaction Event Handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.PageInteractionEventHandler.RequiredFields">
+ <summary>
+ Gets a field collection specified for the event handler.
+ </summary>
+ <returns>Null by default; override as necessary</returns>
+</member>
+<member name="P:kCura.EventHandler.PageInteractionEventHandler.QuerystringFingerprintKey">
+ <summary>
+ Gets a key for querystring fingerprint.
+ </summary>
+ <returns>Key for querystring fingerprinting of linked client resources; "v" unless overridden</returns>
+</member>
+<member name="P:kCura.EventHandler.PageInteractionEventHandler.QuerystringFingerprintValue">
+ <summary>
+ Gets the executing assembly version.
+ </summary>
+ <returns>By default, the executing assembly's version; override if different behavior is desired.</returns>
+</member>
+<member name="P:kCura.EventHandler.PageInteractionEventHandler.StartupScripts">
+ <summary>
+ Gets a list of startup script blocks registered on a page.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.PageInteractionEventHandler.ClientScripts">
+ <summary>
+ Gets a list of client script blocks registered on a page.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.PageInteractionEventHandler.ScriptFileNames">
+ <summary>
+ Gets a list of JavaScript file names to register with the web application. These files must be added to the Relativity application associated with this EventHandler and will be hosted on Relativity web servers.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:kCura.EventHandler.PageInteractionEventHandler.AdditionalHostedFileNames">
+ <summary>
+ Gets a list of additional file names that need to be hosted for the PageInteraction EventHandler to properly execute. These files must be added to the Relativity Application associated with this EventHandler and will be hosted on Relativity web servers.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:kCura.EventHandler.PageInteractionEventHandler.PopulateScriptBlocks">
+ <summary>
+ Populates script block section of the page.
+ </summary>
+ <returns>Returns an event handler response object upon event handler execution.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PageInteractionEventHandler.RegisterLinkedCss(System.String)">
+ <summary>
+ Registers css file on a page.
+ </summary>
+ <param name="cssFileUri">File path to the css file.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PageInteractionEventHandler.RegisterLinkedClientScript(System.String)">
+ <summary>
+ Registers client script section on a page.
+ </summary>
+ <param name="scriptFileUri">File path to the script file.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PageInteractionEventHandler.RegisterLinkedStartupScript(System.String)">
+ <summary>
+ Registers startup script on a page.
+ </summary>
+ <param name="scriptFileUri">File path to the script file.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PageInteractionEventHandler.RegisterClientScriptBlock(kCura.EventHandler.ScriptBlock)">
+ <summary>
+ Registers client script block on a page.
+ </summary>
+ <param name="script">Name of the script block.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PageInteractionEventHandler.RegisterStartupScriptBlock(kCura.EventHandler.ScriptBlock)">
+ <summary>
+ Registers startup script block on a page.
+ </summary>
+ <param name="script">Name of the script block.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.PostSaveEventHandler">
+ <summary>
+ Defines a Post Save event handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PostSaveEventHandler.Execute">
+ <summary>
+ Returns an event handler response object upon event handler execution.
+ </summary>
+ <returns>Returns an event handler response object upon event handler execution.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.PostSaveEventHandler.RequiredFields">
+ <summary>
+ Returns a collection of required fields of the event handler.
+ </summary>
+</member>
+<member name="T:kCura.EventHandler.PreCascadeDeleteEventHandler">
+ <summary>
+ Defines a Pre Cascade Delete event handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PreCascadeDeleteEventHandler.Commit">
+ <summary>
+ Commits a database transaction used for a Pre Cascade Delete event handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PreCascadeDeleteEventHandler.Rollback">
+ <summary>
+ Rolls back a database transaction used for a Pre Cascade Delete event handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.PreCascadeDeleteEventHandler.TempTableNameWithParentArtifactsToDelete">
+ <summary>
+ Gets and/or sets a temporary table name which contains parent artifact IDs that are marked for deletion.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.PreCascadeDeleteEventHandler.Execute">
+ <summary>
+ Returns an event handler response object upon event handler execution.
+ </summary>
+ <returns>Returns an event handler response object upon event handler execution.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.PreCascadeDeleteEventHandler.RequiredFields">
+ <summary>
+ Returns a collection of required fields of the event handler.
+ </summary>
+</member>
+<member name="T:kCura.EventHandler.PreDeleteEventHandler">
+ <summary>
+ Defines a Pre Delete event handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PreDeleteEventHandler.Commit">
+ <summary>
+ Commits a database transaction used for a Pre Delete event handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PreDeleteEventHandler.Rollback">
+ <summary>
+ Rolls back a database transaction used for a Pre Delete event handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PreDeleteEventHandler.Execute">
+ <summary>
+ Returns an event handler response object upon event handler execution.
+ </summary>
+ <returns>Returns an event handler response object upon event handler execution.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.PreDeleteEventHandler.RequiredFields">
+ <summary>
+ Returns a collection of required fields of the event handler.
+ </summary>
+</member>
+<member name="T:kCura.EventHandler.PreLoadEventHandler">
+ <summary>
+ Defines a Pre Load event handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PreLoadEventHandler.Execute">
+ <summary>
+ Returns an event handler response object upon event handler execution.
+ </summary>
+ <returns>Returns an event handler response object upon event handler execution.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.PreLoadEventHandler.RequiredFields">
+ <summary>
+ Returns a collection of required fields of the event handler.
+ </summary>
+</member>
+<member name="T:kCura.EventHandler.PreMassDeleteEventHandler">
+ <summary>
+ Defines a Pre Mass Delete event handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PreMassDeleteEventHandler.Commit">
+ <summary>
+ Commits a database transaction used for a Pre Mass Delete event handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PreMassDeleteEventHandler.Rollback">
+ <summary>
+ Rolls back a database transaction used for a Pre Mass Delete event handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.PreMassDeleteEventHandler.TempTableNameWithParentArtifactsToDelete">
+ <summary>
+ Gets and/or sets a temporary table name which contains parent artifact IDs that are marked for deletion.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.PreMassDeleteEventHandler.RequiredFields">
+ <summary>
+ Override this to Get/Set the list of required fields for this event handler
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.PreMassDeleteEventHandler.Execute">
+ <summary>
+ Override this method to add custom code to handle this event
+ </summary>
+ <returns>Returns an object of type kCura.EventHandler.Response</returns>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.PreSaveEventHandler">
+ <summary>
+ Defines a Pre Save event handler.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.PreSaveEventHandler.Execute">
+ <summary>
+ Returns an event handler response object upon event handler execution.
+ </summary>
+ <returns>Returns an event handler response object upon event handler execution.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.PreSaveEventHandler.RequiredFields">
+ <summary>
+ Returns a collection of required fields of the event handler.
+ </summary>
+</member>
+<member name="T:kCura.EventHandler.ScriptBlock">
+ <summary>
+ Defines a script block for event handlers.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.ScriptBlock.Key">
+ <summary>
+ Gets and/or sets a key for a script.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.ScriptBlock.Script">
+ <summary>
+ Gets and/or sets a script body for an event handler.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.ScriptBlock.#ctor">
+ <summary>
+ Initializes a new instance of the ScriptBlock class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.ConsoleLiteral">
+ <summary>
+ Creates console literal instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.ConsoleLiteral.#ctor(System.String)">
+ <summary>
+ Initializes a new instance of the ConsoleLiteral class.
+ </summary>
+ <param name="htmlLiteral">HTML-encoded string representing an instance of a console literal.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.ConsoleLiteral.ToHTML">
+ <summary>
+ Returns an HTML-encoded string of a console literal object.
+ </summary>
+ <returns>Returns an HTML-encoded string of a console literal object.</returns>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.ConsoleSeparator">
+ <summary>
+ Creates a Relativity styled separator.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.ConsoleSeparator.#ctor">
+ <summary>
+ Initializes a new instance of the ConsoleSeparator class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.ConsoleHeader">
+ <summary>
+ Creates a Relativity styled header.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.ConsoleHeader.#ctor(System.String)">
+ <summary>
+ Initializes a new instance of the ConsoleHeader class.
+ </summary>
+ <param name="title">Text of a <see cref="T:kCura.EventHandler.ConsoleHeader">ConsoleHeader</see>.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.FileFieldValue">
+ <summary>
+ Creates file field value instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.FileFieldValue.FileID">
+ <summary>
+ Returns the ID of the file in the database. Will only have a non-null value if the field had a File associated with it previously.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.FileFieldValue.NewFileUploaded">
+ <summary>
+ This returns whether a new file was uploaded to the File field. Will only be true during a PreSave EventHandler.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.FileFieldValue.FileValue">
+ <summary>
+ Gets the FileValue associated with the field.
+ </summary>
+ <value></value>
+ <returns>The FileValue associated with the field.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.FileFieldValue.Size">
+ <summary>
+ Gets and/or sets a size of a file field value.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.FileFieldValue.IsNewFile">
+ <summary>
+ Returns a Boolean flag indicating whether a file field value is a new file or not.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.FileFieldValue.GetFileID">
+ <summary>
+ Returns the file ID.
+ </summary>
+ <returns>Returns the file ID.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.FileFieldValue.GetFullyQualifiedFileName">
+ <summary>
+ Returns the fully qualified file name of a file field value.
+ </summary>
+ <returns>Returns the fully qualified file name of a file field value.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.FileFieldValue.#ctor">
+ <summary>
+ Initializes a new, empty instance of the FileFieldValue class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.FileFieldValue.#ctor(kCura.EventHandler.FileValue)">
+ <summary>
+ Initializes a new instance of the FileFieldValue class.
+ </summary>
+ <param name="fileValue">The stream of the file. The stream should </param>
+ <remarks>This constructor is intended for internal use only.</remarks>
+</member>
+<member name="T:kCura.EventHandler.IConsoleElement">
+ <summary>
+ Provides the interface for console elements.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.IConsoleElement.ToHTML">
+ <summary>
+ Returns an HTML-encoded string of a console element.
+ </summary>
+ <returns>Returns an HTML-encoded string of a console element.</returns>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.IConsoleItem">
+ <summary>
+ Provides the interface for console items.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.Choice">
+ <summary>
+ Creates choice instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.Choice.ArtifactID">
+ <summary>
+ Gets the Artifact ID value of a choice.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Choice.Name">
+ <summary>
+ Gets the name of a choice.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Choice.IsSelected">
+ <summary>
+ This property is being deprecated because when a choice object is being created, it's always a selected choice.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Choice.SubChoices">
+ <summary>
+ Gets and/or sets a choice collection associated with a given choice.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.Choice.#ctor(System.Int32,System.String)">
+ <summary>
+ Initializes a new instance of the Choice class.
+ </summary>
+ <param name="artifactID">Integer value uniquely identifying a choice to be created.</param>
+ <param name="name">String value containing a name of a choice to be created.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.Choice.#ctor(System.Int32,System.String,System.Boolean,kCura.EventHandler.ChoiceCollection)">
+ <summary>
+ Initializes a new instance of the Choice class.
+ </summary>
+ <param name="artifactID">Integer value uniquely identifying a choice to be created.</param>
+ <param name="name">String value containing a name of a choice to be created.</param>
+ <param name="selected">Boolean flag identifying if a given choice should be selected.</param>
+ <param name="subChoices">Choice collection which should be associated with a given choice.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.ChoiceCollection">
+ <summary>
+ A class used to as a container for choice values. 
+ </summary>
+ <remarks>Typically used to contain the selected value(s) for a Single- or Multi-choice field.</remarks>
+</member>
+<member name="P:kCura.EventHandler.ChoiceCollection.Item(System.Int32)">
+ <summary>
+ Gets the choice object by its artifact ID.
+ </summary>
+ <param name="artifactID">Integer value uniquely identifying a choice to be selected.</param>
+</member>
+<member name="P:kCura.EventHandler.ChoiceCollection.Item(System.String)">
+ <summary>
+ Gets the choice object by its name.
+ </summary>
+ <param name="name">String value identifying a choice to be selected.</param>
+</member>
+<member name="M:kCura.EventHandler.ChoiceCollection.#ctor">
+ <summary>
+ Initializes a new instance of the ChoiceCollection class.
+ </summary>
+ <remarks>You can create either an empty ChoiceCollection or one with Choice members by using Collection Initializers</remarks>
+ <example>(C#)
+ <code>
+ var choices = new ChoiceCollection
+     {
+         new Choice(11, "Choice 1"),
+         new Choice(22, "Choice 2"),
+         new Choice(33, "Choice 3"),
+         new Choice(44, "Choice 4"),
+         new Choice(55, "Choice 5"),
+     };
+ </code>
+ </example>
+</member>
+<member name="M:kCura.EventHandler.ChoiceCollection.Add(kCura.EventHandler.Choice)">
+ <summary>
+ Adds a choice object to a choice collection.
+ </summary>
+ <param name="choice">Choice object to be added to a collection.</param>
+ <remarks>Once the choices are added, there is no method to clear or remove the choices.
+ However, you can create a new ChoiceCollection and assign it to Field.Value.Value</remarks>
+</member>
+<member name="M:kCura.EventHandler.ChoiceCollection.CopyTo(System.Array,System.Int32)">
+ <summary>
+ Copies the System.Collections.Specialized.HybridDictionary entries to a one-dimensional System.Array instance at the specified index.
+ </summary>
+ <param name="array">Array object to which the entries are copied.</param>
+ <param name="index">Integer value identifying the starting point in an array where items should be inserted.</param>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.ChoiceCollection.Count">
+ <summary>
+ Gets the number of key/value pairs contained in the System.Collections.Specialized.HybridDictionary.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.ChoiceCollection.IsSynchronized">
+ <summary>
+ Gets a value indicating whether the System.Collections.Specialized.HybridDictionary is synchronized (thread safe).
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.ChoiceCollection.SyncRoot">
+ <summary>
+ Gets an object that can be used to synchronize access to the System.Collections.Specialized.HybridDictionary.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.ChoiceCollection.GetEnumerator">
+ <summary>
+ Returns an enumerator that iterates through a collection.
+ </summary>
+ <returns>Returns an enumerator that iterates through a collection.</returns>
+</member>
+<member name="T:kCura.EventHandler.ChoiceFieldValue">
+ <summary>
+ Creates choice field value instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.ChoiceFieldValue.#ctor(kCura.EventHandler.ChoiceCollection)">
+ <summary>
+ Initializes a new instance of the ChoiceFieldValue class.
+ </summary>
+ <param name="value">Collection of choices associated with a choice field value to be created.</param>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.ChoiceFieldValue.Choices">
+ <summary>
+ Gets and/or sets a collection of choices associated with a choice field value.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.ChoiceFieldValue.IsChoiceSelected(System.Int32)">
+ <summary>
+ Returns True if a given choice specified by artifact ID is marked as selected in a given collection of choices, otherwise it returns False.
+ </summary>
+ <param name="artifactID">Integer value identifying a choice object.</param>
+ <returns>Returns True if a given choice specified by artifact ID is marked as selected in a given collection of choices, otherwise it returns False.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.ChoiceFieldValue.IsChoiceSelected(System.String)">
+ <summary>
+ Returns True if a given choice specified by name is marked as selected in a given collection of choices, otherwise it returns False.
+ </summary>
+ <param name="name">String value identifying a choice object.</param>
+ <returns>Returns True if a given choice specified by name is marked as selected in a given collection of choices, otherwise it returns False.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.ChoiceFieldValue.FindChoiceByArtifactID(System.Int32)">
+ <summary>
+ Returns the choice by its artifact ID.
+ </summary>
+ <param name="artifactID">Integer value identifying a choice object.</param>
+ <returns>Returns the choice by its artifact ID.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.ChoiceFieldValue.FindChoiceByName(System.String)">
+ <summary>
+ Returns a choice by its name.
+ </summary>
+ <param name="name">String value identifying a choice object.</param>
+ <returns>Returns a choice by its name.</returns>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.Console">
+ <summary>
+ Creates console instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.Console.Title">
+ <summary>
+ Gets or sets a title of a console.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Console.ButtonList">
+ <summary>
+ This method has been deprecated. Please use Items instead.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.Console.Items">
+ <summary>
+ Gets or sets a list of console items.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.Console.AddScriptBlock(System.String,System.String)">
+ <summary>
+ Adds a script literal to the rendered page.  Your text should be enclosed in script tags.
+ </summary>
+ <param name="key">String value uniquely identifying a script.</param>
+ <param name="script">String value containing a body of a script.</param>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.Console.ScriptBlocks">
+ <summary>
+ A list of script text that will be added to the header of the rendered page.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Console.HTMLBlocks">
+ <summary>
+ A list of HTML blocks that will be added to the page.  All HTML blocks get wrapped in a hidden div.  Note that the Items property may be used instead to inject HTML into the Console.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.Console.AddLinksToConsole(System.Collections.Generic.IEnumerable{kCura.EventHandler.ConsoleLinkButton})">
+ <summary>
+ Adds a collection of links to the console.  
+ A set of div tags contain and apply styles to the links.
+ </summary>
+ <param name="links">Collection of console link buttons.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.Console.AddRefreshLinkToConsole">
+ <summary>
+ Adds a refresh button to the console and returns the newly added refresh button so that it can be modified. 
+ The refresh button is disabled by default.
+ </summary>
+ <returns>Returns a new ConsoleLinkButton that was just added to the console</returns>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Console.RefreshButtonName">
+ <summary>
+ Name of a refresh button, defaults to Refresh Page.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.Console.#ctor">
+ <summary>
+ Initializes a new instance of the Console class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.ConsoleButton">
+ <summary>
+ Creates console button instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.ConsoleButton.Name">
+ <summary>
+ Gets or sets a console button name.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.ConsoleButton.CssClass">
+ <summary>
+ Gets or sets a console button CSS class.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.ConsoleButton.Enabled">
+ <summary>
+ Updates the Enabled property and sets the CSS class accordingly for the button.
+ This won't overwrite any extra CSS classes or use default classes if the CSS class has been explicitly set.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.ConsoleButton.ToolTip">
+ <summary>
+ Gets or sets a console button tool tip.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.ConsoleButton.RaisesPostBack">
+ <summary>
+ Gets or sets a console button Boolean value indicating whether to raise a post back on a click event.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.ConsoleButton.OnClickEvent">
+ <summary>
+ Gets or sets a string value which is executed when a console button is clicked.
+ </summary>
+ <remarks>This property can be used to attach a JavaScript handler to a console button click event.</remarks>
+</member>
+<member name="P:kCura.EventHandler.ConsoleButton.DisplayText">
+ <summary>
+ Gets or sets the display text of a console button.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.ConsoleButton.StyleAttribute">
+ <summary>
+ Gets or sets a style attribute of a console button.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.ConsoleButton.UpdateCssClassForEnabled(System.Boolean)">
+ <summary>
+ Updates CSS class of a console button based on its enabled property.
+ </summary>
+ <param name="isEnabled">Boolean flag indicating whether a console button is enabled or not.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.ConsoleButton.#ctor">
+ <summary>
+ Initializes a new instance of the ConsoleButton class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.DatabaseConnection">
+ <summary>
+ Creates database connection instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.DatabaseConnection.BeginTransaction">
+ <summary>
+ Opens a database connection and starts a database transaction.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.DatabaseConnection.CommitTransaction">
+ <summary>
+ Commits the database transaction.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.DatabaseConnection.RollbackTransaction">
+ <summary>
+ Rolls back a database transaction from a pending state.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.DatabaseConnection.GetCaseDatabasePrependString(System.Int32)">
+ <summary>
+ Returns a prepend string value for a given case database based on application ID.
+ </summary>
+ <param name="appID">Integer value identifying a case database.</param>
+ <returns>Returns a prepend string value for a given case database based on application ID.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.DatabaseConnection.GetCaseDatabasePrependString(System.Int32,System.Boolean)">
+ <summary>
+ Returns a prepend string value for a given case database based on application ID and a Boolean flag indicating whether the schema name should be used.
+ </summary>
+ <param name="appID">Integer value identifying a case database.</param>
+ <param name="useSchemaName">Boolean flag indicating whether schema name should be used or not.</param>
+ <returns>Returns a prepend string value for a given case database based on application ID and a Boolean flag indicating whether the schema name should be used.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.DatabaseConnection.GetMasterPrependString">
+ <summary>
+ Returns a prepend string value for a master database.
+ </summary>
+ <returns>Returns a prepend string value for a master database.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.DatabaseConnection.GetMasterPrependString(System.Boolean)">
+ <summary>
+ Returns a prepend string value for a master database based on boolean flag indicating if schema name should be used.
+ </summary>
+ <param name="useSchemaName">Boolean flag indicating whether schema name should be used or not.</param>
+ <returns>Returns a prepend string value for a master database based on boolean flag indicating if schema name should be used.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.DatabaseConnection.ExecuteNonQuery(System.String,System.Data.SqlClient.SqlParameter[],System.Int32)">
+ <summary>
+ Executes a Transact-SQL statement against the connection and returns the number of rows affected.
+ </summary>
+ <param name="sqlStatement">SQL statement to be executed.</param>
+ <param name="parameters">SQL parameters used in SQL statement.</param>
+ <param name="timeoutValue">Number of seconds after which a SQL query should time out. Default value: -1 meaning execution of a SQL statement should never expire.</param>
+ <returns>Returns an integer value indicating the number of rows affected</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.DatabaseConnection.ExecuteAsDataSet(System.String,System.Data.SqlClient.SqlParameter[],System.Int32)">
+ <summary>
+ Executes a Transact-SQL statement against the connection and returns a dataset object.
+ </summary>
+ <param name="sqlStatement">SQL statement to be executed.</param>
+ <param name="parameters">SQL parameters used in SQL statement.</param>
+ <param name="timeoutValue">Number of seconds after which a SQL query should time out. The default value (-1) indicates that the execution of a SQL statement should never expire.</param>
+ <returns>Returns a dataset object.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.DatabaseConnection.ExecuteAsScalar(System.String,System.Data.SqlClient.SqlParameter[],System.Int32)">
+ <summary>
+ Executes the query, and returns the first column of the first row in the result set returned by the query. Additional columns or rows are ignored.
+ </summary>
+ <param name="sqlStatement">SQL statement to be executed.</param>
+ <param name="parameters">SQL parameters used in SQL statement.</param>
+ <param name="timeoutValue">Number of seconds after which a SQL query should time out. Default value: -1 meaning execution of a SQL statement should never expire.</param>
+ <returns>returns an Object type that contains the result of the sql operation</returns>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.Helper">
+ <summary>
+ Helper class containing numerous enums useful for event handlers.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.Helper.#ctor">
+ <summary>
+ Initializes a new instance of the Helper class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.Helper.EventHandlerType">
+ <summary>
+ Enum specifying event handler types.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.PreSave">
+ <summary>
+ Pre save event handler type.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.PostSave">
+ <summary>
+ Post save event handler type.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.PreDelete">
+ <summary>
+ Pre delete event handler type.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.Console">
+ <summary>
+ Console event handler type.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.PreLoad">
+ <summary>
+ Pre load event handler type.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.PreCascadeDelete">
+ <summary>
+ Pre cascade delete event handler type.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.PreInstall">
+ <summary>
+ Pre application install event handler type.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.PostInstall">
+ <summary>
+ Post application install event handler type.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.RunOncePreInstall">
+ <summary>
+ Pre application install event handler type that runs only once.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.RunOncePostInstall">
+ <summary>
+ Post application install event handler type that runs only once.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.PreMassDelete">
+ <summary>
+ Pre mass delete event handler runs once before a mass deletion.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.PreUninstall">
+ <summary>
+ Pre Uninstall event handler type.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.PageInteraction">
+ <summary>
+ Page interaction event handler runs once per edit or view page and is used to register client scripts.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.PostWorkspaceCreation">
+ <summary>
+ Post workspace creation event handler is run after a case with the application containing it used as a template to make a new workspace.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.XMLStatistics">
+ <summary>
+ Statistics event handler is run by the case statistics manager.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.MassOperation">
+ <summary>
+ Custom Mass Operation are run on the list item page.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.CSVStatistics">
+ <summary>
+ Statistics event handler is run by the case statistics manager.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.PreWorkspaceDelete">
+ <summary>
+ Pre workspace delete event handler is run before a workspace with the application containing it is marked for delete.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.PreWorkspaceDisable">
+ <summary>
+ Pre workspace disable event handler is run before a workspace with the application containing it is marked disabled.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.PreCopy">
+ <summary>
+ Pre Copy event handler is run on a Mask DTO on the source data, but before that source data is passed to the Create call.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.Save">
+ <summary>
+ Save event handler is run instead of pre and post save
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.EventHandlerType.PostCopy">
+ <summary>
+ Post Copy event handler is run on a newly copied Mask DTO.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.Helper.RunTargets">
+ <summary>
+ An enum type which specifies values available for a RunTarget custom attribute class.
+ </summary>
+</member>
+<member name="F:kCura.EventHandler.Helper.RunTargets.Workspace">
+ <summary>
+ Event handlers should run against a workspace database context
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.RunTargets.Environment">
+ <summary>
+ Event handlers should run against an instance level context
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.RunTargets.Instance">
+ <summary>
+ Event handlers should run against an instance level context
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.RunTargets.InstanceAndWorkspace">
+ <summary>
+ Event handlers that can run against either the instance or workspace level database contexts
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.Helper.PageMode">
+ <summary>
+ Enum specifying page modes.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.PageMode.Unknown">
+ <summary>
+ Unknown page mode.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.PageMode.View">
+ <summary>
+ View page mode.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.PageMode.Edit">
+ <summary>
+ Edit page mode.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.Helper.PageMode.List">
+ <summary>
+ List page mode.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.Field">
+ <summary>
+ Creates field instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.Field.ArtifactID">
+ <summary>
+ Returns an artifact ID of a field.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Field.Name">
+ <summary>
+ Returns a name of a field.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Field.ColumnName">
+ <summary>
+ Returns a column name of a field.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Field.FieldTypeID">
+ <summary>
+ Returns a field type ID.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Field.FieldCategoryID">
+ <summary>
+ Returns a field category ID.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Field.CodeTypeID">
+ <summary>
+ Returns a code type ID of a field.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Field.IsReflected">
+ <summary>
+ Returns a Boolean flag indicating whether a field is a reflected field or not.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Field.IsInLayout">
+ <summary>
+ Returns a Boolean flag indicating whether a field is in layout or not.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Field.Value">
+ <summary>
+ Returns a field value.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Field.Guids">
+ <summary>
+ Returns a list of GUID values associated with a given field.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.Field.#ctor(System.Int32,System.String,System.String,System.Int32,System.Nullable{System.Int32},System.Int32,System.Boolean,System.Boolean,kCura.EventHandler.FieldValue,System.Collections.Generic.List{System.Guid})">
+ <summary>
+ Initializes a new instance of the Field class.
+ </summary>
+ <param name="artifactID">Integer value specifying an artifact ID of a field.</param>
+ <param name="name">String value specifying a name of a field.</param>
+ <param name="columnName">Name of the column that will be associated with a field to be created.</param>
+ <param name="fieldTypeID">Integer value indicating a type of a field.</param>
+ <param name="codeTypeID">Integer value indicating a code type of a field.</param>
+ <param name="fieldCategoryID">Integer value indicating a field category.</param>
+ <param name="isReflected">Boolean value indicating whether a field is a reflected field or not.</param>
+ <param name="isInLayout">Boolean value indicating whether a field is in a layout or not.</param>
+ <param name="value">Value of a field to be created.</param>
+ <param name="guids">List of GUIDs associated with a field.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.Field.#ctor(System.Int32)">
+ <summary>
+ Initializes a new instance of the Field class.
+ </summary>
+ <param name="artifactID">Integer value specifying an artifact ID of a field.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.Field.#ctor(System.String)">
+ <summary>
+ Initializes a new instance of the Field class.
+ </summary>
+ <param name="name">String value specifying a name of a field.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.Field.#ctor(System.Collections.Generic.List{System.Guid})">
+ <summary>
+ Initializes a new instance of the Field class.
+ </summary>
+ <param name="guids">List of GUIDs associated with a field.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.Field.#ctor(System.Guid)">
+ <summary>
+ Initializes a new instance of the Field class.
+ </summary>
+ <param name="guid">GUID associated with a field.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.FieldCollection">
+ <summary>
+ Creates a collection of fields.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.FieldCollection.Item(System.Int32)">
+ <summary>
+ Returns the field by its artifact ID.
+ </summary>
+ <param name="artifactID">Integer value identifying a field.</param>
+</member>
+<member name="P:kCura.EventHandler.FieldCollection.Item(System.String)">
+ <summary>
+ Returns the field by either its display name or GUID (all case insensitive).
+ </summary>
+ <param name="uniqueName">String value indicating a display name or GUID of a field.</param>
+</member>
+<member name="M:kCura.EventHandler.FieldCollection.#ctor">
+ <summary>
+ Initializes a new instance of the FieldCollection class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.FieldCollection.Add(kCura.EventHandler.Field)">
+ <summary>
+ Adds field ArtifactID, Display Name, and Guids to backing collections. 
+ </summary>
+ <param name="field">Field object to be added to a collection.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.FieldCollection.GetFieldsByFieldCategoryID(System.Int32)">
+ <summary>
+ Returns a collection of fields based on a field category ID.
+ </summary>
+ <param name="fieldCategoryID">Integer value indicating a field category.</param>
+ <returns>A FieldCollection object containing all the requested fields</returns>
+</member>
+<member name="M:kCura.EventHandler.FieldCollection.GetFieldsByFieldTypeID(System.Int32)">
+ <summary>
+ Returns a collection of fields based on a field type ID.
+ </summary>
+ <param name="fieldTypeID">Integer value indicating a type of a field.</param>
+ <returns>A FieldCollection object containing all the requested fields</returns>
+</member>
+<member name="M:kCura.EventHandler.FieldCollection.GetEnumerator">
+ <summary>
+ Returns an enumerator that iterates through the System.Collections.Generic.Dictionary(Of TKey, TValue).ValueCollection.
+ </summary>
+ <returns>An object of type IEnumerator which can be used to enumerate through the collection</returns>
+</member>
+<member name="M:kCura.EventHandler.FieldCollection.CopyTo(System.Array,System.Int32)">
+ <summary>
+ Copies the System.Collections.Generic.Dictionary(Of TKey, TValue).ValueCollection elements to an existing one-dimensional System.Array, starting at the specified array index.
+ </summary>
+ <param name="array">Array object to which the entries are copied.</param>
+ <param name="index">Integer value identifying a starting point of an array from where items should be inserted.</param>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.FieldCollection.Count">
+ <summary>
+ Gets the number of key/value pairs contained in the System.Collections.Generic.Dictionary(Of TKey, TValue).
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.FieldCollection.IsSynchronized">
+ <summary>
+ Returns False for field collections.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.FieldCollection.SyncRoot">
+ <summary>
+ Returns null for field collections.
+ </summary>
+</member>
+<member name="T:kCura.EventHandler.FieldValue">
+ <summary>
+ Creates field value instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.FieldValue.Updated">
+ <summary>
+ Returns whether the Value has been updated within an EventHandler.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.FieldValue.IsNull">
+ <summary>
+ Returns whether the field's value is null.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.FieldValue.Value">
+ <summary>
+ Gets and/or sets a field value.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.FieldValue.#ctor(System.Object)">
+ <summary>
+ Initializes a new instance of the FieldValue class.
+ </summary>
+ <param name="value">Field value.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.IDataEnabled">
+ <summary>
+ Allows event handlers to interact with a database.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.Layout">
+ <summary>
+ Creates layout instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.Layout.Name">
+ <summary>
+ Returns a name of a layout.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Layout.ArtifactID">
+ <summary>
+ Returns an artifact ID of a layout.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.Layout.#ctor(System.Int32,System.String)">
+ <summary>
+ Initializes a new instance of the Layout class.
+ </summary>
+ <param name="artifactID">Integer value indicating an artifact ID of a layout.</param>
+ <param name="name">String value indicating a name of a layout.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.Response">
+ <summary>
+ Defines a response object for event handlers.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.Response.#ctor">
+ <summary>
+ Initializes a new instance of the Response class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.Response.Message">
+ <summary>
+ Gets and/or sets a message for a response object.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Response.Success">
+ <summary>
+ Boolean flag indicating whether a response message is successfully created or not.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Response.FieldCollection">
+ <summary>
+ Gets and/or sets a collection of fields for a response object.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Response.Exception">
+ <summary>
+ Gets and/or sets an exception representing errors that occurred during an event handler execution.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.Response.PostExecuteActions">
+ <summary>
+ Gets and/or sets a list of actions to be executed.
+ </summary>
+</member>
+<member name="T:kCura.EventHandler.UriImprinter">
+ <summary>
+ Imprints a query value onto a URL.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:kCura.EventHandler.UriImprinter.QUERYSTRING_FINGERPRINT_KEY">
+ <summary>
+ Default Query String Fingerprint.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.UriImprinter.VersionString">
+ <summary>
+ Default Version String.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.UriImprinter.ImprintUri(System.String,System.String,System.String)">
+ <summary>
+ Imprints a query value onto an URL; useful for fingerprinting client resource link URLs such as JS and CSS files.
+ </summary>
+ <param name="scriptFileUri">String representation of a URL</param>
+ <param name="querystringFingerprintKey">The key to imprint into the scriptFileUri's query segment</param>
+ <param name="querystringFingerprintValue">The value to imprint into the scriptFileUri's query segment</param>
+ <returns>An imprinted URI string</returns>
+ <remarks>This will overwrite any existing query values with the same key as the one specified in querystringFingerprintKey.  This method also uses the System.Uri and System.UriBuilder classes to do a lot of the heavy lifting; it will simplify URLs that contain . and .. directives.</remarks>
+</member>
+<member name="T:kCura.EventHandler.User">
+ <summary>
+ Creates a user instances.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.EventHandler.User.CaseUserArtifactID">
+ <summary>
+ Gets the case specific artifact ID of the user.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.User.ArtifactID">
+ <summary>
+ Gets the global artifact ID of the user.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.User.FirstName">
+ <summary>
+ Gets the first name of the user.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.User.LastName">
+ <summary>
+ Gets the last name of the user.
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.User.FullName">
+ <summary>
+ Gets the full name of the user, as that is "LastName, FirstName".
+ </summary>
+</member>
+<member name="P:kCura.EventHandler.User.EmailAddress">
+ <summary>
+ Gets the email Address of the User.
+ </summary>
+</member>
+<member name="M:kCura.EventHandler.User.#ctor(System.Int32,System.String,System.String,System.String)">
+ <summary>
+ Initializes a new instance of the User class.
+ </summary>
+ <param name="artifactID">Integer value indicating the artifact ID for a user.</param>
+ <param name="firstName">String value indicating the first name of a user.</param>
+ <param name="lastName">String value indicating the last name of a user.</param>
+ <param name="emailAddress">String value indicating the email address of a user.</param>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.EventHandler.User.#ctor(System.Int32,System.String,System.String,System.String,System.Int32)">
+ <summary>
+ Initializes a new instance of the User class.
+ </summary>
+ <param name="artifactID">Integer value indicating the artifact ID for a user.</param>
+ <param name="firstName">String value indicating the first name of a user.</param>
+ <param name="lastName">String value indicating the last name of a user.</param>
+ <param name="emailAddress">String value indicating the email address of a user.</param>
+ <param name="caseUserArtifactID">Integer value indicating the artifact ID of the user, within this case. This can be different from the user id if the case was migrated across servers.</param>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.EventHandler.WrappedStream">
+ <summary>
+ This class is internal to the EventHandler assembly. It's purpose is to wrap an HttpPostedFile.InputStream in order to prevent it from being disposed.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:kCura.MassOperationHandlers.MassOperationHandler">
+ <summary>
+ Base class for mass operation handlers.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.MassOperationHandlers.MassOperationHandler.Name">
+ <summary>
+ Gets a name of a mass operation handler.
+ </summary>
+ <returns>String value indicating a name of a mass operation handler.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.MassOperationHandlers.MassOperationHandler.Helper">
+ <summary>
+ Gets and/or sets the Helper property of the mass operation handler which returns IMOHHelper object from Relativity.API.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.MassOperationHandlers.MassOperationHandler.LayoutMask">
+ <summary>
+ Gets and/or sets a layout mask for a current mass operation handler.
+ </summary>
+ <returns>Returns <see cref="T:kCura.EventHandler.Artifact">Artifact</see> object.</returns>
+ <remarks>This is applicable only for assembly backed mass operation handlers. Custom page mass operation handlers do not require that property to be set.</remarks>
+</member>
+<member name="P:kCura.MassOperationHandlers.MassOperationHandler.BatchIDs">
+ <summary>
+ Gets and/or sets a list of integer values indicating ids included in a current batch.
+ </summary>
+</member>
+<member name="P:kCura.MassOperationHandlers.MassOperationHandler.MassActionTableName">
+ <summary>
+ Gets and/or sets a name of a temporary table where all ids will be stored for batching work of a particular mass operation handler.
+ </summary>
+</member>
+<member name="M:kCura.MassOperationHandlers.MassOperationHandler.DoBatch">
+ <summary>
+ Abstract method which will execute a batch.
+ </summary>
+ <returns>Returns a <see cref="T:kCura.EventHandler.Response">Response</see> object.</returns>
+ <remarks>This assumes <see cref="M:kCura.MassOperationHandlers.MassOperationHandler.PreMassOperation">PreMassOperation</see> method executes successfully.</remarks>
+</member>
+<member name="M:kCura.MassOperationHandlers.MassOperationHandler.PreMassOperation">
+ <summary>
+ Abstract method which will be executed prior to DoBatch() method.)
+ </summary>
+ <returns>Returns a <see cref="T:kCura.EventHandler.Response">Response</see> object.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.MassOperationHandlers.MassOperationHandler.PostMassOperation">
+ <summary>
+ Abstract method which will be executed after DoBatch() method.
+ </summary>
+ <returns>Returns a <see cref="T:kCura.EventHandler.Response">Response</see> object.</returns>
+ <remarks>This assumes <see cref="M:kCura.MassOperationHandlers.MassOperationHandler.PreMassOperation">PreMassOperation()</see> and <see cref="M:kCura.MassOperationHandlers.MassOperationHandler.DoBatch">DoBatch()</see> methods will not throw any exceptions to interrupt the process.</remarks>
+</member>
+<member name="M:kCura.MassOperationHandlers.MassOperationHandler.ValidateSelection">
+ <summary>
+ Abstract method which will execute validation of a batch set to be processed.
+ </summary>
+ <returns>Returns a <see cref="T:kCura.EventHandler.Response">Response</see> object.</returns>
+ <remarks>If this method fails the red modal box will be displayed on the mass operation handler popup as well as the OK button will be disabled.</remarks>
+</member>
+<member name="M:kCura.MassOperationHandlers.MassOperationHandler.ValidateLayout">
+ <summary>
+ Abstract method which will execute validation of a layout attached to a mass operation handler.
+ </summary>
+ <returns>Returns a <see cref="T:kCura.EventHandler.Response">Response</see> object.</returns>
+ <remarks>This method will execute only on mass operation handlers which are assembly backed with a layout being attached. If it fails it will display a warning modal box inside the mass operation handler.</remarks>
+</member>
+<member name="M:kCura.MassOperationHandlers.MassOperationHandler.IncrementCount(System.Int32)">
+ <summary>
+ Method which will update the current count of the executing batch.
+ </summary>
+ <param name="count">Integer value indicating the current count of an executing batch.</param>
+ <remarks>This can be used to update the progress bar on the popup when mass operation handler is executing.</remarks>
+</member>
+<member name="M:kCura.MassOperationHandlers.MassOperationHandler.ChangeStatus(System.String)">
+ <summary>
+ Method which will update a status of a mass operation handler execution process.
+ </summary>
+ <param name="statusMessage">String value depicting the current status of a process.</param>
+</member>
+<member name="M:kCura.MassOperationHandlers.MassOperationHandler.IsCancelled">
+ <summary>
+ Method which returns True if a user clicked Cancel button on currently executing batch.
+ </summary>
+ <returns>True/False</returns>
+</member>
+<member name="E:kCura.MassOperationHandlers.MassOperationHandler.UpdateCount">
+ <summary>
+ Raises an event to update the current count of executing batch.
+ </summary>
+ <param name="count">Integer value indicating the current count of an executing batch.</param>
+ <remarks></remarks>
+</member>
+<member name="E:kCura.MassOperationHandlers.MassOperationHandler.UpdateStatus">
+ <summary>
+ Raises an event to update a status of a mass operation handler execution process.
+ </summary>
+ <param name="statusMessage">String value depicting the current status of a process.</param>
+ <remarks></remarks>
+</member>
+<member name="E:kCura.MassOperationHandlers.MassOperationHandler.CheckCancelled">
+ <summary>
+ Raises an event of a Cancel button click action on currently executing batch.
+ </summary>
+ <param name="IsCancelled">Boolean value indicating if current batch needs to be cancelled.</param>
+ <remarks>It is automatically raised when <see cref="M:kCura.MassOperationHandlers.MassOperationHandler.IsCancelled">IsCancelled()</see> method is called.</remarks>
+</member>
+</members>
+</doc>

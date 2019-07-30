@@ -2,11 +2,10 @@
   <TemplateData>
     <DefaultName>Relativity Integration Points Provider.cs</DefaultName>
     <Name>Relativity Integration Points Provider</Name>
-    <Description>Item template for the Relativity Integration Points Provider</Description>
+    <Description>Item Template for Relativity Integration Points Provider</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>10</SortOrder>
-    <Icon>__PreviewImage.ico</Icon>
-    <PreviewImage>__PreviewImage.ico</PreviewImage>
+    <Icon>__TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
     <References />

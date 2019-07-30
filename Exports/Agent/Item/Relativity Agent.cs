@@ -3,11 +3,12 @@ using kCura.Relativity.Client;
 using Relativity.API;
 using Relativity.Services.Objects;
 using System;
+using System.Net;
 
 namespace $rootnamespace$
 {
 	[kCura.Agent.CustomAttributes.Name("Agent Name")]
-	// [System.Runtime.InteropServices.Guid("$guid1$")]
+	[System.Runtime.InteropServices.Guid("$guid1$")]
 	public class $safeitemname$ : AgentBase
 	{
 		/// <summary>
@@ -19,6 +20,9 @@ namespace $rootnamespace$
 
 			try
 			{
+				// Update Security Protocol
+				ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+
 				//Get the current Agent artifactID
 				int agentArtifactId = AgentID;
 

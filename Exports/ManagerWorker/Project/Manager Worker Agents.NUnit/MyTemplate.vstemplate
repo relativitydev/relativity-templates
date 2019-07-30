@@ -1,7 +1,7 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
     <Name>Agents.NUnit</Name>
-    <Description>NUnit Project Template for Manager Worker Agents</Description>
+    <Description>Project Template for Relativity Manager Worker Agents.NUnit</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
@@ -12,11 +12,11 @@
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <Icon>__TemplateIcon.ico</Icon>
-	<Hidden>true</Hidden>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="Agents.NUnit.csproj" File="Agents.NUnit.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="LICENSE.txt">LICENSE.txt</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="ManagerAgentTests.cs">ManagerAgentTests.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties" />
@@ -33,12 +33,16 @@
   </WizardExtension>
   <WizardData>
     <packages repository="extension" repositoryId="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b">
-	  <package id="Moq" version="4.2.1510.2205" />
-	  <package id="NUnit" version="2.6.3" />
-	  <package id="Relativity.Agent" version="9.5.370.136" />
-	  <package id="Relativity.Api" version="9.5.370.136" />
-	  <package id="Relativity.ObjectManager" version="9.5.370.136" />
-	  <package id="Relativity.Rsapi" version="9.5.370.136" />
-	</packages>
+      <package id="BCrypt-Official" version="0.1.109" />
+      <package id="Moq" version="4.2.1510.2205" />
+      <package id="Newtonsoft.Json" version="6.0.8" />
+      <package id="NUnit" version="2.6.3" />
+      <package id="Relativity.Agent" version="10.2.170.2" />
+      <package id="Relativity.Api" version="10.2.170.2" />
+      <package id="Relativity.Logging" version="2019.5.1" />
+      <package id="Relativity.ObjectManager" version="10.2.170.2" />
+      <package id="Relativity.Other" version="10.2.170.2" />
+      <package id="Relativity.Rsapi" version="10.2.170.2" />
+    </packages>
   </WizardData>
 </VSTemplate>

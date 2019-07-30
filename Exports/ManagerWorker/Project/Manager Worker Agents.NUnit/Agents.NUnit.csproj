@@ -53,15 +53,18 @@
   <ItemGroup>
     <ProjectReference Include="..\$saferootprojectname$.Agents\$saferootprojectname$.Agents.csproj">
       <Project>{439F47FC-70FC-4202-B312-F856F1A09960}</Project>
-      <Name>$saferootprojectname$.Agents</Name>
+      <Name>Agents</Name>
     </ProjectReference>
     <ProjectReference Include="..\$saferootprojectname$.Helpers\$saferootprojectname$.Helpers.csproj">
       <Project>{8F4CDA45-EAF3-4B40-A7A9-F312B7664ABC}</Project>
-      <Name>$saferootprojectname$.Helpers</Name>
+      <Name>Helpers</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LICENSE.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -10,7 +10,6 @@ using Relativity.API;
 using $saferootprojectname$.CustomPages.Models;
 using $saferootprojectname$.Helpers;
 
-
 namespace $safeprojectname$
 {
 	[TestFixture]

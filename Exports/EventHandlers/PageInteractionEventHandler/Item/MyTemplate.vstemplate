@@ -2,7 +2,7 @@
   <TemplateData>
     <DefaultName>Relativity PageInteractionEventHandler.cs</DefaultName>
     <Name>Relativity PageInteractionEventHandler</Name>
-    <Description>Item Template for Relativity Relativity Page Interaction Event Handler</Description>
+    <Description>Item Template for Relativity Page Interaction Event Handler</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>10</SortOrder>
     <Icon>__TemplateIcon.ico</Icon>

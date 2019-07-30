@@ -8,7 +8,7 @@ namespace $safeprojectname$
 {
 	[kCura.EventHandler.CustomAttributes.RunOnce(false)]
 	[kCura.EventHandler.CustomAttributes.Description("Creates the underlying tables for the application.")]
-	[System.Runtime.InteropServices.Guid("7B2888B6-E788-4EC1-B422-60C7762B9866")]
+	[System.Runtime.InteropServices.Guid("$guid1$")]
 	class PostInstallSetup : kCura.EventHandler.PostInstallEventHandler
 	{
 		private IAPILog Logger;
