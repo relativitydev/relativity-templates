@@ -93,7 +93,3 @@ The following projects are created:
  - **Helpers.NUnit**
 
 	Add any unit tests for the helpers project to this project.
-
-
-# Source Code
-Relativity Templates is an open-source project on Github. If the templates are missing any features, you are encouraged to contribute to the project.
