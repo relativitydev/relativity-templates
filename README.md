@@ -25,7 +25,7 @@ The Relativity Templates are compatible with Visual Studio 2012, 2013, 2015 and 
 ### Installation
 To install all of the templates simply double click the .vsix file and click the “Install” button. If Visual Studio is already open you will have to restart it for the templates to populate.
 
-# Project Templates
+## Project Templates
 
 To use these click File -> New Project
 All the Relativity Project Templates will be found under:
@@ -38,7 +38,7 @@ All the Relativity Project Templates will be found under:
 
 _* If there are any errors make sure you have all the references setup correctly._
 
-# Item Templates
+## Item Templates
 
 To use these right click on your desired solution and then click “add new item”
 All the Relativity Item Templates will be found under:		
@@ -50,7 +50,7 @@ All the Relativity Item Templates will be found under:
 
 _* Note that if the project you add the item to does not have the correct references added, Visual Studio will tell you that you are missing assembly references._
 
-# Manager-Worker Agent template
+## Manager-Worker Agent template
 The Manager-Worker Agent project template is an architectural pattern where a long-running Agent task can be split into single or multiple manager/worker agents and execute the task in parallel. This template also consists recommended best practices for coding and features like resource-pool aware agents, configure agents to run in off hours, a custom page to view manager/worker agents progress, unit tests projects etc.
 
 The following projects are created:
