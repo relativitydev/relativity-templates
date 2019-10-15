@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Relativity.Kepler.Template</Name>
+    <Description>Template used to create a new Relativity ADS deployable Kepler Service.</Description>
+    <Icon>favicon.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>fb803a05-4db1-4217-bbcb-6f7c10a7baa3</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Relativity.Kepler.Template</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Services" CopyParameters="true">
+        Services\Services.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Interfaces" CopyParameters="true">
+        Interfaces\Interfaces.vstemplate
+      </ProjectTemplateLink>
+    </ProjectCollection>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Relativity.Kepler.Wizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=07ea334d423f21b4</Assembly>
+    <FullClassName>Relativity.Kepler.Wizard.ProjectWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity.Kepler.Template", "Relativity.Kepler.Template\Relativity.Kepler.Template.csproj", "{28C62BA4-A6B8-4FFF-97EB-6A300F8096E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Relativity.Kepler.Template\Services\Services.csproj", "{90F0BD0E-99B3-4AA6-AEEE-2E5A581EC32F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Relativity.Kepler.Template\Interfaces\Interfaces.csproj", "{CEE5C550-62DB-4C4D-97C5-DCEBF69AAD18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity.Kepler.Wizard", "Relativity.Kepler.Template\Relativity.Kepler.Wizard\Relativity.Kepler.Wizard.csproj", "{BFF382FA-0547-4815-8923-F36CBF44CEDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity.Kepler.IModule", "Relativity.Kepler.Template\Relativity.Kepler.IModule\Relativity.Kepler.IModule.csproj", "{B0F5C1B9-7689-4600-81D6-26F66015EBD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity.Kepler.Module", "Relativity.Kepler.Template\Relativity.Kepler.Module\Relativity.Kepler.Module.csproj", "{9ED12400-DAFF-4E6B-A4AC-39AC47C3BE7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity.Kepler.IService", "Relativity.Kepler.Template\Relativity.Kepler.IService\Relativity.Kepler.IService.csproj", "{CD3ECB42-42C5-4621-A006-B309F8547016}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity.Kepler.Service", "Relativity.Kepler.Template\Relativity.Kepler.Service\Relativity.Kepler.Service.csproj", "{0DB0021F-F251-4A62-A64A-3AA626A0EC4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity.Kepler.Exception", "Relativity.Kepler.Template\Relativity.Kepler.Exception\Relativity.Kepler.Exception.csproj", "{16C29B23-DEA4-4090-8B1F-9B47DE49411A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity.Kepler.Exception.FaultSafe", "Relativity.Kepler.Template\Relativity.Kepler.Exception.FaultSafe\Relativity.Kepler.Exception.FaultSafe.csproj", "{21C10FF3-E7DE-43B1-A1B6-02FFBCDE1BAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28C62BA4-A6B8-4FFF-97EB-6A300F8096E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28C62BA4-A6B8-4FFF-97EB-6A300F8096E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28C62BA4-A6B8-4FFF-97EB-6A300F8096E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28C62BA4-A6B8-4FFF-97EB-6A300F8096E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90F0BD0E-99B3-4AA6-AEEE-2E5A581EC32F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90F0BD0E-99B3-4AA6-AEEE-2E5A581EC32F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90F0BD0E-99B3-4AA6-AEEE-2E5A581EC32F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90F0BD0E-99B3-4AA6-AEEE-2E5A581EC32F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE5C550-62DB-4C4D-97C5-DCEBF69AAD18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE5C550-62DB-4C4D-97C5-DCEBF69AAD18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE5C550-62DB-4C4D-97C5-DCEBF69AAD18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE5C550-62DB-4C4D-97C5-DCEBF69AAD18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFF382FA-0547-4815-8923-F36CBF44CEDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF382FA-0547-4815-8923-F36CBF44CEDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF382FA-0547-4815-8923-F36CBF44CEDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFF382FA-0547-4815-8923-F36CBF44CEDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0F5C1B9-7689-4600-81D6-26F66015EBD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0F5C1B9-7689-4600-81D6-26F66015EBD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0F5C1B9-7689-4600-81D6-26F66015EBD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0F5C1B9-7689-4600-81D6-26F66015EBD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED12400-DAFF-4E6B-A4AC-39AC47C3BE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED12400-DAFF-4E6B-A4AC-39AC47C3BE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED12400-DAFF-4E6B-A4AC-39AC47C3BE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED12400-DAFF-4E6B-A4AC-39AC47C3BE7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD3ECB42-42C5-4621-A006-B309F8547016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD3ECB42-42C5-4621-A006-B309F8547016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD3ECB42-42C5-4621-A006-B309F8547016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD3ECB42-42C5-4621-A006-B309F8547016}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DB0021F-F251-4A62-A64A-3AA626A0EC4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB0021F-F251-4A62-A64A-3AA626A0EC4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB0021F-F251-4A62-A64A-3AA626A0EC4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB0021F-F251-4A62-A64A-3AA626A0EC4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16C29B23-DEA4-4090-8B1F-9B47DE49411A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C29B23-DEA4-4090-8B1F-9B47DE49411A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C29B23-DEA4-4090-8B1F-9B47DE49411A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16C29B23-DEA4-4090-8B1F-9B47DE49411A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21C10FF3-E7DE-43B1-A1B6-02FFBCDE1BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21C10FF3-E7DE-43B1-A1B6-02FFBCDE1BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21C10FF3-E7DE-43B1-A1B6-02FFBCDE1BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21C10FF3-E7DE-43B1-A1B6-02FFBCDE1BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B8B8D96-0E01-403F-B056-1CD2C5413B67}
+	EndGlobalSection
+EndGlobal

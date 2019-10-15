@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Hidden>true</Hidden>
+    <Name>Services</Name>
+    <Description>Services</Description>
+    <Icon>favicon.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>57079761-1a7d-40c9-abc1-1a043f983cb0</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Services</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true">license.txt</ProjectItem>
+      <ProjectItem ReplaceParameters="true">packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="false">$ext_ServiceModule$\$ext_ServiceModule$Module.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true" OpenOrder="3">$ext_ServiceModule$\v1\$ext_ServiceName$.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

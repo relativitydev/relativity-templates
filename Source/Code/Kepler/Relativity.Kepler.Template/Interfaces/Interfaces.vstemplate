@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Hidden>true</Hidden>
+    <Name>Interfaces</Name>
+    <Description>Interfaces</Description>
+    <Icon>favicon.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>a4c6c142-adc9-413d-aa57-3126f20ac2ba</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Interfaces</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true">license.txt</ProjectItem>
+      <ProjectItem ReplaceParameters="true">packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true" OpenOrder="1">$ext_ServiceModule$\I$ext_ServiceModule$Module.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true" OpenOrder="2">$ext_ServiceModule$\v1\I$ext_ServiceName$.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="false">$ext_ServiceModule$\v1\Models\$ext_ServiceName$Model.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="false">$ext_ServiceModule$\v1\Exceptions\$ext_ServiceName$Exception.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

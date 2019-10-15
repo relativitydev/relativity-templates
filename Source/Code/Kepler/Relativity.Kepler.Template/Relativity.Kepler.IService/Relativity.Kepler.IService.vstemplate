@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Relativity.Kepler.IService</Name>
+    <Description>Add a Relativity Kepler IService</Description>
+    <Icon>favicon.ico</Icon>
+    <TemplateID>d1efcf98-3440-4de9-b938-69c87cc794a9</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>IService.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem ReplaceParameters="true">IService.cs</ProjectItem>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Relativity.Kepler.Wizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=07ea334d423f21b4</Assembly>
+    <FullClassName>Relativity.Kepler.Wizard.ServiceWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>
