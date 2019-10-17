@@ -48,6 +48,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,11 +59,49 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChildWizard.cs" />
+	<Compile Include="InputFormModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputFormModule.designer.cs">
+      <DependentUpon>InputFormModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputFormProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+	<Compile Include="InputFormProject.designer.cs">
+      <DependentUpon>InputFormProject.cs</DependentUpon>
+    </Compile>
+	<Compile Include="InputFormService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+	<Compile Include="InputFormService.designer.cs">
+      <DependentUpon>InputFormService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleWizard.cs" />
+    <Compile Include="ProjectWizard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RootWizard.cs" />
+    <Compile Include="ServiceWizard.cs" />
+    <Compile Include="Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="key.snk" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\platform-stacked.png" />
+    <Content Include="stylesheet.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="InputFormModule.resx">
+      <DependentUpon>InputFormModule.cs</DependentUpon>
+    </EmbeddedResource>
+	<EmbeddedResource Include="InputFormProject.resx">
+      <DependentUpon>InputFormProject.cs</DependentUpon>
+    </EmbeddedResource>
+	<EmbeddedResource Include="InputFormService.resx">
+      <DependentUpon>InputFormService.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
