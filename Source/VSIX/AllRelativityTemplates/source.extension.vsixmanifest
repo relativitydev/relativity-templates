@@ -98,15 +98,15 @@
         <Asset Type="Relativity.Rsapi.10.2.170.2.nupkg" d:Source="File" Path="Packages\Relativity.Rsapi.10.2.170.2.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="RelativityDev.RelativityTestHelpers.6.7.0.1.nupkg" d:Source="File" Path="Packages\RelativityDev.RelativityTestHelpers.6.7.0.1.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="WebGrease.1.5.2.nupkg" d:Source="File" Path="Packages\WebGrease.1.5.2.nupkg" d:VsixSubPath="Packages" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Kepler\Relativity.Kepler.Exception.FaultSafe.zip" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Kepler\Relativity.Kepler.Exception.zip" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Kepler\Relativity.Kepler.IModule.zip" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Kepler\Relativity.Kepler.IService.zip" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Kepler\Relativity.Kepler.Module.zip" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Kepler\Relativity.Kepler.Service.zip" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\Kepler\Relativity.Kepler.Template.zip" />
         <Asset d:Source="File" Path="packages\relativity.api.10.3.170.1.nupkg" Type="File" />
         <Asset Type="File" d:Source="File" Path="packages\relativity.objectmanager.10.3.170.1.nupkg" />
+        <Asset d:Source="File" Path="ItemTemplates\Relativity\Kepler\KeplerException.zip" Type="File" />
+        <Asset Type="File" d:Source="File" Path="ItemTemplates\Relativity\Kepler\KeplerExceptionFaultSafe.zip" />
+        <Asset Type="File" d:Source="File" Path="ItemTemplates\Relativity\Kepler\KeplerIModule.zip" />
+        <Asset Type="File" d:Source="File" Path="ItemTemplates\Relativity\Kepler\KeplerIService.zip" />
+        <Asset Type="File" d:Source="File" Path="ItemTemplates\Relativity\Kepler\KeplerModule.zip" />
+        <Asset Type="File" d:Source="File" Path="ItemTemplates\Relativity\Kepler\KeplerService.zip" />
+        <Asset Type="File" d:Source="File" Path="ProjectTemplates\Relativity\Kepler\KeplerTemplate.zip" />
     </Assets>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.8.27729.1,17.0)" DisplayName="Visual Studio core editor" />
