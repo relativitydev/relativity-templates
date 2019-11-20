@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace Relativity.Kepler.Wizard
+namespace RelativityWizard
 {
 	public class ServiceWizard : IWizard
 	{
