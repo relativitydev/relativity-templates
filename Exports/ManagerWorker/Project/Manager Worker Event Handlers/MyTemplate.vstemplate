@@ -2,9 +2,6 @@
   <TemplateData>
     <Name>Event Handlers</Name>
     <Description>Project Template for Manager Worker Agent Event Handlers</Description>
-    <ProjectType>CSharp</ProjectType>
-    <ProjectSubType>
-    </ProjectSubType>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <DefaultName>Event Handlers</DefaultName>

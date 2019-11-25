@@ -107,6 +107,8 @@
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\Kepler\KeplerTemplate.zip" />
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Kepler\KeplerIModule.zip" />
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Kepler\KeplerIService.zip" />
+        <Asset Type="File" d:Source="File" Path="packages\relativity.api.10.3.191.8.nupkg" />
+        <Asset Type="File" d:Source="File" Path="packages\relativity.kepler.2.3.2.nupkg" />
     </Assets>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.8.27729.1,17.0)" DisplayName="Visual Studio core editor" />
