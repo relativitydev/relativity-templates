@@ -20,7 +20,14 @@ The Relativity Templates are compatible with Visual Studio 2012, 2013, 2015, 201
 - Integration Points template
 - Manager-Worker Agent template
 - Integration Test template
-  
+- Kepler
+    - Kepler Project Template (creates Interfaces and Services projects in one go, has a UI Wizard)
+    - Kepler Exception Item Template
+    - Kepler Exception.FaultSafe Item Template
+    - Kepler IModule Item Template
+    - Kepler IService Item Template
+    - Kepler Module Item Template
+    - Kepler Serice Item Template
   
 ### Installation
 To install all of the templates simply double click the .vsix file and click the “Install” button. If Visual Studio is already open you will have to restart it for the templates to populate.
@@ -35,6 +42,7 @@ All the Relativity Project Templates will be found under:
 - 	Visual C#/Relativity/IntegrationPoints/
 - 	Visual C#/Relativity/ManagerWorker/
 - 	Visual C#/Relativity/RelativityTestTemplate/
+- 	Visual C#/Relativity/Kepler/
 
 _* If there are any errors make sure you have all the references setup correctly._
 
@@ -47,6 +55,7 @@ All the Relativity Item Templates will be found under:
 - 	Visual C#/Relativity/EventHandlers/
 - 	Visual C#/Relativity/IntegrationPoints/
 - 	Visual C#/Relativity/TestHelper/
+- 	Visual C#/Relativity/Kepler/
 
 _* Note that if the project you add the item to does not have the correct references added, Visual Studio will tell you that you are missing assembly references._
 

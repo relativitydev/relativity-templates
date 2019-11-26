@@ -23,5 +23,6 @@ StyleCop*
 .pyo
 .vs
 *.pubxml.user
+*.csproj.user
 *.suo
 Source/Code/AdminMigrationUtility/AdminMigrationUtility.sln.DotSettings.user

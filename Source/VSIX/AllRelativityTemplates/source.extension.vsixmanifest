@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b" Version="2.0" Language="en-US" Publisher="Relativity" />
+        <Identity Id="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b" Version="2.1" Language="en-US" Publisher="Relativity" />
         <DisplayName>Relativity Templates</DisplayName>
-        <Description xml:space="preserve">This Project Contains Templates for Relativity Event Handlers, Agents, Custom Pages, The Manager Worker Solution, Relativity Integration Points(RIP) and The Test Helper Example.</Description>
+        <Description xml:space="preserve">This Project Contains Templates for Relativity Event Handlers, Agents, Custom Pages, The Manager Worker Solution, Relativity Integration Points(RIP), Kepler, and The Test Helper Example.</Description>
         <License>license.txt</License>
         <Icon>favicon.ico</Icon>
-        <Tags>Relativity Agent EventHandler ManagerWorker RIP CustomPage TestHelper</Tags>
+        <Tags>Relativity Agent EventHandler ManagerWorker RIP CustomPage TestHelper Kepler</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[11.0,17.0)" />
@@ -98,6 +98,17 @@
         <Asset Type="Relativity.Rsapi.10.2.170.2.nupkg" d:Source="File" Path="Packages\Relativity.Rsapi.10.2.170.2.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="RelativityDev.RelativityTestHelpers.6.7.0.1.nupkg" d:Source="File" Path="Packages\RelativityDev.RelativityTestHelpers.6.7.0.1.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="WebGrease.1.5.2.nupkg" d:Source="File" Path="Packages\WebGrease.1.5.2.nupkg" d:VsixSubPath="Packages" />
+        <Asset d:Source="File" Path="packages\relativity.api.10.3.170.1.nupkg" Type="File" />
+        <Asset Type="File" d:Source="File" Path="packages\relativity.objectmanager.10.3.170.1.nupkg" />
+        <Asset d:Source="File" Path="ItemTemplates" Type="Microsoft.VisualStudio.ItemTemplate" d:TargetPath="ItemTemplates\Relativity\Kepler\KeplerException.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Kepler\KeplerExceptionFaultSafe.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Kepler\KeplerModule.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Kepler\KeplerService.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Relativity\Kepler\KeplerTemplate.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Kepler\KeplerIModule.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Kepler\KeplerIService.zip" />
+        <Asset Type="File" d:Source="File" Path="packages\relativity.api.10.3.191.8.nupkg" />
+        <Asset Type="File" d:Source="File" Path="packages\relativity.kepler.2.3.2.nupkg" />
     </Assets>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.8.27729.1,17.0)" DisplayName="Visual Studio core editor" />
