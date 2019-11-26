@@ -2,9 +2,6 @@
   <TemplateData>
     <Name>Custom Page</Name>
     <Description>Project Template for Relativity Manager Worker Custom Page</Description>
-    <ProjectType>CSharp</ProjectType>
-    <ProjectSubType>
-    </ProjectSubType>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <DefaultName>Custom Page</DefaultName>

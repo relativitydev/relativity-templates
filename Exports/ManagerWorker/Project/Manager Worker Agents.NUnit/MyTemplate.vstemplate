@@ -2,9 +2,6 @@
   <TemplateData>
     <Name>Agents.NUnit</Name>
     <Description>Project Template for Relativity Manager Worker Agents.NUnit</Description>
-    <ProjectType>CSharp</ProjectType>
-    <ProjectSubType>
-    </ProjectSubType>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <DefaultName>Agents.NUnit</DefaultName>

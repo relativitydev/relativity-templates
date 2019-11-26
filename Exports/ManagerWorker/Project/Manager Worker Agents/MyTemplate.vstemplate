@@ -2,9 +2,6 @@
   <TemplateData>
     <Name>Agents</Name>
     <Description>Project Template for Relativity Manager Worker Agents</Description>
-    <ProjectType>CSharp</ProjectType>
-    <ProjectSubType>
-    </ProjectSubType>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <DefaultName>Agents</DefaultName>

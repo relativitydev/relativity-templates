@@ -2,9 +2,6 @@
   <TemplateData>
     <Name>EventHandlers.NUnit</Name>
     <Description>Project Template for Relativity Manager Worker EventHandlers.NUnit</Description>
-    <ProjectType>CSharp</ProjectType>
-    <ProjectSubType>
-    </ProjectSubType>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <DefaultName>EventHandlers.NUnit</DefaultName>

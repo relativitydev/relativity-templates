@@ -2,9 +2,6 @@
   <TemplateData>
     <Name>Helpers.NUnit</Name>
     <Description>Project Template for Relativity Manager Worker Helpers.NUnit</Description>
-    <ProjectType>CSharp</ProjectType>
-    <ProjectSubType>
-    </ProjectSubType>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <DefaultName>Helpers.NUnit</DefaultName>
