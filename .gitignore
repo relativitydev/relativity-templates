@@ -26,3 +26,11 @@ StyleCop*
 *.csproj.user
 *.suo
 Source/Code/AdminMigrationUtility/AdminMigrationUtility.sln.DotSettings.user
+/Source/Code/Agents/packages
+/Source/Code/CustomPages/MVC5/packages
+/Source/Code/CustomPages/WebForms/packages
+/Source/Code/EventHandler/packages
+/Source/Code/Kepler/packages
+/Source/Code/RIP/packages
+/Source/Code/TestHelper/packages
+/Source/Code/WorkerManager/packages
