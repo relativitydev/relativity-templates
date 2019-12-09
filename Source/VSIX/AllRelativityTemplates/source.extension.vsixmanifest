@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b" Version="2.1" Language="en-US" Publisher="Relativity" />
+        <Identity Id="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b" Version="3.1" Language="en-US" Publisher="Relativity" />
         <DisplayName>Relativity Templates</DisplayName>
         <Description xml:space="preserve">This Project Contains Templates for Relativity Event Handlers, Agents, Custom Pages, The Manager Worker Solution, Relativity Integration Points(RIP), Kepler, and The Test Helper Example.</Description>
         <License>license.txt</License>
@@ -66,40 +66,27 @@
         <Asset Type="jQuery.3.4.1.nupkg" d:Source="File" Path="Packages\jQuery.3.4.1.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="jQuery.Validation.1.17.0.nupkg" d:Source="File" Path="Packages\jQuery.Validation.1.17.0.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="Microsoft.AspNet.Mvc.5.2.3.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.Mvc.5.2.3.nupkg" d:VsixSubPath="Packages" />
-        <Asset Type="Microsoft.AspNet.Mvc.5.2.4.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.Mvc.5.2.4.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="Microsoft.AspNet.Mvc.FixedDisplayModes.5.0.0.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.Mvc.FixedDisplayModes.5.0.0.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="Microsoft.AspNet.Razor.3.2.3.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.Razor.3.2.3.nupkg" d:VsixSubPath="Packages" />
-        <Asset Type="Microsoft.AspNet.Razor.3.2.4.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.Razor.3.2.4.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="Microsoft.AspNet.Web.Optimization.1.1.3.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.Web.Optimization.1.1.3.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="Microsoft.AspNet.WebApi.4.0.20710.0.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.WebApi.4.0.20710.0.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="Microsoft.AspNet.WebApi.Client.4.0.20710.0.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="Microsoft.AspNet.WebApi.Core.4.0.20710.0.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="Microsoft.AspNet.WebApi.WebHost.4.0.20710.0.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="Microsoft.AspNet.WebPages.3.2.3.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.WebPages.3.2.3.nupkg" d:VsixSubPath="Packages" />
-        <Asset Type="Microsoft.AspNet.WebPages.3.2.4.nupkg" d:Source="File" Path="Packages\Microsoft.AspNet.WebPages.3.2.4.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="Microsoft.jQuery.Unobtrusive.Ajax.3.2.2.nupkg" d:Source="File" Path="Packages\Microsoft.jQuery.Unobtrusive.Ajax.3.2.2.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="Microsoft.jQuery.Unobtrusive.Validation.3.2.2.nupkg" d:Source="File" Path="Packages\Microsoft.jQuery.Unobtrusive.Validation.3.2.2.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="Microsoft.Net.Http.2.0.20710.0.nupkg" d:Source="File" Path="Packages\Microsoft.Net.Http.2.0.20710.0.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="Microsoft.Web.Infrastructure.1.0.0.0.nupkg" d:Source="File" Path="Packages\Microsoft.Web.Infrastructure.1.0.0.0.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="Moq.4.2.1510.2205.nupkg" d:Source="File" Path="Packages\Moq.4.2.1510.2205.nupkg" d:VsixSubPath="Packages" />
-        <Asset Type="Newtonsoft.Json.6.0.8.nupkg" d:Source="File" Path="Packages\Newtonsoft.Json.6.0.8.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="Newtonsoft.Json.8.0.3.nupkg" d:Source="File" Path="Packages\Newtonsoft.Json.8.0.3.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="NUnit.2.6.3.nupkg" d:Source="File" Path="Packages\NUnit.2.6.3.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="NUnit.2.6.4.nupkg" d:Source="File" Path="Packages\NUnit.2.6.4.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="NUnit.3.12.0.nupkg" d:Source="File" Path="Packages\NUnit.3.12.0.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="NUnit3TestAdapter.3.12.0.nupkg" d:Source="File" Path="Packages\NUnit3TestAdapter.3.12.0.nupkg" d:VsixSubPath="Packages" />
-        <Asset Type="NUnitTestAdapter.WithFramework.2.0.0.nupkg" d:Source="File" Path="Packages\NUnitTestAdapter.WithFramework.2.0.0.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="popper.1.14.0.nupkg" d:Source="File" Path="Packages\popper.1.14.0.nupkg" d:VsixSubPath="Packages" />
-        <Asset Type="Relativity.Agent.10.2.170.2.nupkg" d:Source="File" Path="Packages\Relativity.Agent.10.2.170.2.nupkg" d:VsixSubPath="Packages" />
-        <Asset Type="Relativity.Api.10.2.170.2.nupkg" d:Source="File" Path="Packages\Relativity.Api.10.2.170.2.nupkg" d:VsixSubPath="Packages" />
-        <Asset Type="Relativity.CustomPages.10.2.170.2.nupkg" d:Source="File" Path="Packages\Relativity.CustomPages.10.2.170.2.nupkg" d:VsixSubPath="Packages" />
-        <Asset Type="Relativity.EventHandler.10.2.170.2.nupkg" d:Source="File" Path="Packages\Relativity.EventHandler.10.2.170.2.nupkg" d:VsixSubPath="Packages" />
-        <Asset Type="Relativity.ObjectManager.10.2.170.2.nupkg" d:Source="File" Path="Packages\Relativity.ObjectManager.10.2.170.2.nupkg" d:VsixSubPath="Packages" />
-        <Asset Type="Relativity.Rsapi.10.2.170.2.nupkg" d:Source="File" Path="Packages\Relativity.Rsapi.10.2.170.2.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="RelativityDev.RelativityTestHelpers.6.7.0.1.nupkg" d:Source="File" Path="Packages\RelativityDev.RelativityTestHelpers.6.7.0.1.nupkg" d:VsixSubPath="Packages" />
         <Asset Type="WebGrease.1.5.2.nupkg" d:Source="File" Path="Packages\WebGrease.1.5.2.nupkg" d:VsixSubPath="Packages" />
-        <Asset d:Source="File" Path="packages\relativity.api.10.3.170.1.nupkg" Type="File" />
-        <Asset Type="File" d:Source="File" Path="packages\relativity.objectmanager.10.3.170.1.nupkg" />
         <Asset d:Source="File" Path="ItemTemplates" Type="Microsoft.VisualStudio.ItemTemplate" d:TargetPath="ItemTemplates\Relativity\Kepler\KeplerException.zip" />
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Kepler\KeplerExceptionFaultSafe.zip" />
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Kepler\KeplerModule.zip" />
@@ -109,6 +96,17 @@
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Relativity\Kepler\KeplerIService.zip" />
         <Asset Type="File" d:Source="File" Path="packages\relativity.api.10.3.191.8.nupkg" />
         <Asset Type="File" d:Source="File" Path="packages\relativity.kepler.2.3.2.nupkg" />
+        <Asset Type="File" d:Source="File" Path="packages\relativity.agent.10.3.226.8.nupkg" />
+        <Asset Type="File" d:Source="File" Path="packages\relativity.api.10.3.226.8.nupkg" />
+        <Asset Type="File" d:Source="File" Path="packages\relativity.custompages.10.3.226.8.nupkg" />
+        <Asset Type="File" d:Source="File" Path="packages\relativity.eventhandler.10.3.226.8.nupkg" />
+        <Asset Type="File" d:Source="File" Path="packages\relativity.objectmanager.10.3.226.8.nupkg" />
+        <Asset Type="File" d:Source="File" Path="packages\relativity.other.10.3.226.8.nupkg" />
+        <Asset Type="File" d:Source="File" Path="packages\relativity.rsapi.10.3.226.8.nupkg" />
+        <Asset Type="File" d:Source="File" Path="packages\Relativity.Logging.2019.5.1.nupkg" />
+        <Asset Type="File" d:Source="File" Path="packages\Microsoft.AspNet.Mvc.5.2.4.nupkg" />
+        <Asset Type="File" d:Source="File" Path="packages\Microsoft.AspNet.Razor.3.2.4.nupkg" />
+        <Asset Type="File" d:Source="File" Path="packages\Microsoft.AspNet.WebPages.3.2.4.nupkg" />
     </Assets>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.8.27729.1,17.0)" DisplayName="Visual Studio core editor" />

@@ -30,10 +30,10 @@
     <packages repository="extension" repositoryId="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b">
       <package id="Moq" version="4.2.1510.2205" targetFramework="net45" />
       <package id="NUnit" version="2.6.3" targetFramework="net45" />
-      <package id="Relativity.Api" version="10.2.170.2" targetFramework="net462" />
-      <package id="Relativity.EventHandler" version="10.2.170.2" targetFramework="net462" />
-      <package id="Relativity.ObjectManager" version="10.2.170.2" targetFramework="net462" />
-      <package id="Relativity.Rsapi" version="10.2.170.2" targetFramework="net462" />
+      <package id="Relativity.Api" version="10.3.226.8" targetFramework="net462" />
+      <package id="Relativity.EventHandler" version="10.3.226.8" targetFramework="net462" />
+      <package id="Relativity.ObjectManager" version="10.3.226.8" targetFramework="net462" />
+      <package id="Relativity.Rsapi" version="10.3.226.8" targetFramework="net462" />
     </packages>
   </WizardData>
 </VSTemplate>

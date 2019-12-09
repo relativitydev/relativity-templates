@@ -42,12 +42,12 @@
   <WizardData>
     <packages repository="extension" repositoryId="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b">
       <package id="BCrypt-Official" version="0.1.109" />
-      <package id="Relativity.Api" version="10.2.170.2" />
-      <package id="Relativity.CustomPages" version="10.2.170.2" />
+      <package id="Relativity.Api" version="10.3.226.8" />
+      <package id="Relativity.CustomPages" version="10.3.226.8" />
       <package id="Relativity.Logging" version="2019.5.1" />
-      <package id="Relativity.ObjectManager" version="10.2.170.2" />
-      <package id="Relativity.Other" version="10.2.170.2" />
-      <package id="Relativity.Rsapi" version="10.2.170.2" />
+      <package id="Relativity.ObjectManager" version="10.3.226.8" />
+      <package id="Relativity.Other" version="10.3.226.8" />
+      <package id="Relativity.Rsapi" version="10.3.226.8" />
     </packages>
   </WizardData>
 </VSTemplate>

@@ -44,10 +44,10 @@
   <WizardData>
     <packages repository="extension" repositoryId="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b">
       <package id="Newtonsoft.Json" version="8.0.3" />
-      <package id="Relativity.Api" version="10.2.170.2" />
-      <package id="Relativity.EventHandler" version="10.2.170.2" />
-      <package id="Relativity.ObjectManager" version="10.2.170.2" />
-      <package id="Relativity.Rsapi" version="10.2.170.2" />
+      <package id="Relativity.Api" version="10.3.226.8" />
+      <package id="Relativity.EventHandler" version="10.3.226.8" />
+      <package id="Relativity.ObjectManager" version="10.3.226.8" />
+      <package id="Relativity.Rsapi" version="10.3.226.8" />
     </packages>
   </WizardData>
 </VSTemplate>
