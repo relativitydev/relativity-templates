@@ -170,12 +170,12 @@
       <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" />
       <package id="Newtonsoft.Json" version="8.0.3" />
       <package id="popper.js" version="1.14.0" />
-      <package id="Relativity.Api" version="10.2.170.2" />
-      <package id="Relativity.CustomPages" version="10.2.170.2" />
+      <package id="Relativity.Api" version="10.3.226.8" />
+      <package id="Relativity.CustomPages" version="10.3.226.8" />
       <package id="Relativity.Logging" version="2019.5.1" />
-      <package id="Relativity.ObjectManager" version="10.2.170.2" />
-      <package id="Relativity.Other" version="10.2.170.2" />
-      <package id="Relativity.Rsapi" version="10.2.170.2" />
+      <package id="Relativity.ObjectManager" version="10.3.226.8" />
+      <package id="Relativity.Other" version="10.3.226.8" />
+      <package id="Relativity.Rsapi" version="10.3.226.8" />
       <package id="WebGrease" version="1.5.2" />
     </packages>
   </WizardData>

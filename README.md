@@ -20,7 +20,7 @@ The Relativity Templates are compatible with Visual Studio 2012, 2013, 2015, 201
 - Integration Points template
 - Manager-Worker Agent template
 - Integration Test template
-- Kepler
+- Kepler (for Relativity Versions 10.3.191.8 and higher)
     - Kepler Project Template (creates Interfaces and Services projects in one go, has a UI Wizard)
     - Kepler Exception Item Template
     - Kepler Exception.FaultSafe Item Template
