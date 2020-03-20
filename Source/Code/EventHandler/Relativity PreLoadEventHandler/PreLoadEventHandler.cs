@@ -17,7 +17,7 @@ namespace Relativity.PreLoadEventHandler
 		public override Response Execute()
 		{
 			// Update Security Protocol
-			ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+			ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
 			//Construct a response object with default values.
 			kCura.EventHandler.Response retVal = new kCura.EventHandler.Response();

@@ -49,7 +49,7 @@ namespace $rootnamespace$
 		public void Execute_TestFixtureSetup()
 		{
 			// Update Security Protocol
-			ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+			ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
 			//Setup for testing
 			TestHelper helper = new TestHelper(ConfigurationHelper.ADMIN_USERNAME, ConfigurationHelper.DEFAULT_PASSWORD);
@@ -69,6 +69,7 @@ namespace $rootnamespace$
 
 			//Create workspace
 			_workspaceId = CreateWorkspace.CreateWorkspaceAsync(_workspaceName, ConfigurationHelper.TEST_WORKSPACE_TEMPLATE_NAME, servicesManager, ConfigurationHelper.ADMIN_USERNAME, ConfigurationHelper.DEFAULT_PASSWORD).Result;
+			// Using GetDBContext outside of an extensibility point will only work on Relativity Server
 			dbContext = helper.GetDBContext(_workspaceId);
 			_client.APIOptions.WorkspaceID = _workspaceId;
 			string executableLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
