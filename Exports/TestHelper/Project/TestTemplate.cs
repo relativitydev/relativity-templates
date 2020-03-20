@@ -1,8 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Net;
-using System.Reflection;
-using kCura.Relativity.Client;
+﻿using kCura.Relativity.Client;
 using NUnit.Framework;
 using Relativity.API;
 using Relativity.Test.Helpers;
@@ -13,6 +9,11 @@ using Relativity.Test.Helpers.ServiceFactory.Extentions;
 using Relativity.Test.Helpers.SharedTestHelpers;
 using Relativity.Test.Helpers.UserHelpers;
 using Relativity.Test.Helpers.WorkspaceHelpers;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net;
+using System.Reflection;
 
 namespace $safeprojectname$
 {
@@ -50,9 +51,16 @@ namespace $safeprojectname$
 		{
 			// Update Security Protocol
 			ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+			
+			//Setup runsettings
+			Dictionary<string, string> configDictionary = new Dictionary<string, string>();
+			foreach (string testParameterName in TestContext.Parameters.Names)
+			{
+				configDictionary.Add(testParameterName, TestContext.Parameters[testParameterName]);
+			}
 
 			//Setup for testing
-			TestHelper helper = new TestHelper(ConfigurationHelper.ADMIN_USERNAME, ConfigurationHelper.DEFAULT_PASSWORD);
+			TestHelper helper = new TestHelper(configDictionary);
 			servicesManager = helper.GetServicesManager();
 			_eddsDbContext = helper.GetDBContext(-1);
 

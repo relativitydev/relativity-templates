@@ -107,6 +107,14 @@
         <Asset Type="File" d:Source="File" Path="packages\Microsoft.AspNet.Mvc.5.2.4.nupkg" />
         <Asset Type="File" d:Source="File" Path="packages\Microsoft.AspNet.Razor.3.2.4.nupkg" />
         <Asset Type="File" d:Source="File" Path="packages\Microsoft.AspNet.WebPages.3.2.4.nupkg" />
+        <Asset Type="File" d:Source="File" Path="BouncyCastle.1.8.5.nupkg" />
+        <Asset Type="File" d:Source="File" Path="MailKit.2.2.0.nupkg" />
+        <Asset Type="File" d:Source="File" Path="MimeKit.2.2.0.nupkg" />
+        <Asset Type="File" d:Source="File" Path="Newtonsoft.Json.12.0.2.nupkg" />
+        <Asset Type="File" d:Source="File" Path="Polly.5.3.1.nupkg" />
+        <Asset Type="File" d:Source="File" Path="Relativity.DataExchange.Client.SDK.1.4.0.nupkg" />
+        <Asset Type="File" d:Source="File" Path="Relativity.OAuth2.Client.1.0.27.nupkg" />
+        <Asset Type="File" d:Source="File" Path="Relativity.OutsideIn.2019.3.0.nupkg" />
     </Assets>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.8.27729.1,17.0)" DisplayName="Visual Studio core editor" />
