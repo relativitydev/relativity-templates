@@ -20,6 +20,28 @@
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       </Folder>
+      <Folder Name="oi" TargetFolderName="oi">
+        <Folder Name="unmanaged" TargetFolderName="unmanaged">
+          <ProjectItem ReplaceParameters="false" TargetFileName="cmmap000.bin">cmmap000.bin</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="oilink.exe">oilink.exe</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="oilink.jar">oilink.jar</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="sccca-R1.dll">sccca-R1.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="sccch-R1.dll">sccch-R1.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="sccda-R1.dll">sccda-R1.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="sccex-R1.dll">sccex-R1.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="sccfa-R1.dll">sccfa-R1.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="sccfi-R1.dll">sccfi-R1.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="sccfmt-R1.dll">sccfmt-R1.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="sccfnt-R1.dll">sccfnt-R1.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="sccfut-R1.dll">sccfut-R1.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="sccind-R1.dll">sccind-R1.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="scclo-R1.dll">scclo-R1.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="sccut-R1.dll">sccut-R1.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="wvcore-R1.dll">wvcore-R1.dll</ProjectItem>
+        </Folder>
+      </Folder>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="test.runsettings">test.runsettings</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="TestHelpers_Kepler_App.rap">TestHelpers_Kepler_App.rap</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="TestTemplate.cs">TestTemplate.cs</ProjectItem>
     </Project>
   </TemplateContent>
@@ -29,11 +51,25 @@
   </WizardExtension>
   <WizardData>
     <packages repository="extension" repositoryId="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b">
-      <package id="NUnit" version="3.12.0" />
-      <package id="NUnit3TestAdapter" version="3.12.0" />
-      <package id="Relativity.Api" version="10.3.226.8" />
-      <package id="Relativity.Rsapi" version="10.3.226.8" />
-      <package id="RelativityDev.RelativityTestHelpers" version="6.7.0.1" />
+      <package id="BouncyCastle" version="1.8.5" />
+	  <package id="MailKit" version="2.2.0" />
+	  <package id="MimeKit" version="2.2.0" />
+	  <package id="Newtonsoft.Json" version="12.0.2" />
+	  <package id="NUnit" version="3.12.0" />
+	  <package id="NUnit3TestAdapter" version="3.12.0" />
+	  <package id="Polly" version="5.3.1" />
+	  <package id="Relativity.API" version="10.3.226.8" />
+	  <package id="Relativity.DataExchange.Client.SDK" version="1.4.0" />
+	  <package id="Relativity.Logging" version="2019.5.1" />
+	  <package id="Relativity.OAuth2.Client" version="1.0.27" />
+	  <package id="Relativity.ObjectManager" version="10.3.226.8" />
+	  <package id="Relativity.OutsideIn" version="2019.3.0" />
+	  <package id="Relativity.Rsapi" version="10.3.226.8" />
+	  <package id="Relativity.Telemetry.Client" version="9.4.164" />
+	  <package id="Relativity.Transfer.Client" version="6.0.16" />
+	  <package id="RelativityDev.RelativityTestHelpers" version="7.4.1.1" />
+	  <package id="SSH.NET" version="2016.0.0" />
+	  <package id="ZetaLongPaths" version="1.0.0.16" />
     </packages>
   </WizardData>
 </VSTemplate>

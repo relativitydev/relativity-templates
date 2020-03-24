@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+	<!-- Parameters used by tests at run time -->
+	<TestRunParameters>
+		<Parameter name="WorkspaceID" value="-1" />
+		<Parameter name="TestWorkspaceName" value="Test Workspace" />
+		<Parameter name="TestWorkspaceTemplateName" value="Base Template" />
+		<Parameter name="AdminUsername" value="email@relativity.com" />
+		<Parameter name="AdminPassword" value="somePassword" />
+		<Parameter name="SQLUserName" value="eddsdbo" />
+		<Parameter name="SQLPassword" value="somepassword" />
+		<Parameter name="SQLServerAddress" value="172.99.99.99" />
+		<Parameter name="TestingServiceRapPath" value="C:\Users\user.name\Downloads" />
+		<Parameter name="UploadTestingServiceRap" value="MyApp.rap" />
+		<Parameter name="EmailTo" value="your.email.account@relativity.com" />
+		<Parameter name="RSAPIServerAddress" value="172.99.99.99" />
+		<Parameter name="RESTServerAddress" value="172.99.99.99" />
+		<Parameter name="ServerBindingType" value="http" />
+		<Parameter name="RelativityInstanceAddress" value="172.99.99.99" />
+		<Parameter name="ForceDbContext" value="false"/>
+		<Parameter name="GmailMailTestEmailAddress" value="someEmail@gmail.com"/> <!--Used for GmailMail Tests-->
+		<Parameter name="GmailMailTestEmailPassword" value="somePassword"/> <!--Used for GmailMail Tests-->
+		<Parameter name="MailTrapTestApiKey" value="someKey"/> <!--Used for MailTrap Tests--> 
+		<Parameter name="MailTrapTestEmailAddress" value="someEmail@gmail.com"/> <!--Used for MailTrap Tests-->
+		<Parameter name="MailTrapTestEmailUsername" value="someUsername"/> <!--Used for MailTrap Tests-->
+		<Parameter name="MailTrapTestEmailPassword" value="somePassword"/> <!--Used for MailTrap Tests-->
+	</TestRunParameters>
+</RunSettings>

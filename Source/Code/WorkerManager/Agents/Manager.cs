@@ -22,7 +22,7 @@ namespace Agents
 		public async Task ExecuteAsync()
 		{
 			// Update Security Protocol
-			ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+			ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
 			Helpers.IQuery queryHelper = new Query();
 			IEnumerable<Int32> resourceGroupIds = GetResourceGroupIDs();
