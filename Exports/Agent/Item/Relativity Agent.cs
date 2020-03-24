@@ -21,7 +21,7 @@ namespace $rootnamespace$
 			try
 			{
 				// Update Security Protocol
-				ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+				ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
 				//Get the current Agent artifactID
 				int agentArtifactId = AgentID;
