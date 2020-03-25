@@ -264,11 +264,11 @@
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="ItemTemplates\Relativity\TestHelpers\TestHelper.zip">
+    <Content Include="ItemTemplates\Relativity\IntegrationTest\IntegrationTest.zip">
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="ProjectTemplates\Relativity\TestHelpers\TestHelper.zip">
+    <Content Include="ProjectTemplates\Relativity\IntegrationTest\IntegrationTest.zip">
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
