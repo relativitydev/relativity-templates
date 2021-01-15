@@ -1,8 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using kCura.Relativity.Client;
 using kCura.Relativity.Client.DTOs;
 using Relativity.API;
+using Relativity.Services.Interfaces.Field.Models;
+using Relativity.Services.Objects;
+using Relativity.Services.Objects.DataContracts;
+using Field = Relativity.Services.Objects.DataContracts.Field;
+using ReadResult = Relativity.Services.Objects.DataContracts.ReadResult;
 
 namespace Helpers.Rsapi
 {
@@ -11,34 +17,33 @@ namespace Helpers.Rsapi
 		//Do not convert to async
 		public Boolean DoesUserHaveAccessToArtifact(IServicesMgr svcMgr, ExecutionIdentity identity, Int32 workspaceArtifactID, Guid guid, String artifactTypeName)
 		{
-			Response<Boolean> result = DoesUserHaveAccessToRdoByType(svcMgr, identity, workspaceArtifactID, guid, artifactTypeName);
-			Boolean hasAccess = result.Success;
-
-			return hasAccess;
+			Boolean result = DoesUserHaveAccessToRdoByType(svcMgr, identity, workspaceArtifactID, guid, artifactTypeName);
+			return result;
 		}
 
 		//Do not convert to async
-		public Response<Boolean> DoesUserHaveAccessToRdoByType(IServicesMgr svcMgr, ExecutionIdentity identity, Int32 workspaceArtifactID, Guid guid, String artifactTypeName)
+		public Boolean DoesUserHaveAccessToRdoByType(IServicesMgr svcMgr, ExecutionIdentity identity, Int32 workspaceArtifactID, Guid guid, String artifactTypeName)
 		{
-			ResultSet<RDO> results = new ResultSet<RDO>();
-
-			using (IRSAPIClient client = svcMgr.CreateProxy<IRSAPIClient>(identity))
+			bool res = false;
+			using (IObjectManager objectManager = svcMgr.CreateProxy<IObjectManager>(identity))
 			{
-				client.APIOptions.WorkspaceID = workspaceArtifactID;
-				RDO relApp = new RDO(guid)
+				ReadRequest readRequest = new ReadRequest
 				{
-					ArtifactTypeName = artifactTypeName
+					Object = new RelativityObjectRef
+					{
+						Guid = guid
+					},
 				};
-
-				results = client.Repositories.RDO.Read(relApp);
+				try
+				{
+					ReadResult readResult = objectManager.ReadAsync(workspaceArtifactID, readRequest).Result;
+					res = true;
+				}
+				catch (Exception ex)
+				{
+					res = false;
+				}
 			}
-
-			Response<bool> res = new Response<Boolean>
-			{
-				Results = results.Success,
-				Success = results.Success,
-				Message = MessageFormatter.FormatMessage(results.Results.Select(x => x.Message).ToList(), results.Message, results.Success)
-			};
 
 			return res;
 		}

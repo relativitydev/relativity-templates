@@ -45,18 +45,6 @@ namespace Agents
 				//Add the error to our custom Errors table
 				queryHelper.InsertRowIntoErrorLogAsync(Helper.GetDBContext(-1), job.WorkspaceArtifactId, Constant.Tables.ManagerQueue, job.RecordId, job.AgentId, ex.ToString()).Wait();
 
-				//Add the error to the Relativity Errors tab
-				//this second try catch is in case we have a problem connecting to the RSAPI
-				try
-				{
-					Helpers.Rsapi.ErrorQueries.WriteError(Helper.GetServicesManager(), ExecutionIdentity.System, job.WorkspaceArtifactId, ex);
-				}
-				catch (Exception rsapiException)
-				{
-					RaiseError(rsapiException.ToString(), rsapiException.ToString());
-					Logger.LogError(rsapiException, String.Format("{0} - {1}", Constant.Names.ApplicationName, rsapiException));
-				}
-
 				//Set the status in the queue to error
 				queryHelper.UpdateStatusInManagerQueueAsync(Helper.GetDBContext(-1), Constant.QueueStatus.Error, job.RecordId).Wait();
 			}

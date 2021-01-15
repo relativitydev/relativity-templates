@@ -40,6 +40,18 @@
     <Reference Include="Relativity.API, Version=10.3.226.8, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Relativity.API.10.3.226.8\lib\net462\Relativity.API.dll</HintPath>
     </Reference>
+    <Reference Include="Relativity.Kepler, Version=1.0.1.627, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.10.3.226.8\lib\net462\Relativity.Kepler.dll</HintPath>
+    </Reference>
+    <Reference Include="Relativity.Services.DataContracts, Version=10.3.226.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.10.3.226.8\lib\net462\Relativity.Services.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Relativity.Services.Interfaces, Version=10.3.226.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.10.3.226.8\lib\net462\Relativity.Services.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Relativity.Services.ServiceProxy, Version=1.0.1.627, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.10.3.226.8\lib\net462\Relativity.Services.ServiceProxy.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -57,7 +69,6 @@
     <Compile Include="Models\WorkerQueueRecord.cs" />
     <Compile Include="Query.cs" />
     <Compile Include="Rsapi\ArtifactQueries.cs" />
-    <Compile Include="Rsapi\ErrorQueries.cs" />
     <Compile Include="Rsapi\Interfaces\IWorkspaceQueries.cs" />
     <Compile Include="Rsapi\MessageFormatter.cs" />
     <Compile Include="Rsapi\Response.cs" />
