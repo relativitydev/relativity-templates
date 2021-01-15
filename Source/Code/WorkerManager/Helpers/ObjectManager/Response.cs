@@ -4,7 +4,7 @@ using System.Linq;
 using kCura.Relativity.Client;
 using kCura.Relativity.Client.DTOs;
 
-namespace Helpers.Rsapi
+namespace Helpers.ObjectManager
 {
 	public class Response<TResultType>
 	{

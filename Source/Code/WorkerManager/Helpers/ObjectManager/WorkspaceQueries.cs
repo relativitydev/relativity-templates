@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Helpers.ObjectManager.Interfaces;
 using kCura.Relativity.Client;
 using Relativity.API;
-using Helpers.Rsapi.Interfaces;
 using Relativity.Services.Objects;
 using Relativity.Services.Objects.DataContracts;
 
-namespace Helpers.Rsapi
+namespace Helpers.ObjectManager
 {
 	public class WorkspaceQueries : IWorkspaceQueries
 	{

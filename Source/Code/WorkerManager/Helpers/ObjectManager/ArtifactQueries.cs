@@ -10,7 +10,7 @@ using Relativity.Services.Objects.DataContracts;
 using Field = Relativity.Services.Objects.DataContracts.Field;
 using ReadResult = Relativity.Services.Objects.DataContracts.ReadResult;
 
-namespace Helpers.Rsapi
+namespace Helpers.ObjectManager
 {
 	public class ArtifactQueries
 	{
