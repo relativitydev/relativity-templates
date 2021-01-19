@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Web.Mvc;
-using kCura.Relativity.Client;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Relativity.API;
 using Relativity.CustomPages;
+using Relativity.Services.Objects;
 using RIP.Provider;
 
 namespace RIP.Web.Controllers
@@ -16,18 +16,14 @@ namespace RIP.Web.Controllers
 		// GET: Provider
 		public ActionResult Index()
 		{
-			// Example demonstrates the creation of the RSAPI client and use of the logger
+			// Example demonstrates the creation of the Object Manager client and use of the logger
 			IAPILog logger = ConnectionHelper.Helper().GetLoggerFactory().GetLogger();
 			try
 			{
-				using (IRSAPIClient rsapiClient = ConnectionHelper.Helper().GetServicesManager().CreateProxy<IRSAPIClient>(ExecutionIdentity.System))
+				using (IObjectManager objectManager = ConnectionHelper.Helper().GetServicesManager()
+					.CreateProxy<IObjectManager>(ExecutionIdentity.System))
 				{
-					int randomRDOArtifactID = 123123;
-					rsapiClient.APIOptions = new APIOptions
-					{
-						WorkspaceID = ConnectionHelper.Helper().GetActiveCaseID()
-					};
-					//var result = rsapiClient.Repositories.RDO.Read(randomRDOArtifactID);
+
 				}
 			}
 			catch (Exception ex)

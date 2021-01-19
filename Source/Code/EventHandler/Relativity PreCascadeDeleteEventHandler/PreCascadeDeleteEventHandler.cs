@@ -28,20 +28,10 @@ namespace Relativity.PreCascadeDeleteEventHandler
 			{
 				Int32 currentWorkspaceArtifactID = Helper.GetActiveCaseID();
 
-				//The Object Manager is the newest and preferred way to interact with Relativity instead of the Relativity Services API(RSAPI). 
-				//The RSAPI will be scheduled for depreciation after the Object Manager reaches feature party with it.
+				//The Object Manager is the newest and preferred way to interact with Relativity instead of the Relativity Services API(RSAPI).
 				using (IObjectManager objectManager = this.Helper.GetServicesManager().CreateProxy<IObjectManager>(ExecutionIdentity.System))
 				{
 
-				}
-
-				//Setting up an RSAPI Client
-				using (IRSAPIClient proxy =
-						Helper.GetServicesManager().CreateProxy<IRSAPIClient>(ExecutionIdentity.System))
-				{
-					//Set the proxy to use the current workspace
-					proxy.APIOptions.WorkspaceID = currentWorkspaceArtifactID;
-					//Add code for working with RSAPIClient
 				}
 
 				workspaceContext = Helper.GetDBContext(currentWorkspaceArtifactID);
