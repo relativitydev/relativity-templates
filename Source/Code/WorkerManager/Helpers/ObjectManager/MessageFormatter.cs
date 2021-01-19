@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Helpers.Rsapi
+namespace Helpers.ObjectManager
 {
 	public class MessageFormatter
 	{
