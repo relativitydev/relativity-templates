@@ -48,8 +48,8 @@
     <Reference Include="Microsoft.VisualStudio.CoreUtility">
       <Private>False</Private>
     </Reference>
-    <Reference Include="Relativity.API, Version=10.3.170.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Relativity.Api.10.3.170.1\lib\net462\Relativity.API.dll</HintPath>
+    <Reference Include="Relativity.API, Version=10.1.273.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Relativity.Api.10.1.273.3\lib\net462\Relativity.API.dll</HintPath>
     </Reference>
     <Reference Include="Relativity.Kepler, Version=2.2.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Relativity.Kepler.2.2.1\lib\net462\Relativity.Kepler.dll</HintPath>
