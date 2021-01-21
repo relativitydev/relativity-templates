@@ -37,14 +37,14 @@
     <Reference Include="BCrypt.Net, Version=0.1.5073.29922, Culture=neutral, PublicKeyToken=6bcd409ee6bc9292, processorArchitecture=MSIL">
       <HintPath>..\packages\BCrypt-Official.0.1.109\lib\BCrypt.Net.dll</HintPath>
     </Reference>
-    <Reference Include="kCura, Version=10.3.226.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Other.10.3.226.8\lib\net462\kCura.dll</HintPath>
+    <Reference Include="kCura, Version=10.1.273.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Other.10.1.273.3\lib\net462\kCura.dll</HintPath>
     </Reference>
-    <Reference Include="kCura.Agent, Version=10.3.226.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Agent.10.3.226.8\lib\net462\kCura.Agent.dll</HintPath>
+    <Reference Include="kCura.Agent, Version=10.1.273.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Agent.10.1.273.3\lib\net462\kCura.Agent.dll</HintPath>
     </Reference>
-    <Reference Include="kCura.Relativity.Client, Version=10.3.226.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Rsapi.10.3.226.8\lib\net462\kCura.Relativity.Client.dll</HintPath>
+    <Reference Include="kCura.Relativity.Client, Version=10.1.273.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Rsapi.10.1.273.3\lib\net462\kCura.Relativity.Client.dll</HintPath>
     </Reference>
     <Reference Include="Moq, Version=4.2.1510.2205, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>..\packages\Moq.4.2.1510.2205\lib\net40\Moq.dll</HintPath>
@@ -57,14 +57,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity, Version=10.3.226.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Other.10.3.226.8\lib\net462\Relativity.dll</HintPath>
+    <Reference Include="Relativity, Version=10.1.273.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Other.10.1.273.3\lib\net462\Relativity.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.API, Version=10.3.226.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.API.10.3.226.8\lib\net462\Relativity.API.dll</HintPath>
+    <Reference Include="Relativity.API, Version=10.1.273.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Api.10.1.273.3\lib\net462\Relativity.API.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Kepler, Version=1.0.1.627, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.10.3.226.8\lib\net462\Relativity.Kepler.dll</HintPath>
+    <Reference Include="Relativity.Kepler, Version=1.0.1.557, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.10.1.273.3\lib\net462\Relativity.Kepler.dll</HintPath>
     </Reference>
     <Reference Include="Relativity.Logging, Version=2019.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Relativity.Logging.2019.5.1\lib\net462\Relativity.Logging.dll</HintPath>
@@ -72,14 +72,14 @@
     <Reference Include="Relativity.Logging.Interfaces, Version=2019.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Relativity.Logging.2019.5.1\lib\net462\Relativity.Logging.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Services.DataContracts, Version=10.3.226.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.10.3.226.8\lib\net462\Relativity.Services.DataContracts.dll</HintPath>
+    <Reference Include="Relativity.Services.DataContracts, Version=10.1.273.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.10.1.273.3\lib\net462\Relativity.Services.DataContracts.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Services.Interfaces, Version=10.3.226.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.10.3.226.8\lib\net462\Relativity.Services.Interfaces.dll</HintPath>
+    <Reference Include="Relativity.Services.Interfaces, Version=10.1.273.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.10.1.273.3\lib\net462\Relativity.Services.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Services.ServiceProxy, Version=1.0.1.627, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.10.3.226.8\lib\net462\Relativity.Services.ServiceProxy.dll</HintPath>
+    <Reference Include="Relativity.Services.ServiceProxy, Version=1.0.1.557, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.10.1.273.3\lib\net462\Relativity.Services.ServiceProxy.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

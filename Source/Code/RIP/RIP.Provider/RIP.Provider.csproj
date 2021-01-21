@@ -31,8 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="kCura.EventHandler, Version=10.3.226.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.EventHandler.10.3.226.8\lib\net462\kCura.EventHandler.dll</HintPath>
+    <Reference Include="kCura.EventHandler, Version=10.1.273.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.EventHandler.10.1.273.3\lib\net462\kCura.EventHandler.dll</HintPath>
     </Reference>
     <Reference Include="kCura.IntegrationPoints.Contracts, Version=10.2.23.7, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
@@ -50,26 +50,26 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLL\kCura.IntegrationPoints.SourceProviderInstaller.dll</HintPath>
     </Reference>
-    <Reference Include="kCura.Relativity.Client, Version=10.3.226.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Rsapi.10.3.226.8\lib\net462\kCura.Relativity.Client.dll</HintPath>
+    <Reference Include="kCura.Relativity.Client, Version=10.1.273.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Rsapi.10.1.273.3\lib\net462\kCura.Relativity.Client.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.API, Version=10.3.226.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.API.10.3.226.8\lib\net462\Relativity.API.dll</HintPath>
+    <Reference Include="Relativity.API, Version=10.1.273.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Api.10.1.273.3\lib\net462\Relativity.API.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Kepler, Version=1.0.1.627, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.10.3.226.8\lib\net462\Relativity.Kepler.dll</HintPath>
+    <Reference Include="Relativity.Kepler, Version=1.0.1.557, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.10.1.273.3\lib\net462\Relativity.Kepler.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Services.DataContracts, Version=10.3.226.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.10.3.226.8\lib\net462\Relativity.Services.DataContracts.dll</HintPath>
+    <Reference Include="Relativity.Services.DataContracts, Version=10.1.273.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.10.1.273.3\lib\net462\Relativity.Services.DataContracts.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Services.Interfaces, Version=10.3.226.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.10.3.226.8\lib\net462\Relativity.Services.Interfaces.dll</HintPath>
+    <Reference Include="Relativity.Services.Interfaces, Version=10.1.273.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.10.1.273.3\lib\net462\Relativity.Services.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Services.ServiceProxy, Version=1.0.1.627, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.ObjectManager.10.3.226.8\lib\net462\Relativity.Services.ServiceProxy.dll</HintPath>
+    <Reference Include="Relativity.Services.ServiceProxy, Version=1.0.1.557, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.ObjectManager.10.1.273.3\lib\net462\Relativity.Services.ServiceProxy.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
