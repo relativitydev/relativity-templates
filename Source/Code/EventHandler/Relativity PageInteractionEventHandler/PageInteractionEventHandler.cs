@@ -39,7 +39,8 @@ namespace Relativity.PageInteractionEventhandler
 			//Load Javascript and CSS from an existing Relativity Custom Page
 
 			//Retrieve the URL to the custom page where your external files are stored.  Use your custom page application's GUID.
-			string applicationPath = this.Helper.GetUrlHelper().GetRelativePathToCustomPages(new Guid("439e0ca3-cfbf-4940-a868-c9cd70d0368d"));
+			Guid applicationGuid = new Guid("439e0ca3-cfbf-4940-a868-c9cd70d0368d");
+			string applicationPath = this.Helper.GetUrlHelper().GetRelativePathToCustomPages(applicationGuid);
 
 			// Before the elements are loaded on a page, register the JavaScript file. 
 			// You can load a JavaScript file into Relativity via a custom page.
