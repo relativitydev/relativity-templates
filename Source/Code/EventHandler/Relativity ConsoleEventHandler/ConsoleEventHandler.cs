@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Runtime.InteropServices;
-using kCura.EventHandler;
-using kCura.EventHandler.CustomAttributes;
-using kCura.Relativity.Client;
+﻿using kCura.EventHandler;
 using Relativity.API;
 using Relativity.Services.Objects;
+using System;
+using System.Collections.Generic;
+using System.Net;
 
 namespace Relativity.ConsoleEventHandler
 {
@@ -18,20 +15,18 @@ namespace Relativity.ConsoleEventHandler
 		public override kCura.EventHandler.Console GetConsole(PageEvent pageEvent)
 		{
 			// Update Security Protocol
-			ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls |
-																						 SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+			ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
 			kCura.EventHandler.Console returnConsole = new kCura.EventHandler.Console()
 			{ Items = new List<IConsoleItem>(), Title = "Title of Console" };
 			;
 
-			returnConsole.Items.Add(new ConsoleButton() { Name = "1st Button", DisplayText = "Click Me", Enabled = true });
+			returnConsole.Items.Add(new ConsoleButton() { Name = "1st Button", DisplayText = "Click Me", Enabled = true, RaisesPostBack = true });
 
 			Int32 currentWorkspaceArtifactID = Helper.GetActiveCaseID();
 
 			//The Object Manager is the newest and preferred way to interact with Relativity instead of the Relativity Services API(RSAPI).
-			using (IObjectManager objectManager =
-				this.Helper.GetServicesManager().CreateProxy<IObjectManager>(ExecutionIdentity.System))
+			using (IObjectManager objectManager = this.Helper.GetServicesManager().CreateProxy<IObjectManager>(ExecutionIdentity.System))
 			{
 
 			}
@@ -52,8 +47,7 @@ namespace Relativity.ConsoleEventHandler
 		public override void OnButtonClick(ConsoleButton consoleButton)
 		{
 			// Update Security Protocol
-			ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls |
-																						 SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+			ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
 			switch (consoleButton.Name)
 			{

@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using kCura.EventHandler;
-using kCura.Relativity.Client;
+﻿using kCura.EventHandler;
 using Relativity.API;
 using Relativity.Services.Objects;
+using System;
+using System.Net;
 
 namespace Relativity_ListPageInteractionEventHandler
 {

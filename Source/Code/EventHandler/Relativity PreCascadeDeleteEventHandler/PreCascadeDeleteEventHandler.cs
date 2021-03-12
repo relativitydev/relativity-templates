@@ -1,11 +1,8 @@
-﻿using System;
-using System.Net;
-using System.Runtime.InteropServices;
-using kCura.EventHandler;
-using kCura.EventHandler.CustomAttributes;
-using kCura.Relativity.Client;
+﻿using kCura.EventHandler;
 using Relativity.API;
 using Relativity.Services.Objects;
+using System;
+using System.Net;
 
 namespace Relativity.PreCascadeDeleteEventHandler
 {

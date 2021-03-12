@@ -1,49 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Runtime.InteropServices;
-using kCura.EventHandler;
-using kCura.EventHandler.CustomAttributes;
-using kCura.Relativity.Client;
+﻿using kCura.EventHandler;
 using Relativity.API;
 using Relativity.Services.Objects;
+using System;
+using System.Collections.Generic;
+using System.Net;
 
 namespace $rootnamespace$
 {
 	[kCura.EventHandler.CustomAttributes.Description("Console EventHandler")]
 	[System.Runtime.InteropServices.Guid("$guid1$")]
-	public class $safeitemname$ : kCura.EventHandler.ConsoleEventHandler
+	public class $safeitemname$ : kCura.EventHandler.$safeitemname$
 	{
 
 		public override kCura.EventHandler.Console GetConsole(PageEvent pageEvent)
 		{
 			// Update Security Protocol
-			ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls |
-																						 SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+			ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
 			kCura.EventHandler.Console returnConsole = new kCura.EventHandler.Console()
 			{ Items = new List<IConsoleItem>(), Title = "Title of Console" };
 			;
 
-			returnConsole.Items.Add(new ConsoleButton() { Name = "1st Button", DisplayText = "Click Me", Enabled = true });
+			returnConsole.Items.Add(new ConsoleButton() { Name = "1st Button", DisplayText = "Click Me", Enabled = true, RaisesPostBack = true });
 
 			Int32 currentWorkspaceArtifactID = Helper.GetActiveCaseID();
 
-			//The Object Manager is the newest and preferred way to interact with Relativity instead of the Relativity Services API(RSAPI). 
-			//The RSAPI will be scheduled for depreciation after the Object Manager reaches feature party with it.
-			using (IObjectManager objectManager =
-				this.Helper.GetServicesManager().CreateProxy<IObjectManager>(ExecutionIdentity.System))
+			//The Object Manager is the newest and preferred way to interact with Relativity instead of the Relativity Services API(RSAPI).
+			using (IObjectManager objectManager = this.Helper.GetServicesManager().CreateProxy<IObjectManager>(ExecutionIdentity.System))
 			{
 
-			}
-
-			//Setting up an RSAPI Client
-			using (IRSAPIClient proxy =
-				Helper.GetServicesManager().CreateProxy<IRSAPIClient>(ExecutionIdentity.System))
-			{
-				//Set the proxy to use the current workspace
-				proxy.APIOptions.WorkspaceID = currentWorkspaceArtifactID;
-				//Add code for working with RSAPIClient
 			}
 
 			Relativity.API.IDBContext workspaceContext = Helper.GetDBContext(currentWorkspaceArtifactID);
@@ -62,8 +47,7 @@ namespace $rootnamespace$
 		public override void OnButtonClick(ConsoleButton consoleButton)
 		{
 			// Update Security Protocol
-			ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls |
-																						 SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+			ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
 			switch (consoleButton.Name)
 			{
