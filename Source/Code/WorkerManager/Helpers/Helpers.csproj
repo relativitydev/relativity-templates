@@ -34,9 +34,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="kCura.Relativity.Client, Version=10.3.191.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Rsapi.10.3.191.8\lib\net462\kCura.Relativity.Client.dll</HintPath>
-    </Reference>
     <Reference Include="Relativity.API, Version=10.3.191.8, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Relativity.Api.10.3.191.8\lib\net462\Relativity.API.dll</HintPath>
     </Reference>
@@ -71,7 +68,6 @@
     <Compile Include="ObjectManager\ArtifactQueries.cs" />
     <Compile Include="ObjectManager\Interfaces\IWorkspaceQueries.cs" />
     <Compile Include="ObjectManager\MessageFormatter.cs" />
-    <Compile Include="ObjectManager\Response.cs" />
     <Compile Include="ObjectManager\WorkspaceQueries.cs" />
   </ItemGroup>
   <ItemGroup>

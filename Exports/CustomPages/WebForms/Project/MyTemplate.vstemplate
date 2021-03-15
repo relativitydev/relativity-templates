@@ -1,13 +1,13 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <Name>Relativity Custom Page WebForms</Name>
-    <Description>Project Template for Relativity Custom Page WebForms</Description>
+    <Name>Relativity Custom Page Form</Name>
+    <Description>Project Template for Relativity Custom Page Form</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
-    <DefaultName>Relativity Custom Page WebForms</DefaultName>
+    <DefaultName>Relativity Custom Page Form</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
@@ -35,19 +35,18 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="Web.Release.config">Web.Release.config</ProjectItem>
     </Project>
   </TemplateContent>
-  <WizardExtension>
-    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
-    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
-  </WizardExtension>
-  <WizardData>
-    <packages repository="extension" repositoryId="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b">
-      <package id="BCrypt-Official" version="0.1.109" />
-      <package id="Relativity.Api" version="10.3.226.8" />
-      <package id="Relativity.CustomPages" version="10.3.226.8" />
-      <package id="Relativity.Logging" version="2019.5.1" />
-      <package id="Relativity.ObjectManager" version="10.3.226.8" />
-      <package id="Relativity.Other" version="10.3.226.8" />
-      <package id="Relativity.Rsapi" version="10.3.226.8" />
-    </packages>
-  </WizardData>
+	<WizardExtension>
+		<Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+		<FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+	</WizardExtension>
+	<WizardData>
+		<packages repository="extension" repositoryId="Relativity.Templates.10a39f04-8755-4444-9928-c25527b9209b">
+		  <package id="BCrypt-Official" version="0.1.109" />
+		  <package id="Relativity.Api" version="10.3.191.8" />
+		  <package id="Relativity.CustomPages" version="10.3.191.8" />
+		  <package id="Relativity.Logging" version="2019.5.1" />
+		  <package id="Relativity.ObjectManager" version="10.3.191.8" />
+		  <package id="Relativity.Other" version="10.3.191.8" />
+		</packages>
+	</WizardData>
 </VSTemplate>
