@@ -31,26 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BCrypt.Net, Version=0.1.5073.29922, Culture=neutral, PublicKeyToken=6bcd409ee6bc9292, processorArchitecture=MSIL">
-      <HintPath>packages\BCrypt-Official.0.1.109\lib\BCrypt.Net.dll</HintPath>
+    <Reference Include="kCura.Agent, Version=17.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Relativity.Agent.17.0.4\lib\net462\kCura.Agent.dll</HintPath>
     </Reference>
-    <Reference Include="kCura, Version=10.3.191.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Relativity.Other.10.3.191.8\lib\net462\kCura.dll</HintPath>
-    </Reference>
-    <Reference Include="kCura.Agent, Version=10.3.191.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Relativity.Agent.10.3.191.8\lib\net462\kCura.Agent.dll</HintPath>
-    </Reference>
-    <Reference Include="kCura.Relativity.Client, Version=10.3.191.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Relativity.Rsapi.10.3.191.8\lib\net462\kCura.Relativity.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Relativity, Version=10.3.191.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Relativity.Other.10.3.191.8\lib\net462\Relativity.dll</HintPath>
-    </Reference>
-    <Reference Include="Relativity.API, Version=10.3.191.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Relativity.Api.10.3.191.8\lib\net462\Relativity.API.dll</HintPath>
+    <Reference Include="Relativity.API, Version=17.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Relativity.API.17.0.4\lib\net462\Relativity.API.dll</HintPath>
     </Reference>
     <Reference Include="Relativity.Kepler, Version=1.0.1.627, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Relativity.ObjectManager.10.3.191.8\lib\net462\Relativity.Kepler.dll</HintPath>
@@ -83,10 +68,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LICENSE.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Helpers.ObjectManager.Interfaces;
-using kCura.Relativity.Client;
+﻿using Helpers.ObjectManager.Interfaces;
 using Relativity.API;
 using Relativity.Services.Objects;
 using Relativity.Services.Objects.DataContracts;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Helpers.ObjectManager
 {
@@ -33,7 +32,7 @@ namespace Helpers.ObjectManager
 					},
 					Condition = $"'ArtifactID' == '{workspaceArtifactId}'"
 				};
-				QueryResultSlim workspaceQueryResultSlim = await objectManager.QuerySlimAsync(-1, workspaceQueryRequest,0,25);
+				QueryResultSlim workspaceQueryResultSlim = await objectManager.QuerySlimAsync(-1, workspaceQueryRequest, 0, 25);
 				if (workspaceQueryResultSlim.TotalCount == 0)
 				{
 					throw new Exception("Failed to Query for Workspace");

@@ -2,7 +2,7 @@
   <TemplateData>
     <DefaultName>Relativity PreMassDeleteEventHandler.cs</DefaultName>
     <Name>Relativity PreMassDeleteEventHandler</Name>
-    <Description>Item Template for Relativity Pre Mass Delete Event Handler</Description>
+    <Description>Item Template for Relativity PreMassDeleteEventHandler</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>10</SortOrder>
     <Icon>__TemplateIcon.ico</Icon>

@@ -1,11 +1,8 @@
-﻿using System;
-using System.Net;
-using System.Runtime.InteropServices;
-using kCura.EventHandler;
-using kCura.EventHandler.CustomAttributes;
-using kCura.Relativity.Client;
+﻿using kCura.EventHandler;
 using Relativity.API;
 using Relativity.Services.Objects;
+using System;
+using System.Net;
 
 namespace $rootnamespace$
 {
@@ -25,20 +22,10 @@ namespace $rootnamespace$
 
 			Int32 currentWorkspaceArtifactID = Helper.GetActiveCaseID();
 
-			//The Object Manager is the newest and preferred way to interact with Relativity instead of the Relativity Services API(RSAPI). 
-			//The RSAPI will be scheduled for depreciation after the Object Manager reaches feature party with it.
+			//The Object Manager is the newest and preferred way to interact with Relativity instead of the Relativity Services API(RSAPI).
 			using (IObjectManager objectManager = this.Helper.GetServicesManager().CreateProxy<IObjectManager>(ExecutionIdentity.System))
 			{
 
-			}
-
-			//Setting up an RSAPI Client
-			using (IRSAPIClient proxy =
-					Helper.GetServicesManager().CreateProxy<IRSAPIClient>(ExecutionIdentity.System))
-			{
-				//Set the proxy to use the current workspace
-				proxy.APIOptions.WorkspaceID = currentWorkspaceArtifactID;
-				//Add code for working with RSAPIClient
 			}
 
 			//Register Javascript functions directly.
@@ -51,8 +38,9 @@ namespace $rootnamespace$
 
 			//Load Javascript and CSS from an existing Relativity Custom Page
 
-			//Let's get the url to our custom pages so we can pull in script/css pages from there
-			String applicationPath = getApplicationPath(this.Application.ApplicationUrl);
+			//Retrieve the URL to the custom page where your external files are stored.  Use your custom page application's GUID.
+			Guid applicationGuid = new Guid("439e0ca3-cfbf-4940-a868-c9cd70d0368d");
+			string applicationPath = this.Helper.GetUrlHelper().GetRelativePathToCustomPages(applicationGuid);
 
 			// Before the elements are loaded on a page, register the JavaScript file. 
 			// You can load a JavaScript file into Relativity via a custom page.
@@ -66,15 +54,6 @@ namespace $rootnamespace$
 
 			IAPILog logger = Helper.GetLoggerFactory().GetLogger();
 			logger.LogVerbose("Log information throughout execution.");
-
-			return retVal;
-		}
-
-		private string getApplicationPath(string currentURL)
-		{
-			string retVal = "";
-			string[] split = currentURL.Substring(0, currentURL.IndexOf("/Case")).Split('/');
-			retVal = "/" + split[split.Length - 1] + "/CustomPages/45A52DF1-41E1-4E71-8119-35C5AA014E62/";
 
 			return retVal;
 		}

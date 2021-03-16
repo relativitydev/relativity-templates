@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using kCura.Relativity.Client;
-using kCura.Relativity.Client.DTOs;
-using Relativity.API;
+﻿using Relativity.API;
 using Relativity.Services.Objects;
 using Relativity.Services.Objects.DataContracts;
-using Field = Relativity.Services.Objects.DataContracts.Field;
+using System;
 using ReadResult = Relativity.Services.Objects.DataContracts.ReadResult;
 
 namespace Helpers.ObjectManager

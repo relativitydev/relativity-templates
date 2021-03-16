@@ -1,18 +1,15 @@
-﻿using System;
-using System.Net;
-using System.Runtime.InteropServices;
-using kCura.EventHandler;
-using kCura.EventHandler.CustomAttributes;
-using kCura.Relativity.Client;
+﻿using kCura.EventHandler;
 using Relativity.API;
 using Relativity.Services.Objects;
+using System;
+using System.Net;
 
 namespace $rootnamespace$
 {
 	[kCura.EventHandler.CustomAttributes.Description("Post Install EventHandler")]
 	[System.Runtime.InteropServices.Guid("$guid1$")]
 	public class $safeitemname$ : kCura.EventHandler.PostInstallEventHandler
-    {
+	{
 		public override Response Execute()
 		{
 			// Update Security Protocol
@@ -26,20 +23,10 @@ namespace $rootnamespace$
 			{
 				Int32 currentWorkspaceArtifactID = this.Helper.GetActiveCaseID();
 
-				//The Object Manager is the newest and preferred way to interact with Relativity instead of the Relativity Services API(RSAPI). 
-				//The RSAPI will be scheduled for depreciation after the Object Manager reaches feature party with it.
+				//The Object Manager is the newest and preferred way to interact with Relativity instead of the Relativity Services API(RSAPI).
 				using (IObjectManager objectManager = this.Helper.GetServicesManager().CreateProxy<IObjectManager>(ExecutionIdentity.System))
 				{
 
-				}
-
-				//Setting up an RSAPI Client
-				using (IRSAPIClient proxy =
-						Helper.GetServicesManager().CreateProxy<IRSAPIClient>(ExecutionIdentity.System))
-				{
-					//Set the proxy to use the current workspace
-					proxy.APIOptions.WorkspaceID = currentWorkspaceArtifactID;
-					//Add code for working with RSAPIClient
 				}
 
 				Relativity.API.IDBContext workspaceContext = this.Helper.GetDBContext(currentWorkspaceArtifactID);

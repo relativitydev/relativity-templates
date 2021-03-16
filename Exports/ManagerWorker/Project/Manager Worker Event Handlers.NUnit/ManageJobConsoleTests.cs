@@ -6,7 +6,7 @@ using Moq;
 using NUnit.Framework;
 using Relativity.API;
 using $saferootprojectname$.Helpers;
-using $saferootprojectname$.Helpers.Rsapi.Interfaces;
+using $saferootprojectname$.Helpers.ObjectManager.Interfaces;
 using PageEvent = kCura.EventHandler.ConsoleEventHandler.PageEvent;
 using $saferootprojectname$.EventHandlers;
 using Console = kCura.EventHandler.Console;

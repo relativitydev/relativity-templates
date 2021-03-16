@@ -1,5 +1,4 @@
 ﻿using kCura.Agent;
-using kCura.Relativity.Client;
 using Relativity.API;
 using Relativity.Services.Objects;
 using System;
@@ -38,7 +37,7 @@ namespace Relativity.Agent
 				//Guid guidForTestArtifactId = Helper.GetGuid(workspaceArtifactId, testArtifactId);
 
 				//Display a message in Agents Tab and Windows Event Viewer
-				RaiseMessage("The current time is: " +DateTime.Now.ToLongTimeString(), 1);
+				RaiseMessage("The current time is: " + DateTime.Now.ToLongTimeString(), 1);
 
 				//The Object Manager is the newest and preferred way to interact with Relativity instead of the Relativity Services API(RSAPI). 
 				using (IObjectManager objectManager = this.Helper.GetServicesManager().CreateProxy<IObjectManager>(ExecutionIdentity.CurrentUser))
