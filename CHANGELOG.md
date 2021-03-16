@@ -7,6 +7,7 @@
 
 ## 2021-03-12
 
-- REL-533605 - Consolidating all RSAPI removals and misc changes into new VSIX (v#)
+- REL-533605 - Consolidating all RSAPI removals and misc changes into new VSIX (v4.0)
+    - Removed projects and code across the directories that we no longer support (RIP and old Test Helpers Integration Test)
 
 -------------------------

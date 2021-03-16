@@ -3,7 +3,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Relativity.API;
 using System;
-using $saferootprojectname$.Helpers.Rsapi;
+using $saferootprojectname$.Helpers.ObjectManager;
 using Relativity.CustomPages;
 
 namespace $safeprojectname$
