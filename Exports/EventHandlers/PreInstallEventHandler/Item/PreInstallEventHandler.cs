@@ -8,7 +8,7 @@ namespace $rootnamespace$
 {
 	[kCura.EventHandler.CustomAttributes.Description("Pre Install EventHandler")]
 	[System.Runtime.InteropServices.Guid("$guid1$")]
-	public class $safeitemname$ : kCura.EventHandler.PreDeleteEventHandler
+	public class $safeitemname$ : kCura.EventHandler.PreInstallEventHandler
 	{
 		public override Response Execute()
 		{
