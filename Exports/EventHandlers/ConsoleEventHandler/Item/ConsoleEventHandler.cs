@@ -9,7 +9,7 @@ namespace $rootnamespace$
 {
 	[kCura.EventHandler.CustomAttributes.Description("Console EventHandler")]
 	[System.Runtime.InteropServices.Guid("$guid1$")]
-	public class $safeitemname$ : kCura.EventHandler.$safeitemname$
+	public class $safeitemname$ : kCura.EventHandler.ConsoleEventHandler
 	{
 
 		public override kCura.EventHandler.Console GetConsole(PageEvent pageEvent)

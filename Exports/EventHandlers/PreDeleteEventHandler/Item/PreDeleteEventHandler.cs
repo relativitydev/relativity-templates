@@ -8,7 +8,7 @@ namespace $rootnamespace$
 {
 	[kCura.EventHandler.CustomAttributes.Description("Pre Delete EventHandler")]
 	[System.Runtime.InteropServices.Guid("$guid1$")]
-	public class $safeitemname$ : kCura.EventHandler.$safeitemname$
+	public class $safeitemname$ : kCura.EventHandler.PreDeleteEventHandler
 	{
 		private IDBContext workspaceContext;
 

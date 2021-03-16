@@ -8,7 +8,7 @@ namespace $rootnamespace$
 {
 	[kCura.EventHandler.CustomAttributes.Description("List Page Interaction EventHandler")]
 	[System.Runtime.InteropServices.Guid("$guid1$")]
-	public class $safeitemname$ : kCura.EventHandler.$safeitemname$
+	public class $safeitemname$ : kCura.EventHandler.ListPageInteractionEventHandler
 	{
 		public override Response PopulateScriptBlocks()
 		{
