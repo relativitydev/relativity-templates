@@ -46,18 +46,6 @@ namespace $safeprojectname$
 				//Add the error to our custom Errors table
 				queryHelper.InsertRowIntoErrorLogAsync(Helper.GetDBContext(-1), job.WorkspaceArtifactId, Constant.Tables.WorkerQueue, job.RecordId, job.AgentId, ex.ToString()).Wait();
 
-				//Add the error to the Relativity Errors tab
-				//this second try catch is in case we have a problem connecting to the RSAPI
-				try
-				{
-					Helpers.Rsapi.ErrorQueries.WriteError(Helper.GetServicesManager(), ExecutionIdentity.System, job.WorkspaceArtifactId, ex);
-				}
-				catch (Exception rsapiException)
-				{
-					RaiseError(rsapiException.ToString(), rsapiException.ToString());
-					Logger.LogError(rsapiException, String.Format("{0} - {1}", Constant.Names.ApplicationName, rsapiException));
-				}
-
 				//Set the status in the queue to error
 				queryHelper.UpdateStatusInWorkerQueueAsync(Helper.GetDBContext(-1), Constant.QueueStatus.Error, job.BatchTableName).Wait();
 			}

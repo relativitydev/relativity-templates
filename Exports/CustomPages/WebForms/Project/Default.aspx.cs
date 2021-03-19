@@ -1,5 +1,4 @@
-﻿using kCura.Relativity.Client;
-using Relativity.API;
+﻿using Relativity.API;
 using Relativity.Services.Objects;
 using System;
 using System.Net;
@@ -45,19 +44,9 @@ namespace $safeprojectname$
 				IDBContext workspaceDbContext = Relativity.CustomPages.ConnectionHelper.Helper().GetDBContext(currentUserWorkspaceArtifactId);
 
 				//The Object Manager is the newest and preferred way to interact with Relativity instead of the Relativity Services API(RSAPI). 
-				//The RSAPI will be scheduled for depreciation after the Object Manager reaches feature party with it.
 				using (IObjectManager objectManager = Relativity.CustomPages.ConnectionHelper.Helper().GetServicesManager().CreateProxy<IObjectManager>(ExecutionIdentity.CurrentUser))
 				{
 
-				}
-
-				//Setting up an RSAPI Client
-				using (IRSAPIClient rsapiClient = Relativity.CustomPages.ConnectionHelper.Helper().GetServicesManager().CreateProxy<IRSAPIClient>(ExecutionIdentity.CurrentUser))
-				{
-					//Set the proxy to use the current workspace
-					rsapiClient.APIOptions.WorkspaceID = currentUserWorkspaceArtifactId;
-
-					//Add code for working with RSAPIClient
 				}
 
 				logger.LogVerbose("Log information throughout execution.");

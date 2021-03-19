@@ -50,12 +50,10 @@
     <Compile Include="Models\ManagerQueueRecord.cs" />
     <Compile Include="Models\WorkerQueueRecord.cs" />
     <Compile Include="Query.cs" />
-    <Compile Include="Rsapi\ArtifactQueries.cs" />
-    <Compile Include="Rsapi\ErrorQueries.cs" />
-    <Compile Include="Rsapi\Interfaces\IWorkspaceQueries.cs" />
-    <Compile Include="Rsapi\MessageFormatter.cs" />
-    <Compile Include="Rsapi\Response.cs" />
-    <Compile Include="Rsapi\WorkspaceQueries.cs" />
+    <Compile Include="ObjectManager\ArtifactQueries.cs" />
+    <Compile Include="ObjectManager\Interfaces\IWorkspaceQueries.cs" />
+    <Compile Include="ObjectManager\MessageFormatter.cs" />
+    <Compile Include="ObjectManager\WorkspaceQueries.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

@@ -1,8 +1,8 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
   <TemplateData>
-    <DefaultName>Relativity Custom Page WebForms.aspx</DefaultName>
-    <Name>Relativity Custom Page WebForms</Name>
-    <Description>Item Template for Relativity Custom Page WebForms</Description>
+    <DefaultName>Relativity Custom Page Form.aspx</DefaultName>
+    <Name>Relativity Custom Page Form</Name>
+    <Description>Item Template for Relativity Custom Page Form</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>10</SortOrder>
     <Icon>__TemplateIcon.ico</Icon>

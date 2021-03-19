@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using kCura.EventHandler;
 using Relativity.API;
 using $saferootprojectname$.Helpers;
-using $saferootprojectname$.Helpers.Rsapi;
-using $saferootprojectname$.Helpers.Rsapi.Interfaces;
+using $saferootprojectname$.Helpers.ObjectManager;
+using $saferootprojectname$.Helpers.ObjectManager.Interfaces;
 using Console = kCura.EventHandler.Console;
 
 namespace $safeprojectname$

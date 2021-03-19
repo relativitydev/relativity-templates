@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using kCura.EventHandler;
-using kCura.Relativity.Client;
+﻿using kCura.EventHandler;
 using Relativity.API;
 using Relativity.Services.Objects;
+using System;
+using System.Net;
 
 namespace Relativity_ListPageInteractionEventHandler
 {
@@ -27,20 +22,10 @@ namespace Relativity_ListPageInteractionEventHandler
 
 			Int32 currentWorkspaceArtifactID = Helper.GetActiveCaseID();
 
-			//The Object Manager is the newest and preferred way to interact with Relativity instead of the Relativity Services API(RSAPI). 
-			//The RSAPI will be scheduled for depreciation after the Object Manager reaches feature party with it.
+			//The Object Manager is the newest and preferred way to interact with Relativity instead of the Relativity Services API(RSAPI).
 			using (IObjectManager objectManager = this.Helper.GetServicesManager().CreateProxy<IObjectManager>(ExecutionIdentity.System))
 			{
 
-			}
-
-			//Setting up an RSAPI Client
-			using (IRSAPIClient proxy =
-					Helper.GetServicesManager().CreateProxy<IRSAPIClient>(ExecutionIdentity.System))
-			{
-				//Set the proxy to use the current workspace
-				proxy.APIOptions.WorkspaceID = currentWorkspaceArtifactID;
-				//Add code for working with RSAPIClient
 			}
 
 			IAPILog logger = Helper.GetLoggerFactory().GetLogger();

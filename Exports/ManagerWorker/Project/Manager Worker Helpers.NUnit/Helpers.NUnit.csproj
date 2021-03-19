@@ -44,7 +44,6 @@
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="ManagerQueueRecordTests.cs" />
     <Compile Include="MessageFormatterTests.cs" />
-    <Compile Include="ResponseTests.cs" />
     <Compile Include="WorkerQueueRecordTests.cs" />
   </ItemGroup>
   <ItemGroup>

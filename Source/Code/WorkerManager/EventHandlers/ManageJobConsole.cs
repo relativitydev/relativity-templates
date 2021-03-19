@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using kCura.EventHandler;
 using Relativity.API;
 using Helpers;
-using Helpers.Rsapi;
-using Helpers.Rsapi.Interfaces;
+using Helpers.ObjectManager;
+using Helpers.ObjectManager.Interfaces;
 using Console = kCura.EventHandler.Console;
 
 namespace EventHandlers
