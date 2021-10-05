@@ -5,4 +5,22 @@
 	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/AutoDetectedNamingRules/=Locals/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
 	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/AutoDetectedNamingRules/=Property/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
 	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/AutoDetectedNamingRules/=LocalConstants/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="row" Suffix="" Style="AaBb" /&gt;</s:String>
-	<s:Int64 x:Key="/Default/CodeStyle/Naming/CSharpAutoNaming/AutoNamingCompletedVersion/@EntryValue">2</s:Int64></wpf:ResourceDictionary>
+	<s:Int64 x:Key="/Default/CodeStyle/Naming/CSharpAutoNaming/AutoNamingCompletedVersion/@EntryValue">2</s:Int64>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0e8755b3_002Db053_002D40c5_002Dbe55_002D72521edfa503/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ManagerQueueRecordTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit2x::09364F6F-1646-41B5-96E4-AC604726A321::.NETFramework,Version=v4.6.2::Helpers.NUnit.ManagerQueueRecordTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit2x::09364F6F-1646-41B5-96E4-AC604726A321::.NETFramework,Version=v4.6.2::Helpers.NUnit.WorkerQueueRecordTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit2x::D18B0B84-5A82-4F61-8FFB-6FE4F01E53DE::.NETFramework,Version=v4.6.2::EventHandlers.NUnit.ManageJobConsoleTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit2x::C931958B-F21F-430A-86A9-7E80D46C3A99::.NETFramework,Version=v4.6.2::CustomPages.NUnit.ManagerAgentModelTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit2x::C931958B-F21F-430A-86A9-7E80D46C3A99::.NETFramework,Version=v4.6.2::CustomPages.NUnit.ManagerQueueRecordModelTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit2x::C931958B-F21F-430A-86A9-7E80D46C3A99::.NETFramework,Version=v4.6.2::CustomPages.NUnit.WorkerAgentModelTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit2x::C931958B-F21F-430A-86A9-7E80D46C3A99::.NETFramework,Version=v4.6.2::CustomPages.NUnit.WorkerQueueRecordModelTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit2x::A269D655-2F6E-4A92-B0D5-B5CF030E85D1::.NETFramework,Version=v4.6.2::Agents.NUnit.ManagerAgentTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit2x::A269D655-2F6E-4A92-B0D5-B5CF030E85D1::.NETFramework,Version=v4.6.2::Agents.NUnit.WorkerAgentTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6141d207_002Db04b_002D4f22_002Db450_002Da4a41f6af8b8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="MessageFormatterTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit2x::09364F6F-1646-41B5-96E4-AC604726A321::.NETFramework,Version=v4.6.2::Helpers.NUnit.MessageFormatterTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
