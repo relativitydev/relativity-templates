@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Threading.Tasks;
-using $saferootprojectname$.Helpers;
+using Helpers;
 
 namespace $safeprojectname$.Models
 {
