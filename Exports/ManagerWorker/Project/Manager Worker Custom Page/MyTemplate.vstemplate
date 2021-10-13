@@ -1,10 +1,13 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <Name>Custom Page</Name>
-    <Description>Project Template for Relativity Manager Worker Custom Page</Description>
+    <Name>CustomPages</Name>
+    <Description>Templates for Custom Pages Worker Manager</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
-    <DefaultName>Custom Page</DefaultName>
+    <DefaultName>CustomPages</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
@@ -85,13 +88,13 @@
           <ProjectItem ReplaceParameters="true" TargetFileName="popper.min.js.map">popper.min.js.map</ProjectItem>
         </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="index.d.ts">index.d.ts</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.4.1.intellisense.js">jquery-3.4.1.intellisense.js</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.4.1.js">jquery-3.4.1.js</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.4.1.min.js">jquery-3.4.1.min.js</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.4.1.min.map">jquery-3.4.1.min.map</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.4.1.slim.js">jquery-3.4.1.slim.js</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.4.1.slim.min.js">jquery-3.4.1.slim.min.js</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.4.1.slim.min.map">jquery-3.4.1.slim.min.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.6.0.intellisense.js">jquery-3.6.0.intellisense.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.6.0.js">jquery-3.6.0.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.6.0.min.js">jquery-3.6.0.min.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.6.0.min.map">jquery-3.6.0.min.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.6.0.slim.js">jquery-3.6.0.slim.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.6.0.slim.min.js">jquery-3.6.0.slim.min.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.6.0.slim.min.map">jquery-3.6.0.slim.min.map</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="jquery.unobtrusive-ajax.js">jquery.unobtrusive-ajax.js</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="jquery.unobtrusive-ajax.min.js">jquery.unobtrusive-ajax.min.js</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="jquery.validate-vsdoc.js">jquery.validate-vsdoc.js</ProjectItem>
@@ -140,7 +143,7 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="Web.Release.config">Web.Release.config</ProjectItem>
     </Project>
   </TemplateContent>
-	<WizardExtension>
+    <WizardExtension>
 		<Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
 		<FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
 	</WizardExtension>
@@ -153,8 +156,8 @@
 			<package id="Antlr" version="3.4.1.9004" />
 			<package id="BCrypt-Official" version="0.1.109" />
 			<package id="bootstrap" version="4.3.1" />
-			<package id="jQuery" version="3.4.1" />
-			<package id="jQuery.Validation" version="1.17.0" />
+			<package id="jQuery" version="3.6.0" />
+			<package id="jQuery.Validation" version="1.19.3" />
 			<package id="Microsoft.AspNet.Mvc" version="5.2.4" />
 			<package id="Microsoft.AspNet.Mvc.FixedDisplayModes" version="5.0.0" />
 			<package id="Microsoft.AspNet.Razor" version="3.2.4" />
