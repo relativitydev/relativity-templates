@@ -16,7 +16,7 @@ namespace $safeprojectname$
 
 			if (httpContext.Session != null)
 			{
-				Int32 caseArtifactId = RRelativity.CustomPages.ConnectionHelper.Helper().GetActiveCaseID();
+				Int32 caseArtifactId = Relativity.CustomPages.ConnectionHelper.Helper().GetActiveCaseID();
 				ArtifactQueries query = new ArtifactQueries();
 				bool res = query.DoesUserHaveAccessToArtifact(
 				ConnectionHelper.Helper().GetServicesManager(),
