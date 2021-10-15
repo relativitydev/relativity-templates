@@ -1,6 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Data;
+using System.Threading.Tasks;
 using $saferootprojectname$.Helpers;
 
 namespace $safeprojectname$.Models
