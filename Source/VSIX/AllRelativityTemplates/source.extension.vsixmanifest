@@ -119,6 +119,7 @@
         <Asset Type="File" d:Source="File" Path="packages\Relativity.Other.10.3.191.8.nupkg" />
         <Asset Type="jQuery.Validation.1.19.3.nupkg" d:Source="File" Path="packages\jQuery.Validation.1.19.3.nupkg" d:VsixSubPath="packages" />
         <Asset Type="jQuery.3.6.0.nupkg" d:Source="File" Path="packages\jQuery.3.6.0.nupkg" d:VsixSubPath="Packages" />
+        <Asset d:Source="File" Path="packages\Newtonsoft.Json.13.0.2.nupkg" Type="File" />
     </Assets>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.8.27729.1,17.0)" DisplayName="Visual Studio core editor" />
