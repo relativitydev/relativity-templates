@@ -96,3 +96,7 @@ The following projects are created:
  - **Helpers.NUnit**
 
 	Add any unit tests for the helpers project to this project.
+
+## Maintainers
+
+This repository is owned by the [Eventing & API Enablement Team](https://einstein.kcura.com/x/P7HCH).  Please send any issues or feature requests to <help-eventing-messaging@relativity.com>
