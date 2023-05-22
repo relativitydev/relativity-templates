@@ -27,6 +27,12 @@ The Relativity Templates are compatible with Visual Studio 2017 and 2019 and con
     - Kepler Module Item Template
     - Kepler Serice Item Template
 
+## Maintainers
+
+Relativity Templates are maintained by [Eventing & API Enablement](https://einstein.kcura.com/x/P7HCH). Feel free to reach out to our team at [#help-eventing-and-api-enablement](https://kcura-pd.slack.com/archives/C03CQV3DKLY) for any questions or requests.
+
+---
+
 ### Installation
 To install all of the templates simply double click the .vsix file and click the “Install” button. If Visual Studio is already open you will have to restart it for the templates to populate.
 
@@ -96,7 +102,3 @@ The following projects are created:
  - **Helpers.NUnit**
 
 	Add any unit tests for the helpers project to this project.
-
-## Maintainers
-
-This repository is owned by the [Eventing & API Enablement Team](https://einstein.kcura.com/x/P7HCH).  Please send any issues or feature requests to <help-eventing-messaging@relativity.com>
