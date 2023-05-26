@@ -27,6 +27,12 @@ The Relativity Templates are compatible with Visual Studio 2017 and 2019 and con
     - Kepler Module Item Template
     - Kepler Serice Item Template
 
+## Maintainers
+
+This repository is maintained by the Eventing & API Enablement Team. Feel free to reach out to our team for any questions or requests.
+
+---
+
 ### Installation
 To install all of the templates simply double click the .vsix file and click the “Install” button. If Visual Studio is already open you will have to restart it for the templates to populate.
 
