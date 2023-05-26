@@ -29,7 +29,7 @@ The Relativity Templates are compatible with Visual Studio 2017 and 2019 and con
 
 ## Maintainers
 
-Relativity Templates are maintained by [Eventing & API Enablement](https://einstein.kcura.com/x/P7HCH). Feel free to reach out to our team at [#help-eventing-and-api-enablement](https://kcura-pd.slack.com/archives/C03CQV3DKLY) for any questions or requests.
+This repository is maintained by the Eventing & API Enablement Team. Feel free to reach out to our team for any questions or requests.
 
 ---
 
